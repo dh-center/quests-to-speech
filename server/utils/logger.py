@@ -1,6 +1,7 @@
 import logging
 import sys
 import time
+from functools import wraps
 from logging.handlers import RotatingFileHandler
 
 BYTES_IN_MEGABYTE = (2 ** 20)
@@ -26,9 +27,21 @@ __LOGGER.addHandler(console_handler)
 def log(messages):
     __LOGGER.info(messages)
 
+
 # # print log
 # LOG_LOCK = threading.RLock()
 #
 # def log(*msg):
 #     with LOG_LOCK:
 #         print(*msg, sep=" : ")
+
+# exceptions handle decorator
+def log_exception(fun):
+    @wraps(fun)
+    def wrapper(*args, **kwargs):
+        try:
+            return fun(*args, **kwargs)
+        except Exception as exp:
+            log(f"Exception happened : {exp}")
+
+    return wrapper

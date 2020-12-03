@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 
-from server.controllers.common_utils import HTTP_SERVICE_UNAVAILABLE
+from server.controllers.controllers_utils import HTTP_SERVICE_UNAVAILABLE
 
 
 class NotActivatedStorageHandler:

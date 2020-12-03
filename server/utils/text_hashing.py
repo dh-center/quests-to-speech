@@ -2,9 +2,9 @@ import hashlib
 
 
 def hash_text(text: str) -> str:
-    sha = hashlib.sha1()
+    sha = hashlib.sha256()
     sha.update(str.encode(text))
-    return sha.hexdigest()
+    return f"{sha.hexdigest()}-{len(text)}"
 
 
 if __name__ == '__main__':
