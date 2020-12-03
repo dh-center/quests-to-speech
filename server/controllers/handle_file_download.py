@@ -2,7 +2,7 @@ import os
 from http.server import BaseHTTPRequestHandler
 
 from server.app_config import CONFIG
-from server.controllers.common_utils import HTTP_OK, HTTP_NOT_FOUND
+from server.controllers.controllers_utils import HTTP_OK, HTTP_NOT_FOUND
 from server.utils.logger import log
 
 

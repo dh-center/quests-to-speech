@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 
-from server.controllers.common_utils import HTTP_OK
+from server.controllers.controllers_utils import HTTP_OK
 
 
 class WelcomePageHandler:
