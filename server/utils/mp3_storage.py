@@ -6,7 +6,7 @@ class Mp3Storage:
         self._activated = False
 
     def activate_storage(self):
-        log("\nStart storage activation...")
+        log("Start storage activation...")
         # TODO parse mp3 files
         self._activated = True
         log("Storage activated.")

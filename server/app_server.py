@@ -22,12 +22,12 @@ class RequestHandler(BaseHTTPRequestHandler):
         return ApiHandler(self).handle()
 
 
-log("\nStarting app...")
+log("Starting app...")
 log(f"Absolute root path : {os.path.abspath(os.curdir)}")
 server = None
 try:
     server = ThreadingHTTPServer(('', CONFIG.port_number), RequestHandler)
-    log('Started httpserver on port', CONFIG.port_number)
+    log(f"Started httpserver on port : {CONFIG.port_number}")
 
     # check data-folder/mp3 exist and create if not
     if os.path.isdir(CONFIG.mp3_location):
@@ -35,7 +35,7 @@ try:
     else:
         os.makedirs(CONFIG.mp3_location)
         log(f"Created data folder : {CONFIG.mp3_location}.")
-    log(f"Absolute folder data folder path : {os.path.abspath(CONFIG.mp3_location)}")
+    log(f"Absolute folder data folder path : {os.path.abspath(CONFIG.mp3_location)}\n")
 
     # activate file storage
     MP3_STORAGE.activate_storage()

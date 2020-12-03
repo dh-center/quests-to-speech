@@ -5,7 +5,7 @@ from server.app_config import CONFIG
 from server.utils.logger import log
 
 EXECUTOR = ThreadPoolExecutor(CONFIG.concurrency_lvl)
-log(f"Created executor concurrency_lvl : {CONFIG.concurrency_lvl}")
+log(f"Created executor concurrency_lvl : {CONFIG.concurrency_lvl}\n")
 
 
 def submit(task, callback, *args, **kwargs):
