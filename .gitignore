@@ -2,4 +2,4 @@
 /venv/
 /.idea/
 /server/log.log*
-*.mp3
+/server/data-folder/**/*.mp3
