@@ -1,5 +1,0 @@
-/server/data-folder/mp3/
-/venv/
-/.idea/
-/server/log.log*
-/server/data-folder/**/*.mp3
