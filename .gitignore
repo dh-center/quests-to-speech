@@ -2,5 +2,3 @@
 /venv/
 /.idea/
 /server/log.log*
-/**/*.mp3
-/**/*.log

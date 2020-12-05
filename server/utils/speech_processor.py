@@ -1,7 +1,7 @@
 import os
 from typing import Tuple
 
-from server.app_config import CONFIG
+from configs.app_config import CONFIG
 from server.utils.logger import log
 
 

@@ -2,7 +2,7 @@ import os
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 import server.utils.task_executor as executor
-from server.app_config import CONFIG
+from configs.app_config import CONFIG
 from server.controllers.handle_api_request import ApiHandler
 from server.controllers.handle_file_download import FileDownloadHandler
 from server.controllers.handle_not_activated_storage_page import NotActivatedStorageHandler

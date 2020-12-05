@@ -2,7 +2,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures._base import Future
 
-from server.app_config import CONFIG
+from configs.app_config import CONFIG
 from server.utils.logger import log, log_exception, log_error
 from server.utils.mp3_storage import StorageValue
 from server.utils.speech_processor import CURRENT_PROCESSOR

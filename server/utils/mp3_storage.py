@@ -3,7 +3,7 @@ import time
 from threading import Thread
 from typing import Tuple, Dict
 
-from server.app_config import CONFIG
+from configs.app_config import CONFIG
 from server.utils.RWLock import RWLock
 from server.utils.logger import log, log_error
 
