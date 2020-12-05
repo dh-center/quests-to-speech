@@ -17,7 +17,7 @@ class WelcomePageHandler:
         # TODO show all tracks stored
         list_elements = [
             f'<span style="color : red"><b>Route ID</b></span> : {route_id} --> <b>State</b> : {storage_value.state} ||  <b>Text Hash</b> : {storage_value.text_hash} || ' \
-            f"<b>File</b> : {storage_value.file_name}"
+            f'<b>File</b> : <a href="/{storage_value.file_name}">{storage_value.file_name}</a>'
             for route_id, storage_value in MP3_STORAGE.get_dict_snapshot().items()
         ]
         self.html(textwrap.dedent(f"""

@@ -19,7 +19,7 @@ class FileDownloadHandler:
         mp3_file_name = self.handler.path.split("/")[-1]
         file_path = os.path.join(os.path.abspath(os.curdir), CONFIG.mp3_location, mp3_file_name)
         log(f"Serve file {file_path}")
-        return self.mp3_serve(file_path, "route_id")
+        return self.mp3_serve(file_path, mp3_file_name)
 
     def mp3_serve(self, file_path, served_file_name):
         try:
