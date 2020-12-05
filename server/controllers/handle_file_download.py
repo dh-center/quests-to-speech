@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler
 
 from server.app_config import CONFIG
 from server.controllers.controllers_utils import HTTP_OK, HTTP_NOT_FOUND
-from server.utils.logger import log
+from server.utils.logger import log, log_error
 
 
 class FileDownloadHandler:
@@ -17,7 +17,7 @@ class FileDownloadHandler:
 
     def handle(self):
         mp3_file_name = self.handler.path.split("/")[-1]
-        file_path = os.path.join(os.path.abspath(os.curdir), CONFIG.data_folder, mp3_file_name)
+        file_path = os.path.join(os.path.abspath(os.curdir), CONFIG.mp3_location, mp3_file_name)
         log(f"Serve file {file_path}")
         return self.mp3_serve(file_path, "route_id")
 
@@ -38,4 +38,4 @@ class FileDownloadHandler:
         except Exception as exp:
             self.handler.send_response(HTTP_NOT_FOUND)
             self.handler.end_headers()
-            log(f"Exception happened on mp3 file serve {file_path} {exp}")
+            log_error(f"Exception happened on mp3 file serve {file_path} {exp}")

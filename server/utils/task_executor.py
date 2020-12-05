@@ -3,7 +3,7 @@ from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures._base import Future
 
 from server.app_config import CONFIG
-from server.utils.logger import log, log_exception
+from server.utils.logger import log, log_exception, log_error
 from server.utils.mp3_storage import StorageValue
 from server.utils.speech_processor import CURRENT_PROCESSOR
 
@@ -21,16 +21,26 @@ def shutdown():
     EXECUTOR.shutdown()
 
 
+def get_file_name(route_id: str, text_hash: str) -> str:
+    now = time.time()
+    sep = CONFIG.file_parts_separator
+    return f"{route_id}{sep}{text_hash}{sep}{now}.mp3"
+
+
 @log_exception
 def route_to_audio_task(value: StorageValue, route_id: str, text: str, text_hash: str):
     task_info = f"route_to_audio_task : {route_id}|{text_hash}|{text[:20]}"
     try:
+        file_name = get_file_name(route_id, text_hash)
+        res, out_file_path = CURRENT_PROCESSOR.create_speech_file(text, file_name)
+        if not res:
+            raise RuntimeError(f"Sth went wrong {route_id}{file_name}")
+        value.file_name = file_name
         value.state = StorageValue.STATE_DONE
-        CURRENT_PROCESSOR.create_speech_file()
-        # TODO get audio, create file
-        log(f"{task_info} done")
+        log(f"Result: {res} {task_info} done (file: {file_name})")
     except Exception as exp:
-        log(f"{task_info} broken, exception {exp}")
+        log_error(f"{task_info} broken, exception {exp}")
+        value.state = StorageValue.STATE_BROKEN
 
 
 @log_exception

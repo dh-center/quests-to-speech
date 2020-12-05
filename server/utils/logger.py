@@ -24,6 +24,10 @@ console_handler.setFormatter(formatter)
 __LOGGER.addHandler(console_handler)
 
 
+def log_error(message):
+    __LOGGER.exception(f"Error happened {message}")
+
+
 def log(messages):
     __LOGGER.info(messages)
 

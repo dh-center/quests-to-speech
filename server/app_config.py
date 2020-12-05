@@ -2,6 +2,7 @@ import os
 from collections import namedtuple
 
 # to create constant fields
+
 __Config = namedtuple(
     '__Config', [
         # Server
@@ -13,6 +14,11 @@ __Config = namedtuple(
         'concurrency_lvl',
         # Mp3 server
         'socket_write_chunk_size',
+        # Storage
+        'clean_storage_interval',
+        'file_parts_separator',
+        # Speech processor
+        'speech_processor',
     ]
 )
 DATA_FOLDER = "data-folder"
@@ -26,5 +32,11 @@ CONFIG = __Config(
     # Executor
     concurrency_lvl=10,
     # Mp3 server
-    socket_write_chunk_size=4 * 1024  # memory page size
+    socket_write_chunk_size=4 * 1024,  # memory page size
+    # Storage
+    clean_storage_interval=60,
+    file_parts_separator="$$",
+    # Speech processor
+    speech_processor="Dummy"
+    # speech_processor="Yandex"
 )

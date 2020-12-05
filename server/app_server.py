@@ -5,6 +5,7 @@ import server.utils.task_executor as executor
 from server.app_config import CONFIG
 from server.controllers.handle_api_request import ApiHandler
 from server.controllers.handle_file_download import FileDownloadHandler
+from server.controllers.handle_not_activated_storage_page import NotActivatedStorageHandler
 from server.controllers.handle_welcome_page import WelcomePageHandler
 from server.utils.logger import log
 from server.utils.mp3_storage import MP3_STORAGE
@@ -13,15 +14,20 @@ from server.utils.mp3_storage import MP3_STORAGE
 class RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         log(f"GET request received {self.path}")
+        if not MP3_STORAGE.is_activated:
+            return NotActivatedStorageHandler(self).handle()
         if self.path.endswith(".mp3"):
             return FileDownloadHandler(self).handle()
         return WelcomePageHandler(self).handle()
 
     def do_POST(self):
         log(f"POST request received {self.path}")
+        if not MP3_STORAGE.is_activated:
+            return NotActivatedStorageHandler(self).handle()
         return ApiHandler(self).handle()
 
 
+log(f"Config : {CONFIG}\n")
 log("Starting app...")
 log(f"Absolute root path : {os.path.abspath(os.curdir)}")
 server = None

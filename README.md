@@ -16,6 +16,7 @@ Stack:
 ##### response body:
 * **OK** (OK 200) - link to audio
 * **PROCESSING** (OK 200) - come latter
+* **BROKEN** (NO_CONTENT 204) - had the task but sth went wrong
 * **NOT FOUND** (NOT_FOUND 404) - please `/route_to_audio` first
 * **BAD REQUEST** (BAD_REQUEST 400) - not know or malformed request
 
