@@ -6,9 +6,9 @@ import server.utils.task_executor as executor
 from configs.app_config import CONFIG
 from server.controllers.controllers_utils import HTTP_BAD_REQUEST, FIELD_ROUTE_JSON, FIELD_ROUTE_ID, \
     check_json_data, HTTP_OK, HTTP_CREATED, HTTP_NO_CONTENT, HTTP_NOT_FOUND
-from server.utils.json_merger import merge_json_to_text
 from server.utils.logger import log
 from server.utils.mp3_storage import MP3_STORAGE
+from server.utils.speech_processor import CURRENT_PROCESSOR
 from server.utils.text_hashing import hash_text
 
 
@@ -40,7 +40,10 @@ class RouteToAudio(ApiMethod):
             error_msg = "Invalid route_json"
             return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
 
-        text = merge_json_to_text(route_json)
+        text = CURRENT_PROCESSOR.get_json_merger()(route_json)
+
+        route_id = json_data[FIELD_ROUTE_ID]
+        log(f"For Route ID : {route_id} got {route_json} and merged it to :\n {text}")
 
         if not text:
             error_msg = f"No text provided"
@@ -50,7 +53,6 @@ class RouteToAudio(ApiMethod):
             error_msg = f"Too large text (> {CONFIG.text_length_limit} characters)"
             return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
 
-        route_id = json_data[FIELD_ROUTE_ID]
         text_hash = hash_text(text)
         (is_created, value) = MP3_STORAGE.get_or_create_value(route_id, text_hash)
 

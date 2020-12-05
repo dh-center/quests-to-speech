@@ -36,11 +36,11 @@ CONFIG = __Config(
     # Mp3 server
     socket_write_chunk_size=4 * 1024,  # memory page size
     # Storage
-    clean_storage_interval=60,
+    clean_storage_interval=30,
     file_parts_separator="$$",
     # Text length limit
     text_length_limit=5000,  # yandex text length limit
     # Speech processor
-    speech_processor="Dummy"
-    # speech_processor="Yandex"
+    # speech_processor="Dummy"
+    speech_processor="Yandex"
 )

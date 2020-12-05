@@ -17,8 +17,8 @@ def merge_json(json_data, res: list = None):
     return res
 
 
-def merge_json_to_text(json_data) -> str:
-    return "\n".join(merge_json(json_data))
+def merge_json_to_text_for_yandex(json_data) -> str:
+    return '\n'.join(f"<p>{line}</p>" for line in merge_json(json_data))
 
 
 if __name__ == '__main__':
@@ -50,4 +50,4 @@ if __name__ == '__main__':
 }
     """)
     print(json_data)
-    print(merge_json_to_text(json_data))
+    print(merge_json_to_text_for_yandex(json_data))
