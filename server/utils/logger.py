@@ -32,7 +32,7 @@ __LOGGER.addHandler(console_handler)
 
 
 def log_error(message):
-    __LOGGER.exception(f"Error happened {message}")
+    __LOGGER.exception(message)
 
 
 def log(messages):

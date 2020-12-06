@@ -27,5 +27,5 @@ class ApiHandler:
             return api_method(self.handler, json_data)
         except Exception as exp:
             error_msg = f"Exception happened : {exp}"
-            prepare_api_response(self.handler, HTTP_BAD_REQUEST, error_msg)
             log_error(error_msg)
+            return prepare_api_response(self.handler, HTTP_BAD_REQUEST, error_msg)

@@ -76,7 +76,7 @@ class GetTrackForRoute(ApiMethod):
         # check request
         error_msg = check_json_data(json_data, [FIELD_ROUTE_ID])
         if error_msg:
-            prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
 
         route_id = json_data[FIELD_ROUTE_ID]
         storage_value = MP3_STORAGE.get_value(route_id)

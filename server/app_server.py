@@ -7,7 +7,7 @@ from server.controllers.handle_api_request import ApiHandler
 from server.controllers.handle_file_download import FileDownloadHandler
 from server.controllers.handle_not_activated_storage_page import NotActivatedStorageHandler
 from server.controllers.handle_welcome_page import WelcomePageHandler
-from server.utils.logger import log
+from server.utils.logger import log, log_error
 from server.utils.mp3_storage import MP3_STORAGE
 
 
@@ -49,7 +49,7 @@ try:
     # Wait forever for incoming http requests
     server.serve_forever()
 except Exception as exp:
-    log(exp)
+    log_error(f"Exception happened : {exp}")
     executor.shutdown()
     if server:
         server.socket.close()

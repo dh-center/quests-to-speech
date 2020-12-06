@@ -153,7 +153,7 @@ def clean_task():
                 route_id, text_hash, created_time = cropped_name.split(CONFIG.file_parts_separator)
                 created_time = float(created_time)
                 if route_id not in keys:
-                    if snapshot_time <= created_time:
+                    if created_time <= snapshot_time:
                         delete_mp3_file(file_name)
                         log(f"Removed unused file on clean {file_name}")
                     continue
