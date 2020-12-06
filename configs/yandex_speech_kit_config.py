@@ -8,6 +8,10 @@ class YandexConfig:
     def am_token(self):
         return YandexConfig._AM_TOKEN
 
+    @staticmethod
+    def set_am_token(token):
+        YandexConfig._AM_TOKEN = token
+
     @property
     def folder_id(self):
         return YandexConfig._FOLDER_ID

@@ -2,13 +2,13 @@ from typing import List
 
 HTTP_OK = 200
 HTTP_CREATED = 201
-HTTP_NO_CONTENT = 204
 HTTP_BAD_REQUEST = 400
 HTTP_NOT_FOUND = 404
 HTTP_SERVICE_UNAVAILABLE = 503
 
 FIELD_ROUTE_JSON = 'route_json'
 FIELD_ROUTE_ID = 'route_id'
+FIELD_TOKEN = 'token'
 
 
 def check_json_data(json_data, fields: List[str]) -> str:

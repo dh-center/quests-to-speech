@@ -125,8 +125,24 @@ class Mp3Storage:
         finally:
             self._rw_lock.reader_release()
 
+    @staticmethod
+    def clear_tmp_files():
+        log("Clear tmp files...")
+        for file_name in os.listdir(CONFIG.data_folder):
+            if file_name.startswith('tmp'):
+                delete_tmp_file(file_name)
+                log(f"tmp file removed {file_name}")
+        log("Clear tmp files finished")
+
 
 MP3_STORAGE = Mp3Storage()
+
+
+def delete_tmp_file(file_path):
+    try:
+        os.remove(os.path.join(CONFIG.data_folder, file_path))
+    except Exception as exp:
+        log_error(f"Exception happened during tmp file {file_path} removal : {exp}")
 
 
 def delete_mp3_file(file_path):

@@ -8,7 +8,9 @@ class YandexApiException(RuntimeError):
     pass
 
 
-def synthesize(ssml_text, folder_id=YANDEX_CONFIG.folder_id, iam_token=YANDEX_CONFIG.am_token):
+def synthesize(ssml_text):
+    folder_id = YANDEX_CONFIG.folder_id
+    iam_token = YANDEX_CONFIG.am_token
     ssml_text = f"<speak>{ssml_text}</speak>"
     url = 'https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize'
     headers = {

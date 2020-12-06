@@ -1,13 +1,14 @@
 import json
 from http.server import BaseHTTPRequestHandler
 
-from server.controllers.api_methods import RouteToAudio, GetTrackForRoute, prepare_api_response
+from server.controllers.api_methods import RouteToAudio, GetTrackForRoute, prepare_api_response, SetYandexToken
 from server.controllers.controllers_utils import HTTP_BAD_REQUEST
 from server.utils.logger import log, log_error
 
 ROUTES = {
     "/get_track_for_route": GetTrackForRoute(),
     "/route_to_audio": RouteToAudio(),
+    "/set_yandex_token": SetYandexToken(),
 }
 
 

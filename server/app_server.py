@@ -43,6 +43,8 @@ try:
         log(f"Created data folder : {CONFIG.mp3_location}.")
     log(f"Absolute folder data folder path : {os.path.abspath(CONFIG.mp3_location)}\n")
 
+    # clean tmp files
+    MP3_STORAGE.clear_tmp_files()
     # activate file storage
     MP3_STORAGE.activate_storage()
 

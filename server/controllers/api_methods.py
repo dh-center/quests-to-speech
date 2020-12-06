@@ -4,8 +4,9 @@ from typing import Union, Dict
 
 import server.utils.task_executor as executor
 from configs.app_config import CONFIG
+from configs.yandex_speech_kit_config import YandexConfig
 from server.controllers.controllers_utils import HTTP_BAD_REQUEST, FIELD_ROUTE_JSON, FIELD_ROUTE_ID, \
-    check_json_data, HTTP_OK, HTTP_CREATED, HTTP_NO_CONTENT, HTTP_NOT_FOUND
+    check_json_data, HTTP_OK, HTTP_CREATED, HTTP_NOT_FOUND, FIELD_TOKEN
 from server.utils.logger import log
 from server.utils.mp3_storage import MP3_STORAGE
 from server.utils.speech_processor import CURRENT_PROCESSOR
@@ -83,7 +84,7 @@ class GetTrackForRoute(ApiMethod):
         if not storage_value:
             return prepare_api_response(handler, HTTP_NOT_FOUND, "NOT_FOUND")
         if storage_value.is_broken():
-            return prepare_api_response(handler, HTTP_NO_CONTENT, "BROKEN")
+            return prepare_api_response(handler, HTTP_OK, "BROKEN")
         if storage_value.is_processed():
             return prepare_api_response(handler, HTTP_OK, "PROCESSING")
         if storage_value.is_done():
@@ -91,3 +92,17 @@ class GetTrackForRoute(ApiMethod):
 
         log(f"Sth went wrong {route_id}")
         return prepare_api_response(handler, HTTP_BAD_REQUEST, "Sth went wrong")
+
+
+class SetYandexToken(ApiMethod):
+
+    def __call__(self, handler: BaseHTTPRequestHandler, json_data):
+        # check request
+        error_msg = check_json_data(json_data, [FIELD_TOKEN])
+        if error_msg:
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+
+        am_token = json_data[FIELD_TOKEN]
+        YandexConfig.set_am_token(am_token)
+        log(f"Yandex token reset {am_token}")
+        return prepare_api_response(handler, HTTP_OK, "TOKEN_SET")
