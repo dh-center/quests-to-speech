@@ -32,7 +32,7 @@ log("Starting app...")
 log(f"Absolute root path : {os.path.abspath(os.curdir)}")
 server = None
 try:
-    server = ThreadingHTTPServer(('', CONFIG.port_number), RequestHandler)
+    server = ThreadingHTTPServer(('', int(CONFIG.port_number)), RequestHandler)
     log(f"Started httpserver on port : {CONFIG.port_number}")
 
     # check data-folder/mp3 exist and create if not
@@ -53,4 +53,4 @@ except Exception as exp:
     executor.shutdown()
     if server:
         server.socket.close()
-    server.server_close()
+        server.server_close()

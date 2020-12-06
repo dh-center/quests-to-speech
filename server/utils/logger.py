@@ -1,8 +1,11 @@
 import logging
+import os
 import sys
 import time
 from functools import wraps
 from logging.handlers import RotatingFileHandler
+
+from configs.app_config import CONFIG
 
 BYTES_IN_MEGABYTE = (2 ** 20)
 
@@ -14,7 +17,11 @@ formatter.converter = time.gmtime
 
 __LOGGER = logging.getLogger("Rotating Log")
 
-file_handler = RotatingFileHandler('log.log', maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2)
+if not os.path.isdir(CONFIG.data_folder):
+    os.makedirs(CONFIG.data_folder)
+file_handler = RotatingFileHandler(
+    os.path.join(CONFIG.data_folder, 'log.log'), maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2
+)
 file_handler.setFormatter(formatter)
 __LOGGER.addHandler(file_handler)
 

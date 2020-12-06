@@ -1,0 +1,3504 @@
+Dec 03 11:00:39 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 11:00:39 : 0 2 3
+Dec 03 11:00:39 : 1 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 11:00:39 : 2 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 11:00:39 : 3 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 11:00:39 : 4 2 3
+Dec 03 11:00:39 : 5 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 11:00:39 : 6 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 11:00:39 : 7 2 3
+INFO:Rotating Log:5 2 3
+INFO:Rotating Log:6 2 3
+INFO:Rotating Log:7 2 3
+Dec 03 11:00:39 : 8 2 3
+INFO:Rotating Log:8 2 3
+Dec 03 11:00:39 : 9 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 11:00:41 : got callback 1
+INFO:Rotating Log:got callback 1
+Dec 03 11:00:41 : 10 2 3
+INFO:Rotating Log:10 2 3
+Dec 03 11:00:41 : got callback 0
+INFO:Rotating Log:got callback 0
+Dec 03 11:00:41 : 11 2 3
+INFO:Rotating Log:11 2 3
+Dec 03 11:00:41 : got callback 2
+INFO:Rotating Log:got callback 2
+Dec 03 11:00:41 : got callback 3
+Dec 03 11:00:41 : got callback 7
+INFO:Rotating Log:got callback 3
+Dec 03 11:00:41 : got callback 4
+INFO:Rotating Log:got callback 7
+INFO:Rotating Log:got callback 4
+Dec 03 11:00:41 : 12 2 3
+Dec 03 11:00:41 : got callback 8
+INFO:Rotating Log:12 2 3
+Dec 03 11:00:41 : got callback 6
+INFO:Rotating Log:got callback 8
+Dec 03 11:00:41 : got callback 9
+INFO:Rotating Log:got callback 6
+INFO:Rotating Log:got callback 9
+Dec 03 11:00:41 : got callback 5
+INFO:Rotating Log:got callback 5
+Dec 03 11:00:41 : 13 2 3
+INFO:Rotating Log:13 2 3
+Dec 03 11:00:41 : 14 2 3
+INFO:Rotating Log:14 2 3
+Dec 03 11:00:41 : 15 2 3
+INFO:Rotating Log:15 2 3
+Dec 03 11:00:41 : 16 2 3
+INFO:Rotating Log:16 2 3
+Dec 03 11:00:41 : 17 2 3
+INFO:Rotating Log:17 2 3
+Dec 03 11:00:41 : 18 2 3
+INFO:Rotating Log:18 2 3
+Dec 03 11:00:41 : 19 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 11:00:43 : got callback 10
+INFO:Rotating Log:got callback 10
+Dec 03 11:00:43 : 20 2 3
+INFO:Rotating Log:20 2 3
+Dec 03 11:00:43 : got callback 11
+INFO:Rotating Log:got callback 11
+Dec 03 11:00:43 : 21 2 3
+INFO:Rotating Log:21 2 3
+Dec 03 11:00:43 : got callback 12
+INFO:Rotating Log:got callback 12
+Dec 03 11:00:43 : 22 2 3
+INFO:Rotating Log:22 2 3
+Dec 03 11:00:43 : got callback 13
+INFO:Rotating Log:got callback 13
+Dec 03 11:00:43 : 23 2 3
+Dec 03 11:00:43 : got callback 17
+INFO:Rotating Log:23 2 3
+Dec 03 11:00:43 : got callback 16
+INFO:Rotating Log:got callback 17
+INFO:Rotating Log:got callback 16
+Dec 03 11:00:43 : got callback 19
+INFO:Rotating Log:got callback 19
+Dec 03 11:00:43 : got callback 15
+INFO:Rotating Log:got callback 15
+Dec 03 11:00:43 : got callback 18
+INFO:Rotating Log:got callback 18
+Dec 03 11:00:43 : got callback 14
+INFO:Rotating Log:got callback 14
+Dec 03 11:00:43 : 24 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 11:00:43 : 25 2 3
+INFO:Rotating Log:25 2 3
+Dec 03 11:00:43 : 26 2 3
+INFO:Rotating Log:26 2 3
+Dec 03 11:00:43 : 27 2 3
+INFO:Rotating Log:27 2 3
+Dec 03 11:00:43 : 28 2 3
+Dec 03 11:00:43 : 29 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 11:00:45 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 11:00:45 : 30 2 3
+Dec 03 11:00:45 : got callback 21
+INFO:Rotating Log:30 2 3
+INFO:Rotating Log:got callback 21
+Dec 03 11:00:45 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 11:00:45 : got callback 22
+INFO:Rotating Log:got callback 22
+Dec 03 11:00:45 : 32 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 11:00:45 : got callback 23
+INFO:Rotating Log:got callback 23
+Dec 03 11:00:45 : 33 2 3
+INFO:Rotating Log:33 2 3
+Dec 03 11:00:45 : got callback 27
+INFO:Rotating Log:got callback 27
+Dec 03 11:00:45 : got callback 26
+Dec 03 11:00:45 : got callback 25
+Dec 03 11:00:45 : 34 2 3
+INFO:Rotating Log:got callback 26
+INFO:Rotating Log:got callback 25
+Dec 03 11:00:45 : got callback 28
+INFO:Rotating Log:34 2 3
+INFO:Rotating Log:got callback 28
+Dec 03 11:00:45 : 35 2 3
+INFO:Rotating Log:35 2 3
+Dec 03 11:00:45 : got callback 29
+INFO:Rotating Log:got callback 29
+Dec 03 11:00:45 : 36 2 3
+INFO:Rotating Log:36 2 3
+Dec 03 11:00:45 : got callback 24
+INFO:Rotating Log:got callback 24
+Dec 03 11:00:45 : 37 2 3
+INFO:Rotating Log:37 2 3
+Dec 03 11:00:45 : 38 2 3
+Dec 03 11:00:45 : 39 2 3
+INFO:Rotating Log:38 2 3
+INFO:Rotating Log:39 2 3
+Dec 03 11:00:47 : got callback 30
+INFO:Rotating Log:got callback 30
+Dec 03 11:00:47 : 40 2 3
+INFO:Rotating Log:40 2 3
+Dec 03 11:00:47 : got callback 31
+INFO:Rotating Log:got callback 31
+Dec 03 11:00:47 : 41 2 3
+INFO:Rotating Log:41 2 3
+Dec 03 11:00:47 : got callback 32
+INFO:Rotating Log:got callback 32
+Dec 03 11:00:47 : 42 2 3
+INFO:Rotating Log:42 2 3
+Dec 03 11:00:47 : got callback 33
+INFO:Rotating Log:got callback 33
+Dec 03 11:00:47 : 43 2 3
+INFO:Rotating Log:43 2 3
+Dec 03 11:00:47 : got callback 34
+INFO:Rotating Log:got callback 34
+Dec 03 11:00:47 : 44 2 3
+Dec 03 11:00:47 : got callback 35
+INFO:Rotating Log:44 2 3
+Dec 03 11:00:47 : got callback 36
+INFO:Rotating Log:got callback 35
+INFO:Rotating Log:got callback 36
+Dec 03 11:00:47 : got callback 37
+INFO:Rotating Log:got callback 37
+Dec 03 11:00:47 : got callback 39
+INFO:Rotating Log:got callback 39
+Dec 03 11:00:47 : got callback 38
+Dec 03 11:00:47 : 45 2 3
+INFO:Rotating Log:got callback 38
+INFO:Rotating Log:45 2 3
+Dec 03 11:00:47 : 46 2 3
+INFO:Rotating Log:46 2 3
+Dec 03 11:00:47 : 47 2 3
+INFO:Rotating Log:47 2 3
+Dec 03 11:00:47 : 48 2 3
+INFO:Rotating Log:48 2 3
+Dec 03 11:00:47 : 49 2 3
+INFO:Rotating Log:49 2 3
+Dec 03 11:00:49 : got callback 40
+INFO:Rotating Log:got callback 40
+Dec 03 11:00:49 : 50 2 3
+INFO:Rotating Log:50 2 3
+Dec 03 11:00:49 : got callback 41
+INFO:Rotating Log:got callback 41
+Dec 03 11:00:49 : 51 2 3
+INFO:Rotating Log:51 2 3
+Dec 03 11:00:49 : got callback 42
+INFO:Rotating Log:got callback 42
+Dec 03 11:00:49 : 52 2 3
+INFO:Rotating Log:52 2 3
+Dec 03 11:00:49 : got callback 43
+INFO:Rotating Log:got callback 43
+Dec 03 11:00:49 : 53 2 3
+INFO:Rotating Log:53 2 3
+Dec 03 11:00:49 : got callback 44
+INFO:Rotating Log:got callback 44
+Dec 03 11:00:49 : 54 2 3
+INFO:Rotating Log:54 2 3
+Dec 03 11:00:49 : got callback 46
+INFO:Rotating Log:got callback 46
+Dec 03 11:00:49 : 55 2 3
+INFO:Rotating Log:55 2 3
+Dec 03 11:00:49 : got callback 45
+INFO:Rotating Log:got callback 45
+Dec 03 11:00:49 : 56 2 3
+INFO:Rotating Log:56 2 3
+Dec 03 11:00:49 : got callback 48
+Dec 03 11:00:49 : got callback 49
+INFO:Rotating Log:got callback 48
+INFO:Rotating Log:got callback 49
+Dec 03 11:00:49 : got callback 47
+INFO:Rotating Log:got callback 47
+Dec 03 11:00:49 : 57 2 3
+INFO:Rotating Log:57 2 3
+Dec 03 11:00:49 : 58 2 3
+INFO:Rotating Log:58 2 3
+Dec 03 11:00:49 : 59 2 3
+INFO:Rotating Log:59 2 3
+Dec 03 11:00:51 : got callback 50
+INFO:Rotating Log:got callback 50
+Dec 03 11:00:51 : 60 2 3
+INFO:Rotating Log:60 2 3
+Dec 03 11:00:51 : got callback 51
+INFO:Rotating Log:got callback 51
+Dec 03 11:00:51 : 61 2 3
+INFO:Rotating Log:61 2 3
+Dec 03 11:00:51 : got callback 52
+INFO:Rotating Log:got callback 52
+Dec 03 11:00:51 : 62 2 3
+INFO:Rotating Log:62 2 3
+Dec 03 11:00:51 : got callback 53
+INFO:Rotating Log:got callback 53
+Dec 03 11:00:51 : 63 2 3
+INFO:Rotating Log:63 2 3
+Dec 03 11:00:51 : got callback 54
+INFO:Rotating Log:got callback 54
+Dec 03 11:00:51 : 64 2 3
+INFO:Rotating Log:64 2 3
+Dec 03 11:00:51 : got callback 56
+Dec 03 11:00:51 : got callback 55
+INFO:Rotating Log:got callback 56
+Dec 03 11:00:51 : 65 2 3
+INFO:Rotating Log:got callback 55
+INFO:Rotating Log:65 2 3
+Dec 03 11:00:51 : 66 2 3
+INFO:Rotating Log:66 2 3
+Dec 03 11:00:51 : got callback 57
+INFO:Rotating Log:got callback 57
+Dec 03 11:00:51 : got callback 58
+INFO:Rotating Log:got callback 58
+Dec 03 11:00:51 : got callback 59
+INFO:Rotating Log:got callback 59
+Dec 03 11:00:51 : 67 2 3
+INFO:Rotating Log:67 2 3
+Dec 03 11:00:51 : 68 2 3
+INFO:Rotating Log:68 2 3
+Dec 03 11:00:51 : 69 2 3
+INFO:Rotating Log:69 2 3
+Dec 03 11:00:53 : got callback 60
+INFO:Rotating Log:got callback 60
+Dec 03 11:00:53 : 70 2 3
+INFO:Rotating Log:70 2 3
+Dec 03 11:00:53 : got callback 61
+INFO:Rotating Log:got callback 61
+Dec 03 11:00:53 : 71 2 3
+INFO:Rotating Log:71 2 3
+Dec 03 11:00:53 : got callback 62
+INFO:Rotating Log:got callback 62
+Dec 03 11:00:53 : 72 2 3
+INFO:Rotating Log:72 2 3
+Dec 03 11:00:53 : got callback 63
+INFO:Rotating Log:got callback 63
+Dec 03 11:00:53 : 73 2 3
+INFO:Rotating Log:73 2 3
+Dec 03 11:00:53 : got callback 64
+INFO:Rotating Log:got callback 64
+Dec 03 11:00:53 : 74 2 3
+INFO:Rotating Log:74 2 3
+Dec 03 11:00:53 : got callback 66
+Dec 03 11:00:53 : got callback 65
+INFO:Rotating Log:got callback 66
+INFO:Rotating Log:got callback 65
+Dec 03 11:00:53 : 75 2 3
+INFO:Rotating Log:75 2 3
+Dec 03 11:00:53 : 76 2 3
+INFO:Rotating Log:76 2 3
+Dec 03 11:00:53 : got callback 68
+INFO:Rotating Log:got callback 68
+Dec 03 11:00:53 : got callback 69
+Dec 03 11:00:53 : 77 2 3
+Dec 03 11:00:53 : got callback 67
+INFO:Rotating Log:got callback 69
+Dec 03 11:00:53 : 78 2 3
+INFO:Rotating Log:77 2 3
+INFO:Rotating Log:got callback 67
+Dec 03 11:00:53 : 79 2 3
+INFO:Rotating Log:78 2 3
+INFO:Rotating Log:79 2 3
+Dec 03 11:00:55 : got callback 70
+INFO:Rotating Log:got callback 70
+Dec 03 11:00:55 : 80 2 3
+INFO:Rotating Log:80 2 3
+Dec 03 11:00:55 : got callback 71
+INFO:Rotating Log:got callback 71
+Dec 03 11:00:55 : 81 2 3
+INFO:Rotating Log:81 2 3
+Dec 03 11:00:55 : got callback 72
+INFO:Rotating Log:got callback 72
+Dec 03 11:00:55 : 82 2 3
+INFO:Rotating Log:82 2 3
+Dec 03 11:00:55 : got callback 73
+INFO:Rotating Log:got callback 73
+Dec 03 11:00:55 : 83 2 3
+INFO:Rotating Log:83 2 3
+Dec 03 11:00:55 : got callback 74
+INFO:Rotating Log:got callback 74
+Dec 03 11:00:55 : 84 2 3
+INFO:Rotating Log:84 2 3
+Dec 03 11:00:55 : got callback 76
+INFO:Rotating Log:got callback 76
+Dec 03 11:00:55 : 85 2 3
+INFO:Rotating Log:85 2 3
+Dec 03 11:00:55 : got callback 75
+INFO:Rotating Log:got callback 75
+Dec 03 11:00:55 : 86 2 3
+INFO:Rotating Log:86 2 3
+Dec 03 11:00:55 : got callback 77
+Dec 03 11:00:55 : got callback 79
+INFO:Rotating Log:got callback 77
+INFO:Rotating Log:got callback 79
+Dec 03 11:00:55 : got callback 78
+Dec 03 11:00:55 : 87 2 3
+INFO:Rotating Log:got callback 78
+INFO:Rotating Log:87 2 3
+Dec 03 11:00:55 : 88 2 3
+INFO:Rotating Log:88 2 3
+Dec 03 11:00:55 : 89 2 3
+INFO:Rotating Log:89 2 3
+Dec 03 11:00:57 : got callback 80
+INFO:Rotating Log:got callback 80
+Dec 03 11:00:57 : 90 2 3
+INFO:Rotating Log:90 2 3
+Dec 03 11:00:57 : got callback 81
+INFO:Rotating Log:got callback 81
+Dec 03 11:00:57 : 91 2 3
+INFO:Rotating Log:91 2 3
+Dec 03 11:00:57 : got callback 82
+INFO:Rotating Log:got callback 82
+Dec 03 11:00:57 : 92 2 3
+INFO:Rotating Log:92 2 3
+Dec 03 11:00:57 : got callback 83
+INFO:Rotating Log:got callback 83
+Dec 03 11:00:57 : 93 2 3
+INFO:Rotating Log:93 2 3
+Dec 03 11:00:57 : got callback 84
+INFO:Rotating Log:got callback 84
+Dec 03 11:00:57 : 94 2 3
+INFO:Rotating Log:94 2 3
+Dec 03 11:00:57 : got callback 86
+Dec 03 11:00:57 : got callback 85
+INFO:Rotating Log:got callback 86
+INFO:Rotating Log:got callback 85
+Dec 03 11:00:57 : 95 2 3
+INFO:Rotating Log:95 2 3
+Dec 03 11:00:57 : 96 2 3
+INFO:Rotating Log:96 2 3
+Dec 03 11:00:57 : got callback 87
+Dec 03 11:00:57 : got callback 88
+INFO:Rotating Log:got callback 87
+Dec 03 11:00:57 : got callback 89
+INFO:Rotating Log:got callback 88
+INFO:Rotating Log:got callback 89
+Dec 03 11:00:57 : 97 2 3
+Dec 03 11:00:57 : 98 2 3
+INFO:Rotating Log:97 2 3
+Dec 03 11:00:57 : 99 2 3
+INFO:Rotating Log:98 2 3
+INFO:Rotating Log:99 2 3
+Dec 03 11:00:59 : got callback 90
+INFO:Rotating Log:got callback 90
+Dec 03 11:00:59 : got callback 91
+INFO:Rotating Log:got callback 91
+Dec 03 11:00:59 : got callback 92
+INFO:Rotating Log:got callback 92
+Dec 03 11:00:59 : got callback 93
+INFO:Rotating Log:got callback 93
+Dec 03 11:00:59 : got callback 94
+INFO:Rotating Log:got callback 94
+Dec 03 11:00:59 : got callback 96
+Dec 03 11:00:59 : got callback 95
+INFO:Rotating Log:got callback 96
+INFO:Rotating Log:got callback 95
+Dec 03 11:00:59 : got callback 97
+INFO:Rotating Log:got callback 97
+Dec 03 11:00:59 : got callback 98
+INFO:Rotating Log:got callback 98
+Dec 03 11:00:59 : got callback 99
+INFO:Rotating Log:got callback 99
+Dec 03 11:01:23 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 11:01:23 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 11:01:23 : 1 2 3
+Dec 03 11:01:23 : 2 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 11:01:23 : 3 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 11:01:23 : 4 2 3
+INFO:Rotating Log:3 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 11:01:23 : 5 2 3
+INFO:Rotating Log:5 2 3
+Dec 03 11:01:23 : 6 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 11:01:23 : 7 2 3
+INFO:Rotating Log:7 2 3
+Dec 03 11:01:23 : 8 2 3
+Dec 03 11:01:23 : 9 2 3
+INFO:Rotating Log:8 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 11:01:25 : bad
+Dec 03 11:01:25 : bad
+INFO:Rotating Log:bad
+INFO:Rotating Log:bad
+Dec 03 11:01:25 : bad
+Dec 03 11:01:25 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:25 : got callback 3
+INFO:Rotating Log:bad
+Dec 03 11:01:25 : got callback 2
+Dec 03 11:01:25 : bad
+INFO:Rotating Log:got callback 3
+INFO:Rotating Log:got callback 2
+Dec 03 11:01:25 : bad
+Dec 03 11:01:25 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:25 : got callback 1
+INFO:Rotating Log:bad
+INFO:Rotating Log:bad
+Dec 03 11:01:25 : got callback 0
+INFO:Rotating Log:got callback 1
+Dec 03 11:01:25 : bad
+Dec 03 11:01:25 : bad
+Dec 03 11:01:25 : bad
+Dec 03 11:01:25 : 10 2 3
+INFO:Rotating Log:got callback 0
+Dec 03 11:01:25 : 11 2 3
+Dec 03 11:01:25 : got callback 5
+INFO:Rotating Log:bad
+Dec 03 11:01:25 : got callback 4
+INFO:Rotating Log:bad
+Dec 03 11:01:25 : got callback 6
+INFO:Rotating Log:bad
+INFO:Rotating Log:10 2 3
+INFO:Rotating Log:11 2 3
+Dec 03 11:01:25 : 12 2 3
+Dec 03 11:01:25 : 13 2 3
+INFO:Rotating Log:got callback 5
+Dec 03 11:01:25 : got callback 7
+INFO:Rotating Log:got callback 4
+Dec 03 11:01:25 : got callback 9
+Dec 03 11:01:25 : got callback 8
+INFO:Rotating Log:got callback 6
+INFO:Rotating Log:12 2 3
+Dec 03 11:01:25 : 14 2 3
+INFO:Rotating Log:13 2 3
+INFO:Rotating Log:got callback 7
+Dec 03 11:01:25 : 15 2 3
+INFO:Rotating Log:got callback 9
+Dec 03 11:01:25 : 16 2 3
+INFO:Rotating Log:got callback 8
+Dec 03 11:01:25 : 17 2 3
+Dec 03 11:01:25 : 18 2 3
+INFO:Rotating Log:14 2 3
+Dec 03 11:01:25 : 19 2 3
+INFO:Rotating Log:15 2 3
+INFO:Rotating Log:16 2 3
+INFO:Rotating Log:17 2 3
+INFO:Rotating Log:18 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : got callback 10
+INFO:Rotating Log:got callback 10
+Dec 03 11:01:27 : got callback 11
+Dec 03 11:01:27 : 20 2 3
+INFO:Rotating Log:got callback 11
+INFO:Rotating Log:20 2 3
+Dec 03 11:01:27 : 21 2 3
+INFO:Rotating Log:21 2 3
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : got callback 13
+INFO:Rotating Log:got callback 13
+Dec 03 11:01:27 : got callback 12
+INFO:Rotating Log:got callback 12
+Dec 03 11:01:27 : 22 2 3
+INFO:Rotating Log:22 2 3
+Dec 03 11:01:27 : 23 2 3
+INFO:Rotating Log:23 2 3
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : got callback 14
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:got callback 14
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : bad
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : 24 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 11:01:27 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:27 : got callback 16
+Dec 03 11:01:27 : got callback 17
+INFO:Rotating Log:got callback 16
+Dec 03 11:01:27 : got callback 15
+Dec 03 11:01:27 : got callback 19
+Dec 03 11:01:27 : got callback 18
+INFO:Rotating Log:got callback 17
+Dec 03 11:01:27 : 25 2 3
+INFO:Rotating Log:got callback 15
+Dec 03 11:01:27 : 26 2 3
+INFO:Rotating Log:got callback 19
+INFO:Rotating Log:got callback 18
+Dec 03 11:01:27 : 27 2 3
+Dec 03 11:01:27 : 28 2 3
+INFO:Rotating Log:25 2 3
+INFO:Rotating Log:26 2 3
+Dec 03 11:01:27 : 29 2 3
+INFO:Rotating Log:27 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : got callback 21
+Dec 03 11:01:29 : got callback 20
+INFO:Rotating Log:got callback 21
+INFO:Rotating Log:got callback 20
+Dec 03 11:01:29 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 11:01:29 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : got callback 23
+Dec 03 11:01:29 : got callback 22
+INFO:Rotating Log:got callback 23
+INFO:Rotating Log:got callback 22
+Dec 03 11:01:29 : 32 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 11:01:29 : 33 2 3
+INFO:Rotating Log:33 2 3
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : got callback 24
+INFO:Rotating Log:got callback 24
+Dec 03 11:01:29 : 34 2 3
+INFO:Rotating Log:34 2 3
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : bad
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : got callback 25
+INFO:Rotating Log:got callback 25
+Dec 03 11:01:29 : got callback 26
+INFO:Rotating Log:got callback 26
+Dec 03 11:01:29 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:29 : got callback 27
+Dec 03 11:01:29 : got callback 29
+INFO:Rotating Log:got callback 27
+INFO:Rotating Log:got callback 29
+Dec 03 11:01:29 : 35 2 3
+Dec 03 11:01:29 : 36 2 3
+Dec 03 11:01:29 : got callback 28
+Dec 03 11:01:29 : 37 2 3
+INFO:Rotating Log:35 2 3
+Dec 03 11:01:29 : 38 2 3
+INFO:Rotating Log:36 2 3
+INFO:Rotating Log:got callback 28
+Dec 03 11:01:29 : 39 2 3
+INFO:Rotating Log:37 2 3
+INFO:Rotating Log:38 2 3
+INFO:Rotating Log:39 2 3
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : got callback 31
+INFO:Rotating Log:got callback 31
+Dec 03 11:01:31 : 40 2 3
+INFO:Rotating Log:40 2 3
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : got callback 30
+INFO:Rotating Log:got callback 30
+Dec 03 11:01:31 : 41 2 3
+INFO:Rotating Log:41 2 3
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : bad
+Dec 03 11:01:31 : got callback 32
+INFO:Rotating Log:bad
+INFO:Rotating Log:got callback 32
+Dec 03 11:01:31 : got callback 33
+INFO:Rotating Log:got callback 33
+Dec 03 11:01:31 : 42 2 3
+INFO:Rotating Log:42 2 3
+Dec 03 11:01:31 : 43 2 3
+INFO:Rotating Log:43 2 3
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : got callback 34
+INFO:Rotating Log:got callback 34
+Dec 03 11:01:31 : 44 2 3
+INFO:Rotating Log:44 2 3
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : got callback 35
+INFO:Rotating Log:got callback 35
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : 45 2 3
+INFO:Rotating Log:45 2 3
+Dec 03 11:01:31 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : got callback 36
+INFO:Rotating Log:got callback 36
+Dec 03 11:01:31 : got callback 37
+INFO:Rotating Log:got callback 37
+Dec 03 11:01:31 : bad
+Dec 03 11:01:31 : got callback 38
+INFO:Rotating Log:bad
+Dec 03 11:01:31 : 46 2 3
+INFO:Rotating Log:got callback 38
+Dec 03 11:01:31 : 47 2 3
+Dec 03 11:01:31 : got callback 39
+INFO:Rotating Log:46 2 3
+Dec 03 11:01:31 : 48 2 3
+INFO:Rotating Log:47 2 3
+INFO:Rotating Log:got callback 39
+Dec 03 11:01:31 : 49 2 3
+INFO:Rotating Log:48 2 3
+INFO:Rotating Log:49 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 40
+INFO:Rotating Log:got callback 40
+Dec 03 11:01:33 : 50 2 3
+INFO:Rotating Log:50 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 41
+INFO:Rotating Log:got callback 41
+Dec 03 11:01:33 : 51 2 3
+INFO:Rotating Log:51 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 42
+INFO:Rotating Log:got callback 42
+Dec 03 11:01:33 : 52 2 3
+INFO:Rotating Log:52 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 43
+INFO:Rotating Log:got callback 43
+Dec 03 11:01:33 : 53 2 3
+INFO:Rotating Log:53 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 44
+INFO:Rotating Log:got callback 44
+Dec 03 11:01:33 : 54 2 3
+INFO:Rotating Log:54 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 45
+INFO:Rotating Log:got callback 45
+Dec 03 11:01:33 : 55 2 3
+INFO:Rotating Log:55 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 47
+INFO:Rotating Log:got callback 47
+Dec 03 11:01:33 : 56 2 3
+INFO:Rotating Log:56 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 46
+INFO:Rotating Log:got callback 46
+Dec 03 11:01:33 : 57 2 3
+INFO:Rotating Log:57 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 48
+INFO:Rotating Log:got callback 48
+Dec 03 11:01:33 : 58 2 3
+INFO:Rotating Log:58 2 3
+Dec 03 11:01:33 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:33 : got callback 49
+INFO:Rotating Log:got callback 49
+Dec 03 11:01:33 : 59 2 3
+INFO:Rotating Log:59 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 50
+INFO:Rotating Log:got callback 50
+Dec 03 11:01:35 : 60 2 3
+INFO:Rotating Log:60 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 51
+INFO:Rotating Log:got callback 51
+Dec 03 11:01:35 : 61 2 3
+INFO:Rotating Log:61 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 52
+INFO:Rotating Log:got callback 52
+Dec 03 11:01:35 : 62 2 3
+INFO:Rotating Log:62 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 53
+INFO:Rotating Log:got callback 53
+Dec 03 11:01:35 : 63 2 3
+INFO:Rotating Log:63 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 54
+INFO:Rotating Log:got callback 54
+Dec 03 11:01:35 : 64 2 3
+INFO:Rotating Log:64 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 55
+INFO:Rotating Log:got callback 55
+Dec 03 11:01:35 : 65 2 3
+INFO:Rotating Log:65 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 56
+INFO:Rotating Log:got callback 56
+Dec 03 11:01:35 : bad
+Dec 03 11:01:35 : 66 2 3
+INFO:Rotating Log:bad
+INFO:Rotating Log:66 2 3
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:35 : got callback 57
+INFO:Rotating Log:got callback 57
+Dec 03 11:01:35 : got callback 58
+INFO:Rotating Log:got callback 58
+Dec 03 11:01:35 : got callback 59
+INFO:Rotating Log:got callback 59
+Dec 03 11:01:35 : 67 2 3
+INFO:Rotating Log:67 2 3
+Dec 03 11:01:35 : 68 2 3
+Dec 03 11:01:35 : 69 2 3
+INFO:Rotating Log:68 2 3
+INFO:Rotating Log:69 2 3
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : got callback 60
+Dec 03 11:01:37 : got callback 61
+INFO:Rotating Log:got callback 60
+Dec 03 11:01:37 : got callback 62
+Dec 03 11:01:37 : got callback 63
+INFO:Rotating Log:got callback 61
+Dec 03 11:01:37 : got callback 64
+INFO:Rotating Log:got callback 62
+Dec 03 11:01:37 : bad
+Dec 03 11:01:37 : 70 2 3
+INFO:Rotating Log:got callback 63
+Dec 03 11:01:37 : 71 2 3
+Dec 03 11:01:37 : 72 2 3
+INFO:Rotating Log:got callback 64
+Dec 03 11:01:37 : 73 2 3
+Dec 03 11:01:37 : 74 2 3
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : got callback 65
+INFO:Rotating Log:70 2 3
+INFO:Rotating Log:71 2 3
+INFO:Rotating Log:72 2 3
+INFO:Rotating Log:73 2 3
+INFO:Rotating Log:74 2 3
+INFO:Rotating Log:got callback 65
+Dec 03 11:01:37 : 75 2 3
+INFO:Rotating Log:75 2 3
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : got callback 66
+INFO:Rotating Log:got callback 66
+Dec 03 11:01:37 : 76 2 3
+INFO:Rotating Log:76 2 3
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : bad
+Dec 03 11:01:37 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : got callback 67
+INFO:Rotating Log:bad
+Dec 03 11:01:37 : got callback 69
+Dec 03 11:01:37 : got callback 68
+INFO:Rotating Log:got callback 67
+Dec 03 11:01:37 : 77 2 3
+INFO:Rotating Log:got callback 69
+Dec 03 11:01:37 : 78 2 3
+INFO:Rotating Log:got callback 68
+Dec 03 11:01:37 : 79 2 3
+INFO:Rotating Log:77 2 3
+INFO:Rotating Log:78 2 3
+INFO:Rotating Log:79 2 3
+Dec 03 11:01:39 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : got callback 72
+INFO:Rotating Log:got callback 72
+Dec 03 11:01:39 : 80 2 3
+INFO:Rotating Log:80 2 3
+Dec 03 11:01:39 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : bad
+Dec 03 11:01:39 : bad
+Dec 03 11:01:39 : got callback 70
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : got callback 73
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : got callback 74
+Dec 03 11:01:39 : got callback 71
+INFO:Rotating Log:got callback 70
+Dec 03 11:01:39 : got callback 75
+INFO:Rotating Log:got callback 73
+Dec 03 11:01:39 : 81 2 3
+Dec 03 11:01:39 : bad
+INFO:Rotating Log:got callback 74
+INFO:Rotating Log:got callback 71
+Dec 03 11:01:39 : 82 2 3
+INFO:Rotating Log:got callback 75
+INFO:Rotating Log:81 2 3
+INFO:Rotating Log:bad
+INFO:Rotating Log:82 2 3
+Dec 03 11:01:39 : 83 2 3
+INFO:Rotating Log:83 2 3
+Dec 03 11:01:39 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : 84 2 3
+INFO:Rotating Log:84 2 3
+Dec 03 11:01:39 : 85 2 3
+INFO:Rotating Log:85 2 3
+Dec 03 11:01:39 : bad
+Dec 03 11:01:39 : got callback 76
+INFO:Rotating Log:bad
+INFO:Rotating Log:got callback 76
+Dec 03 11:01:39 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:39 : got callback 78
+INFO:Rotating Log:got callback 78
+Dec 03 11:01:39 : got callback 77
+Dec 03 11:01:39 : 86 2 3
+INFO:Rotating Log:got callback 77
+Dec 03 11:01:39 : got callback 79
+INFO:Rotating Log:86 2 3
+Dec 03 11:01:39 : 87 2 3
+INFO:Rotating Log:got callback 79
+INFO:Rotating Log:87 2 3
+Dec 03 11:01:39 : 88 2 3
+INFO:Rotating Log:88 2 3
+Dec 03 11:01:39 : 89 2 3
+INFO:Rotating Log:89 2 3
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : got callback 80
+INFO:Rotating Log:got callback 80
+Dec 03 11:01:41 : 90 2 3
+INFO:Rotating Log:90 2 3
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : got callback 81
+INFO:Rotating Log:got callback 81
+Dec 03 11:01:41 : got callback 82
+Dec 03 11:01:41 : 91 2 3
+Dec 03 11:01:41 : bad
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:got callback 82
+Dec 03 11:01:41 : 92 2 3
+INFO:Rotating Log:91 2 3
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:bad
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : got callback 84
+Dec 03 11:01:41 : got callback 83
+INFO:Rotating Log:92 2 3
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : got callback 85
+INFO:Rotating Log:got callback 84
+INFO:Rotating Log:got callback 83
+Dec 03 11:01:41 : bad
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:got callback 85
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : 93 2 3
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : bad
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : 94 2 3
+Dec 03 11:01:41 : 95 2 3
+INFO:Rotating Log:93 2 3
+Dec 03 11:01:41 : got callback 86
+INFO:Rotating Log:bad
+Dec 03 11:01:41 : got callback 88
+INFO:Rotating Log:94 2 3
+Dec 03 11:01:41 : got callback 87
+INFO:Rotating Log:95 2 3
+Dec 03 11:01:41 : got callback 89
+INFO:Rotating Log:got callback 86
+Dec 03 11:01:41 : 96 2 3
+INFO:Rotating Log:got callback 88
+Dec 03 11:01:41 : 97 2 3
+INFO:Rotating Log:got callback 87
+INFO:Rotating Log:got callback 89
+Dec 03 11:01:41 : 98 2 3
+INFO:Rotating Log:96 2 3
+INFO:Rotating Log:97 2 3
+Dec 03 11:01:41 : 99 2 3
+INFO:Rotating Log:98 2 3
+INFO:Rotating Log:99 2 3
+Dec 03 11:01:42 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 11:01:42 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 11:01:42 : 1 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 11:01:42 : 2 2 3
+Dec 03 11:01:42 : 3 2 3
+INFO:Rotating Log:2 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 11:01:42 : 4 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 11:01:42 : 5 2 3
+Dec 03 11:01:42 : 6 2 3
+INFO:Rotating Log:5 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 11:01:42 : 7 2 3
+Dec 03 11:01:42 : 8 2 3
+INFO:Rotating Log:7 2 3
+INFO:Rotating Log:8 2 3
+Dec 03 11:01:42 : 9 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 11:01:44 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:44 : division by zero
+Dec 03 11:01:44 : got callback 0
+INFO:Rotating Log:division by zero
+Dec 03 11:01:44 : got callback 1
+INFO:Rotating Log:got callback 0
+Dec 03 11:01:44 : 10 2 3
+Dec 03 11:01:44 : division by zero
+INFO:Rotating Log:got callback 1
+Dec 03 11:01:44 : division by zero
+INFO:Rotating Log:10 2 3
+INFO:Rotating Log:division by zero
+Dec 03 11:01:44 : division by zero
+Dec 03 11:01:44 : division by zero
+Dec 03 11:01:44 : division by zero
+Dec 03 11:01:44 : 11 2 3
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:44 : division by zero
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:11 2 3
+Dec 03 11:01:44 : division by zero
+Dec 03 11:01:44 : got callback 2
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:44 : got callback 6
+INFO:Rotating Log:got callback 2
+Dec 03 11:01:44 : got callback 5
+INFO:Rotating Log:got callback 6
+INFO:Rotating Log:got callback 5
+Dec 03 11:01:44 : got callback 4
+INFO:Rotating Log:got callback 4
+Dec 03 11:01:44 : got callback 3
+Dec 03 11:01:44 : division by zero
+INFO:Rotating Log:got callback 3
+INFO:Rotating Log:division by zero
+Dec 03 11:01:44 : got callback 8
+INFO:Rotating Log:got callback 8
+Dec 03 11:01:44 : got callback 7
+Dec 03 11:01:44 : 12 2 3
+INFO:Rotating Log:got callback 7
+INFO:Rotating Log:12 2 3
+Dec 03 11:01:44 : 13 2 3
+Dec 03 11:01:44 : 14 2 3
+INFO:Rotating Log:13 2 3
+Dec 03 11:01:44 : 15 2 3
+INFO:Rotating Log:14 2 3
+INFO:Rotating Log:15 2 3
+Dec 03 11:01:44 : 16 2 3
+INFO:Rotating Log:16 2 3
+Dec 03 11:01:44 : got callback 9
+INFO:Rotating Log:got callback 9
+Dec 03 11:01:44 : 17 2 3
+INFO:Rotating Log:17 2 3
+Dec 03 11:01:44 : 18 2 3
+INFO:Rotating Log:18 2 3
+Dec 03 11:01:44 : 19 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : got callback 10
+INFO:Rotating Log:got callback 10
+Dec 03 11:01:46 : 20 2 3
+INFO:Rotating Log:20 2 3
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : got callback 11
+INFO:Rotating Log:got callback 11
+Dec 03 11:01:46 : 21 2 3
+INFO:Rotating Log:21 2 3
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : got callback 12
+Dec 03 11:01:46 : got callback 13
+INFO:Rotating Log:got callback 12
+Dec 03 11:01:46 : division by zero
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:got callback 13
+Dec 03 11:01:46 : division by zero
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : 22 2 3
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : 23 2 3
+INFO:Rotating Log:22 2 3
+Dec 03 11:01:46 : got callback 17
+INFO:Rotating Log:division by zero
+Dec 03 11:01:46 : got callback 16
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:23 2 3
+Dec 03 11:01:46 : got callback 15
+INFO:Rotating Log:got callback 17
+Dec 03 11:01:46 : got callback 14
+INFO:Rotating Log:got callback 16
+Dec 03 11:01:46 : got callback 19
+Dec 03 11:01:46 : got callback 18
+INFO:Rotating Log:got callback 15
+Dec 03 11:01:46 : 24 2 3
+INFO:Rotating Log:got callback 14
+INFO:Rotating Log:got callback 19
+Dec 03 11:01:46 : 25 2 3
+Dec 03 11:01:46 : 26 2 3
+INFO:Rotating Log:got callback 18
+Dec 03 11:01:46 : 27 2 3
+Dec 03 11:01:46 : 28 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 11:01:46 : 29 2 3
+INFO:Rotating Log:25 2 3
+INFO:Rotating Log:26 2 3
+INFO:Rotating Log:27 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 11:01:48 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 21
+INFO:Rotating Log:got callback 21
+Dec 03 11:01:48 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 22
+INFO:Rotating Log:got callback 22
+Dec 03 11:01:48 : 32 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 23
+INFO:Rotating Log:got callback 23
+Dec 03 11:01:48 : 33 2 3
+INFO:Rotating Log:33 2 3
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 24
+INFO:Rotating Log:got callback 24
+Dec 03 11:01:48 : 34 2 3
+INFO:Rotating Log:34 2 3
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 25
+INFO:Rotating Log:got callback 25
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 26
+INFO:Rotating Log:got callback 26
+Dec 03 11:01:48 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:48 : got callback 29
+INFO:Rotating Log:got callback 29
+Dec 03 11:01:48 : 35 2 3
+INFO:Rotating Log:35 2 3
+Dec 03 11:01:48 : got callback 27
+INFO:Rotating Log:got callback 27
+Dec 03 11:01:48 : 36 2 3
+INFO:Rotating Log:36 2 3
+Dec 03 11:01:48 : got callback 28
+INFO:Rotating Log:got callback 28
+Dec 03 11:01:48 : 37 2 3
+INFO:Rotating Log:37 2 3
+Dec 03 11:01:48 : 38 2 3
+INFO:Rotating Log:38 2 3
+Dec 03 11:01:48 : 39 2 3
+INFO:Rotating Log:39 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 30
+INFO:Rotating Log:got callback 30
+Dec 03 11:01:50 : 40 2 3
+INFO:Rotating Log:40 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 31
+INFO:Rotating Log:got callback 31
+Dec 03 11:01:50 : 41 2 3
+INFO:Rotating Log:41 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 32
+INFO:Rotating Log:got callback 32
+Dec 03 11:01:50 : 42 2 3
+INFO:Rotating Log:42 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 33
+INFO:Rotating Log:got callback 33
+Dec 03 11:01:50 : 43 2 3
+INFO:Rotating Log:43 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 34
+INFO:Rotating Log:got callback 34
+Dec 03 11:01:50 : 44 2 3
+INFO:Rotating Log:44 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 39
+INFO:Rotating Log:got callback 39
+Dec 03 11:01:50 : 45 2 3
+INFO:Rotating Log:45 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 35
+INFO:Rotating Log:got callback 35
+Dec 03 11:01:50 : 46 2 3
+INFO:Rotating Log:46 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 36
+INFO:Rotating Log:got callback 36
+Dec 03 11:01:50 : 47 2 3
+INFO:Rotating Log:47 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 37
+INFO:Rotating Log:got callback 37
+Dec 03 11:01:50 : 48 2 3
+INFO:Rotating Log:48 2 3
+Dec 03 11:01:50 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:50 : got callback 38
+INFO:Rotating Log:got callback 38
+Dec 03 11:01:50 : 49 2 3
+INFO:Rotating Log:49 2 3
+Dec 03 11:01:52 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 11:01:52 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 11:01:52 : 1 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 11:01:52 : 2 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 11:01:52 : 3 2 3
+Dec 03 11:01:52 : 4 2 3
+INFO:Rotating Log:3 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 11:01:52 : 5 2 3
+INFO:Rotating Log:5 2 3
+Dec 03 11:01:52 : 6 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 11:01:52 : 7 2 3
+INFO:Rotating Log:7 2 3
+Dec 03 11:01:52 : 8 2 3
+INFO:Rotating Log:8 2 3
+Dec 03 11:01:52 : 9 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : got callback 1
+Dec 03 11:01:54 : got callback 0
+INFO:Rotating Log:got callback 1
+Dec 03 11:01:54 : 10 2 3
+INFO:Rotating Log:got callback 0
+INFO:Rotating Log:10 2 3
+Dec 03 11:01:54 : 11 2 3
+INFO:Rotating Log:11 2 3
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : got callback 3
+INFO:Rotating Log:got callback 3
+Dec 03 11:01:54 : 12 2 3
+INFO:Rotating Log:12 2 3
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : got callback 2
+INFO:Rotating Log:got callback 2
+Dec 03 11:01:54 : 13 2 3
+INFO:Rotating Log:13 2 3
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : got callback 4
+INFO:Rotating Log:got callback 4
+Dec 03 11:01:54 : 14 2 3
+INFO:Rotating Log:14 2 3
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : division by zero
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : got callback 7
+Dec 03 11:01:54 : division by zero
+Dec 03 11:01:54 : got callback 6
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : got callback 5
+INFO:Rotating Log:got callback 7
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : 15 2 3
+Dec 03 11:01:54 : got callback 8
+INFO:Rotating Log:got callback 6
+Dec 03 11:01:54 : 16 2 3
+INFO:Rotating Log:got callback 5
+INFO:Rotating Log:15 2 3
+INFO:Rotating Log:got callback 8
+Dec 03 11:01:54 : 17 2 3
+Dec 03 11:01:54 : 18 2 3
+INFO:Rotating Log:16 2 3
+INFO:Rotating Log:17 2 3
+INFO:Rotating Log:18 2 3
+Dec 03 11:01:54 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:54 : got callback 9
+INFO:Rotating Log:got callback 9
+Dec 03 11:01:54 : 19 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 11:01:56 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : got callback 11
+Dec 03 11:01:56 : division by zero
+INFO:Rotating Log:got callback 11
+Dec 03 11:01:56 : got callback 12
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : division by zero
+INFO:Rotating Log:got callback 12
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : division by zero
+Dec 03 11:01:56 : 20 2 3
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : got callback 10
+INFO:Rotating Log:20 2 3
+INFO:Rotating Log:got callback 10
+Dec 03 11:01:56 : division by zero
+Dec 03 11:01:56 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : 21 2 3
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:21 2 3
+Dec 03 11:01:56 : got callback 13
+INFO:Rotating Log:got callback 13
+Dec 03 11:01:56 : division by zero
+Dec 03 11:01:56 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:56 : got callback 14
+Dec 03 11:01:56 : 22 2 3
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:got callback 14
+Dec 03 11:01:56 : got callback 15
+Dec 03 11:01:56 : got callback 18
+INFO:Rotating Log:22 2 3
+Dec 03 11:01:56 : got callback 16
+INFO:Rotating Log:got callback 15
+INFO:Rotating Log:got callback 18
+Dec 03 11:01:56 : 23 2 3
+Dec 03 11:01:56 : got callback 17
+Dec 03 11:01:56 : got callback 19
+INFO:Rotating Log:got callback 16
+Dec 03 11:01:56 : 24 2 3
+Dec 03 11:01:56 : 25 2 3
+Dec 03 11:01:56 : 26 2 3
+INFO:Rotating Log:23 2 3
+INFO:Rotating Log:got callback 17
+Dec 03 11:01:56 : 27 2 3
+INFO:Rotating Log:got callback 19
+Dec 03 11:01:56 : 28 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 11:01:56 : 29 2 3
+INFO:Rotating Log:25 2 3
+INFO:Rotating Log:26 2 3
+INFO:Rotating Log:27 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 11:01:58 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : got callback 21
+INFO:Rotating Log:got callback 21
+Dec 03 11:01:58 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : got callback 22
+INFO:Rotating Log:got callback 22
+Dec 03 11:01:58 : 32 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : got callback 23
+INFO:Rotating Log:got callback 23
+Dec 03 11:01:58 : 33 2 3
+INFO:Rotating Log:33 2 3
+Dec 03 11:01:58 : division by zero
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : division by zero
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : got callback 24
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : division by zero
+INFO:Rotating Log:got callback 24
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : got callback 26
+Dec 03 11:01:58 : got callback 27
+INFO:Rotating Log:division by zero
+Dec 03 11:01:58 : got callback 25
+INFO:Rotating Log:got callback 26
+Dec 03 11:01:58 : 34 2 3
+Dec 03 11:01:58 : got callback 28
+INFO:Rotating Log:got callback 27
+Dec 03 11:01:58 : got callback 29
+INFO:Rotating Log:got callback 25
+Dec 03 11:01:58 : 35 2 3
+Dec 03 11:01:58 : 36 2 3
+Dec 03 11:01:58 : 37 2 3
+INFO:Rotating Log:34 2 3
+INFO:Rotating Log:got callback 28
+Dec 03 11:01:58 : 38 2 3
+INFO:Rotating Log:got callback 29
+Dec 03 11:01:58 : 39 2 3
+INFO:Rotating Log:35 2 3
+INFO:Rotating Log:36 2 3
+INFO:Rotating Log:37 2 3
+INFO:Rotating Log:38 2 3
+INFO:Rotating Log:39 2 3
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : got callback 30
+INFO:Rotating Log:got callback 30
+Dec 03 11:02:00 : 40 2 3
+INFO:Rotating Log:40 2 3
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : got callback 31
+INFO:Rotating Log:got callback 31
+Dec 03 11:02:00 : 41 2 3
+INFO:Rotating Log:41 2 3
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : got callback 32
+INFO:Rotating Log:got callback 32
+Dec 03 11:02:00 : 42 2 3
+INFO:Rotating Log:42 2 3
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : got callback 33
+INFO:Rotating Log:got callback 33
+Dec 03 11:02:00 : 43 2 3
+INFO:Rotating Log:43 2 3
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : got callback 34
+INFO:Rotating Log:got callback 34
+Dec 03 11:02:00 : 44 2 3
+INFO:Rotating Log:44 2 3
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : division by zero
+Dec 03 11:02:00 : got callback 36
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:got callback 36
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:00 : got callback 37
+INFO:Rotating Log:got callback 37
+Dec 03 11:02:00 : got callback 35
+Dec 03 11:02:00 : 45 2 3
+INFO:Rotating Log:got callback 35
+INFO:Rotating Log:45 2 3
+Dec 03 11:02:00 : got callback 38
+INFO:Rotating Log:got callback 38
+Dec 03 11:02:00 : got callback 39
+Dec 03 11:02:00 : 46 2 3
+Dec 03 11:02:00 : 47 2 3
+INFO:Rotating Log:got callback 39
+INFO:Rotating Log:46 2 3
+Dec 03 11:02:00 : 48 2 3
+INFO:Rotating Log:47 2 3
+Dec 03 11:02:00 : 49 2 3
+INFO:Rotating Log:48 2 3
+INFO:Rotating Log:49 2 3
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 40
+INFO:Rotating Log:got callback 40
+Dec 03 11:02:02 : 50 2 3
+INFO:Rotating Log:50 2 3
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 41
+INFO:Rotating Log:got callback 41
+Dec 03 11:02:02 : 51 2 3
+INFO:Rotating Log:51 2 3
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 42
+INFO:Rotating Log:got callback 42
+Dec 03 11:02:02 : 52 2 3
+INFO:Rotating Log:52 2 3
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 43
+INFO:Rotating Log:got callback 43
+Dec 03 11:02:02 : 53 2 3
+INFO:Rotating Log:53 2 3
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 44
+INFO:Rotating Log:got callback 44
+Dec 03 11:02:02 : 54 2 3
+INFO:Rotating Log:54 2 3
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 45
+INFO:Rotating Log:got callback 45
+Dec 03 11:02:02 : 55 2 3
+INFO:Rotating Log:55 2 3
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 46
+INFO:Rotating Log:got callback 46
+Dec 03 11:02:02 : division by zero
+Dec 03 11:02:02 : got callback 47
+Dec 03 11:02:02 : division by zero
+Dec 03 11:02:02 : 56 2 3
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:got callback 47
+INFO:Rotating Log:division by zero
+Dec 03 11:02:02 : got callback 48
+INFO:Rotating Log:56 2 3
+Dec 03 11:02:02 : 57 2 3
+INFO:Rotating Log:got callback 48
+Dec 03 11:02:02 : got callback 49
+INFO:Rotating Log:57 2 3
+Dec 03 11:02:02 : 58 2 3
+INFO:Rotating Log:got callback 49
+Dec 03 11:02:02 : 59 2 3
+INFO:Rotating Log:58 2 3
+INFO:Rotating Log:59 2 3
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : division by zero
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : got callback 50
+Dec 03 11:02:04 : got callback 51
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : got callback 52
+INFO:Rotating Log:got callback 50
+Dec 03 11:02:04 : got callback 53
+Dec 03 11:02:04 : got callback 54
+INFO:Rotating Log:got callback 51
+Dec 03 11:02:04 : 60 2 3
+INFO:Rotating Log:got callback 52
+Dec 03 11:02:04 : 61 2 3
+INFO:Rotating Log:got callback 53
+Dec 03 11:02:04 : 62 2 3
+INFO:Rotating Log:got callback 54
+Dec 03 11:02:04 : 63 2 3
+Dec 03 11:02:04 : 64 2 3
+INFO:Rotating Log:60 2 3
+INFO:Rotating Log:61 2 3
+INFO:Rotating Log:62 2 3
+INFO:Rotating Log:63 2 3
+INFO:Rotating Log:64 2 3
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : got callback 55
+INFO:Rotating Log:got callback 55
+Dec 03 11:02:04 : 65 2 3
+INFO:Rotating Log:65 2 3
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : got callback 57
+INFO:Rotating Log:got callback 57
+Dec 03 11:02:04 : got callback 58
+INFO:Rotating Log:got callback 58
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : 66 2 3
+INFO:Rotating Log:66 2 3
+Dec 03 11:02:04 : 67 2 3
+INFO:Rotating Log:67 2 3
+Dec 03 11:02:04 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:04 : got callback 56
+INFO:Rotating Log:got callback 56
+Dec 03 11:02:04 : got callback 59
+INFO:Rotating Log:got callback 59
+Dec 03 11:02:04 : 68 2 3
+INFO:Rotating Log:68 2 3
+Dec 03 11:02:04 : 69 2 3
+INFO:Rotating Log:69 2 3
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : got callback 61
+INFO:Rotating Log:got callback 61
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : got callback 63
+INFO:Rotating Log:got callback 63
+Dec 03 11:02:06 : got callback 64
+INFO:Rotating Log:got callback 64
+Dec 03 11:02:06 : got callback 62
+INFO:Rotating Log:got callback 62
+Dec 03 11:02:06 : 70 2 3
+INFO:Rotating Log:70 2 3
+Dec 03 11:02:06 : got callback 60
+INFO:Rotating Log:got callback 60
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : 71 2 3
+Dec 03 11:02:06 : 72 2 3
+INFO:Rotating Log:71 2 3
+Dec 03 11:02:06 : 73 2 3
+INFO:Rotating Log:72 2 3
+INFO:Rotating Log:73 2 3
+Dec 03 11:02:06 : 74 2 3
+INFO:Rotating Log:74 2 3
+Dec 03 11:02:06 : got callback 65
+INFO:Rotating Log:got callback 65
+Dec 03 11:02:06 : 75 2 3
+INFO:Rotating Log:75 2 3
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : division by zero
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:06 : got callback 69
+INFO:Rotating Log:got callback 69
+Dec 03 11:02:06 : got callback 66
+INFO:Rotating Log:got callback 66
+Dec 03 11:02:06 : got callback 68
+Dec 03 11:02:06 : got callback 67
+INFO:Rotating Log:got callback 68
+INFO:Rotating Log:got callback 67
+Dec 03 11:02:06 : 76 2 3
+INFO:Rotating Log:76 2 3
+Dec 03 11:02:06 : 77 2 3
+Dec 03 11:02:06 : 78 2 3
+INFO:Rotating Log:77 2 3
+Dec 03 11:02:06 : 79 2 3
+INFO:Rotating Log:78 2 3
+INFO:Rotating Log:79 2 3
+Dec 03 11:02:08 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : got callback 70
+INFO:Rotating Log:got callback 70
+Dec 03 11:02:08 : 80 2 3
+INFO:Rotating Log:80 2 3
+Dec 03 11:02:08 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : got callback 71
+INFO:Rotating Log:got callback 71
+Dec 03 11:02:08 : division by zero
+Dec 03 11:02:08 : 81 2 3
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:81 2 3
+Dec 03 11:02:08 : got callback 72
+INFO:Rotating Log:got callback 72
+Dec 03 11:02:08 : 82 2 3
+INFO:Rotating Log:82 2 3
+Dec 03 11:02:08 : division by zero
+Dec 03 11:02:08 : division by zero
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : division by zero
+Dec 03 11:02:08 : got callback 73
+Dec 03 11:02:08 : got callback 74
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : got callback 75
+INFO:Rotating Log:got callback 73
+INFO:Rotating Log:got callback 74
+INFO:Rotating Log:got callback 75
+Dec 03 11:02:08 : 83 2 3
+INFO:Rotating Log:83 2 3
+Dec 03 11:02:08 : 84 2 3
+INFO:Rotating Log:84 2 3
+Dec 03 11:02:08 : 85 2 3
+INFO:Rotating Log:85 2 3
+Dec 03 11:02:08 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : got callback 76
+INFO:Rotating Log:got callback 76
+Dec 03 11:02:08 : 86 2 3
+INFO:Rotating Log:86 2 3
+Dec 03 11:02:08 : division by zero
+Dec 03 11:02:08 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : got callback 77
+INFO:Rotating Log:division by zero
+Dec 03 11:02:08 : got callback 78
+INFO:Rotating Log:got callback 77
+Dec 03 11:02:08 : got callback 79
+INFO:Rotating Log:got callback 78
+Dec 03 11:02:08 : 87 2 3
+Dec 03 11:02:08 : 88 2 3
+INFO:Rotating Log:got callback 79
+INFO:Rotating Log:87 2 3
+Dec 03 11:02:08 : 89 2 3
+INFO:Rotating Log:88 2 3
+INFO:Rotating Log:89 2 3
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : got callback 80
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:got callback 80
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : division by zero
+Dec 03 11:02:10 : got callback 81
+INFO:Rotating Log:got callback 81
+Dec 03 11:02:10 : 91 2 3
+INFO:Rotating Log:91 2 3
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : got callback 82
+INFO:Rotating Log:got callback 82
+Dec 03 11:02:10 : 92 2 3
+INFO:Rotating Log:92 2 3
+Dec 03 11:02:10 : 90 2 3
+INFO:Rotating Log:90 2 3
+Dec 03 11:02:10 : division by zero
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : got callback 84
+INFO:Rotating Log:got callback 84
+Dec 03 11:02:10 : got callback 85
+Dec 03 11:02:10 : got callback 83
+INFO:Rotating Log:got callback 85
+Dec 03 11:02:10 : 93 2 3
+Dec 03 11:02:10 : 94 2 3
+INFO:Rotating Log:got callback 83
+Dec 03 11:02:10 : 95 2 3
+INFO:Rotating Log:95 2 3
+INFO:Rotating Log:94 2 3
+INFO:Rotating Log:93 2 3
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : got callback 86
+INFO:Rotating Log:got callback 86
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : 96 2 3
+Dec 03 11:02:10 : got callback 88
+INFO:Rotating Log:96 2 3
+INFO:Rotating Log:got callback 88
+Dec 03 11:02:10 : 97 2 3
+INFO:Rotating Log:97 2 3
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:10 : got callback 87
+INFO:Rotating Log:got callback 87
+Dec 03 11:02:10 : got callback 89
+Dec 03 11:02:10 : 98 2 3
+INFO:Rotating Log:got callback 89
+INFO:Rotating Log:98 2 3
+Dec 03 11:02:10 : 99 2 3
+INFO:Rotating Log:99 2 3
+Dec 03 11:02:12 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : division by zero
+Dec 03 11:02:12 : division by zero
+Dec 03 11:02:12 : got callback 91
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : got callback 90
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : got callback 92
+Dec 03 11:02:12 : division by zero
+Dec 03 11:02:12 : division by zero
+INFO:Rotating Log:got callback 91
+Dec 03 11:02:12 : division by zero
+INFO:Rotating Log:got callback 90
+INFO:Rotating Log:got callback 92
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : got callback 93
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : got callback 94
+INFO:Rotating Log:got callback 93
+Dec 03 11:02:12 : got callback 95
+INFO:Rotating Log:got callback 94
+Dec 03 11:02:12 : division by zero
+INFO:Rotating Log:got callback 95
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : got callback 96
+Dec 03 11:02:12 : got callback 97
+INFO:Rotating Log:got callback 96
+INFO:Rotating Log:got callback 97
+Dec 03 11:02:12 : division by zero
+Dec 03 11:02:12 : division by zero
+INFO:Rotating Log:division by zero
+INFO:Rotating Log:division by zero
+Dec 03 11:02:12 : got callback 99
+Dec 03 11:02:12 : got callback 98
+INFO:Rotating Log:got callback 99
+INFO:Rotating Log:got callback 98
+Dec 03 11:02:15 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 11:02:15 : 0 2 3
+Dec 03 11:02:15 : 1 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 11:02:15 : 2 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 11:02:15 : 3 2 3
+Dec 03 11:02:15 : 4 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 11:02:15 : 5 2 3
+Dec 03 11:02:15 : 6 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 11:02:15 : 7 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 11:02:15 : 8 2 3
+INFO:Rotating Log:5 2 3
+Dec 03 11:02:15 : 9 2 3
+INFO:Rotating Log:6 2 3
+INFO:Rotating Log:7 2 3
+INFO:Rotating Log:8 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : got callback 3
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 3
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : got callback 0
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:17 : got callback 5
+INFO:Rotating Log:got callback 0
+Dec 03 11:02:17 : got callback 4
+INFO:Rotating Log:got callback 5
+Dec 03 11:02:17 : 10 2 3
+Dec 03 11:02:17 : got callback 1
+INFO:Rotating Log:got callback 4
+Dec 03 11:02:17 : got callback 2
+INFO:Rotating Log:10 2 3
+INFO:Rotating Log:got callback 1
+Dec 03 11:02:17 : got callback 6
+Dec 03 11:02:17 : got callback 7
+INFO:Rotating Log:got callback 2
+Dec 03 11:02:17 : got callback 8
+Dec 03 11:02:17 : got callback 9
+INFO:Rotating Log:got callback 6
+INFO:Rotating Log:got callback 7
+Dec 03 11:02:17 : 11 2 3
+INFO:Rotating Log:got callback 8
+Dec 03 11:02:17 : 12 2 3
+INFO:Rotating Log:got callback 9
+Dec 03 11:02:17 : 13 2 3
+INFO:Rotating Log:11 2 3
+Dec 03 11:02:17 : 14 2 3
+INFO:Rotating Log:12 2 3
+Dec 03 11:02:17 : 15 2 3
+INFO:Rotating Log:13 2 3
+Dec 03 11:02:17 : 16 2 3
+Dec 03 11:02:17 : 17 2 3
+INFO:Rotating Log:14 2 3
+INFO:Rotating Log:15 2 3
+Dec 03 11:02:17 : 18 2 3
+Dec 03 11:02:17 : 19 2 3
+INFO:Rotating Log:16 2 3
+INFO:Rotating Log:17 2 3
+INFO:Rotating Log:18 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : got callback 10
+INFO:Rotating Log:got callback 10
+Dec 03 11:02:19 : 20 2 3
+INFO:Rotating Log:20 2 3
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : got callback 11
+INFO:Rotating Log:got callback 11
+Dec 03 11:02:19 : 21 2 3
+INFO:Rotating Log:21 2 3
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : got callback 12
+INFO:Rotating Log:got callback 12
+Dec 03 11:02:19 : 22 2 3
+INFO:Rotating Log:22 2 3
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : got callback 15
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 15
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : got callback 14
+INFO:Rotating Log:got callback 14
+Dec 03 11:02:19 : 23 2 3
+INFO:Rotating Log:23 2 3
+Dec 03 11:02:19 : got callback 13
+INFO:Rotating Log:got callback 13
+Dec 03 11:02:19 : 24 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 11:02:19 : 25 2 3
+INFO:Rotating Log:25 2 3
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : got callback 16
+INFO:Rotating Log:got callback 16
+Dec 03 11:02:19 : 26 2 3
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:26 2 3
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : got callback 17
+INFO:Rotating Log:got callback 17
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:19 : 27 2 3
+INFO:Rotating Log:27 2 3
+Dec 03 11:02:19 : got callback 18
+INFO:Rotating Log:got callback 18
+Dec 03 11:02:19 : got callback 19
+INFO:Rotating Log:got callback 19
+Dec 03 11:02:19 : 28 2 3
+INFO:Rotating Log:28 2 3
+Dec 03 11:02:19 : 29 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 11:02:21 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : got callback 21
+INFO:Rotating Log:got callback 21
+Dec 03 11:02:21 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : got callback 22
+INFO:Rotating Log:got callback 22
+Dec 03 11:02:21 : 32 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : got callback 23
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : got callback 26
+Dec 03 11:02:21 : got callback 24
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 23
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 26
+Dec 03 11:02:21 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 24
+Dec 03 11:02:21 : got callback 25
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : 33 2 3
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : 34 2 3
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:21 : 35 2 3
+INFO:Rotating Log:got callback 25
+Dec 03 11:02:21 : got callback 29
+INFO:Rotating Log:33 2 3
+Dec 03 11:02:21 : got callback 28
+INFO:Rotating Log:34 2 3
+INFO:Rotating Log:35 2 3
+Dec 03 11:02:21 : got callback 27
+Dec 03 11:02:21 : 36 2 3
+INFO:Rotating Log:got callback 29
+Dec 03 11:02:21 : 37 2 3
+INFO:Rotating Log:got callback 28
+Dec 03 11:02:21 : 38 2 3
+INFO:Rotating Log:got callback 27
+Dec 03 11:02:21 : 39 2 3
+INFO:Rotating Log:36 2 3
+INFO:Rotating Log:39 2 3
+INFO:Rotating Log:38 2 3
+INFO:Rotating Log:37 2 3
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : got callback 30
+INFO:Rotating Log:got callback 30
+Dec 03 11:02:23 : 40 2 3
+INFO:Rotating Log:40 2 3
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : got callback 31
+INFO:Rotating Log:got callback 31
+Dec 03 11:02:23 : 41 2 3
+INFO:Rotating Log:41 2 3
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : got callback 32
+INFO:Rotating Log:got callback 32
+Dec 03 11:02:23 : 42 2 3
+INFO:Rotating Log:42 2 3
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : got callback 33
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 33
+Dec 03 11:02:23 : got callback 34
+Dec 03 11:02:23 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : got callback 35
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 34
+Dec 03 11:02:23 : 43 2 3
+Dec 03 11:02:23 : got callback 39
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:23 : got callback 38
+INFO:Rotating Log:got callback 35
+Dec 03 11:02:23 : got callback 37
+INFO:Rotating Log:43 2 3
+Dec 03 11:02:23 : 44 2 3
+Dec 03 11:02:23 : got callback 36
+INFO:Rotating Log:got callback 39
+Dec 03 11:02:23 : 45 2 3
+INFO:Rotating Log:got callback 38
+Dec 03 11:02:23 : 46 2 3
+Dec 03 11:02:23 : 47 2 3
+INFO:Rotating Log:got callback 37
+Dec 03 11:02:23 : 48 2 3
+INFO:Rotating Log:44 2 3
+INFO:Rotating Log:got callback 36
+Dec 03 11:02:23 : 49 2 3
+INFO:Rotating Log:45 2 3
+INFO:Rotating Log:46 2 3
+INFO:Rotating Log:47 2 3
+INFO:Rotating Log:48 2 3
+INFO:Rotating Log:49 2 3
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : got callback 40
+INFO:Rotating Log:got callback 40
+Dec 03 11:02:25 : 50 2 3
+INFO:Rotating Log:50 2 3
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : got callback 41
+INFO:Rotating Log:got callback 41
+Dec 03 11:02:25 : 51 2 3
+INFO:Rotating Log:51 2 3
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : got callback 42
+INFO:Rotating Log:got callback 42
+Dec 03 11:02:25 : 52 2 3
+INFO:Rotating Log:52 2 3
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : got callback 43
+INFO:Rotating Log:got callback 43
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:25 : got callback 44
+INFO:Rotating Log:got callback 44
+Dec 03 11:02:25 : got callback 47
+INFO:Rotating Log:got callback 47
+Dec 03 11:02:25 : got callback 46
+Dec 03 11:02:25 : got callback 45
+INFO:Rotating Log:got callback 46
+INFO:Rotating Log:got callback 45
+Dec 03 11:02:25 : 53 2 3
+INFO:Rotating Log:53 2 3
+Dec 03 11:02:25 : got callback 49
+INFO:Rotating Log:got callback 49
+Dec 03 11:02:25 : got callback 48
+INFO:Rotating Log:got callback 48
+Dec 03 11:02:25 : 54 2 3
+Dec 03 11:02:25 : 55 2 3
+INFO:Rotating Log:54 2 3
+Dec 03 11:02:25 : 56 2 3
+Dec 03 11:02:25 : 57 2 3
+INFO:Rotating Log:55 2 3
+Dec 03 11:02:25 : 58 2 3
+Dec 03 11:02:25 : 59 2 3
+INFO:Rotating Log:56 2 3
+INFO:Rotating Log:57 2 3
+INFO:Rotating Log:58 2 3
+INFO:Rotating Log:59 2 3
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 50
+INFO:Rotating Log:got callback 50
+Dec 03 11:02:27 : 60 2 3
+INFO:Rotating Log:60 2 3
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 51
+INFO:Rotating Log:got callback 51
+Dec 03 11:02:27 : 61 2 3
+INFO:Rotating Log:61 2 3
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 52
+INFO:Rotating Log:got callback 52
+Dec 03 11:02:27 : 62 2 3
+INFO:Rotating Log:62 2 3
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 53
+INFO:Rotating Log:got callback 53
+Dec 03 11:02:27 : 63 2 3
+INFO:Rotating Log:63 2 3
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 54
+INFO:Rotating Log:got callback 54
+Dec 03 11:02:27 : 64 2 3
+INFO:Rotating Log:64 2 3
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 55
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 57
+Dec 03 11:02:27 : got callback 58
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:02:27 : got callback 56
+INFO:Rotating Log:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 55
+INFO:Rotating Log:got callback 57
+Dec 03 11:02:27 : got callback 59
+INFO:Rotating Log:got callback 58
+Dec 03 11:02:27 : 65 2 3
+INFO:Rotating Log:got callback 56
+INFO:Rotating Log:got callback 59
+INFO:Rotating Log:65 2 3
+Dec 03 11:02:27 : 66 2 3
+INFO:Rotating Log:66 2 3
+Dec 03 11:02:27 : 67 2 3
+INFO:Rotating Log:67 2 3
+Dec 03 11:02:27 : 68 2 3
+INFO:Rotating Log:68 2 3
+Dec 03 11:02:27 : 69 2 3
+INFO:Rotating Log:69 2 3
+Dec 03 11:05:21 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 11:05:21 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 11:05:21 : 1 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 11:05:21 : 2 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 11:05:21 : 3 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 11:05:21 : 4 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 11:05:21 : 5 2 3
+INFO:Rotating Log:5 2 3
+Dec 03 11:05:21 : 6 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 11:05:21 : 7 2 3
+Dec 03 11:05:21 : 8 2 3
+INFO:Rotating Log:7 2 3
+Dec 03 11:05:21 : 9 2 3
+INFO:Rotating Log:8 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : got callback 0
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 0
+Dec 03 11:05:23 : got callback 2
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 2
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : got callback 6
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : got callback 5
+INFO:Rotating Log:got callback 6
+INFO:Rotating Log:got callback 5
+Dec 03 11:05:23 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:23 : got callback 1
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 1
+Dec 03 11:05:23 : got callback 3
+INFO:Rotating Log:got callback 3
+Dec 03 11:05:23 : got callback 4
+INFO:Rotating Log:got callback 4
+Dec 03 11:05:23 : 10 2 3
+INFO:Rotating Log:10 2 3
+Dec 03 11:05:23 : 11 2 3
+INFO:Rotating Log:11 2 3
+Dec 03 11:05:23 : got callback 8
+INFO:Rotating Log:got callback 8
+Dec 03 11:05:23 : got callback 9
+INFO:Rotating Log:got callback 9
+Dec 03 11:05:23 : 12 2 3
+INFO:Rotating Log:12 2 3
+Dec 03 11:05:23 : 13 2 3
+Dec 03 11:05:23 : got callback 7
+Dec 03 11:05:23 : 14 2 3
+INFO:Rotating Log:13 2 3
+INFO:Rotating Log:got callback 7
+INFO:Rotating Log:14 2 3
+Dec 03 11:05:23 : 15 2 3
+INFO:Rotating Log:15 2 3
+Dec 03 11:05:23 : 16 2 3
+INFO:Rotating Log:16 2 3
+Dec 03 11:05:23 : 17 2 3
+INFO:Rotating Log:17 2 3
+Dec 03 11:05:23 : 18 2 3
+Dec 03 11:05:23 : 19 2 3
+INFO:Rotating Log:18 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : got callback 10
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 10
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : got callback 11
+INFO:Rotating Log:got callback 11
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : 20 2 3
+INFO:Rotating Log:20 2 3
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : got callback 12
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 12
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : got callback 14
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:got callback 14
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO:Rotating Log:Exception happened !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Dec 03 11:05:25 : got callback 13
+Dec 03 11:05:25 : 21 2 3
+INFO:Rotating Log:got callback 13
+INFO:Rotating Log:21 2 3
+Dec 03 11:05:25 : got callback 15
+Dec 03 11:05:25 : got callback 17
+INFO:Rotating Log:got callback 15
+Dec 03 11:05:25 : 22 2 3
+INFO:Rotating Log:got callback 17
+Dec 03 11:05:25 : got callback 16
+INFO:Rotating Log:22 2 3
+Dec 03 11:05:25 : 23 2 3
+Dec 03 11:05:25 : got callback 19
+INFO:Rotating Log:got callback 16
+Dec 03 11:05:25 : got callback 18
+Dec 03 11:05:25 : 24 2 3
+INFO:Rotating Log:23 2 3
+INFO:Rotating Log:got callback 19
+Dec 03 11:05:25 : 25 2 3
+INFO:Rotating Log:got callback 18
+Dec 03 11:05:25 : 26 2 3
+Dec 03 11:05:25 : 27 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 11:05:25 : 28 2 3
+INFO:Rotating Log:25 2 3
+Dec 03 11:05:25 : 29 2 3
+INFO:Rotating Log:26 2 3
+INFO:Rotating Log:27 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 17:08:53 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 17:08:53 : 0 2 3
+Dec 03 17:08:53 : 1 2 3
+Dec 03 17:08:53 : 2 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 17:08:53 : 3 2 3
+Dec 03 17:08:53 : 4 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 17:08:53 : 5 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 17:08:53 : 6 2 3
+INFO:Rotating Log:3 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 17:08:53 : 7 2 3
+INFO:Rotating Log:5 2 3
+Dec 03 17:08:53 : 8 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 17:08:53 : 9 2 3
+INFO:Rotating Log:7 2 3
+INFO:Rotating Log:8 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 17:08:55 : <Future at 0x7fa9e3ff9f70 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3ff9f70 state=finished returned str>
+Dec 03 17:08:55 : <Future at 0x7fa9e3f6e280 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f6e280 state=finished returned str>
+Dec 03 17:08:55 : <Future at 0x7fa9e3f78040 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f78040 state=finished returned str>
+Dec 03 17:08:55 : <Future at 0x7fa9e3f6eb80 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f6eb80 state=finished returned str>
+Dec 03 17:08:55 : <Future at 0x7fa9e3f5ee50 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f5ee50 state=finished returned str>
+Dec 03 17:08:55 : got callback 0
+Dec 03 17:08:55 : <Future at 0x7fa9e3f6e700 state=finished returned str>
+INFO:Rotating Log:got callback 0
+Dec 03 17:08:55 : <Future at 0x7fa9e3f78460 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f6e700 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f78460 state=finished returned str>
+Dec 03 17:08:55 : <Future at 0x7fa9e3f6ebe0 state=finished returned str>
+Dec 03 17:08:55 : <Future at 0x7fa9e3f5eee0 state=finished returned str>
+Dec 03 17:08:55 : got callback 2
+INFO:Rotating Log:<Future at 0x7fa9e3f6ebe0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f5eee0 state=finished returned str>
+Dec 03 17:08:55 : <Future at 0x7fa9e3f6e760 state=finished returned str>
+INFO:Rotating Log:got callback 2
+Dec 03 17:08:55 : got callback 5
+INFO:Rotating Log:<Future at 0x7fa9e3f6e760 state=finished returned str>
+INFO:Rotating Log:got callback 5
+Dec 03 17:08:55 : got callback 4
+INFO:Rotating Log:got callback 4
+Dec 03 17:08:55 : got callback 1
+INFO:Rotating Log:got callback 1
+Dec 03 17:08:55 : 10 2 3
+INFO:Rotating Log:10 2 3
+Dec 03 17:08:55 : got callback 3
+INFO:Rotating Log:got callback 3
+Dec 03 17:08:55 : got callback 6
+INFO:Rotating Log:got callback 6
+Dec 03 17:08:55 : got callback 8
+Dec 03 17:08:55 : got callback 9
+INFO:Rotating Log:got callback 8
+Dec 03 17:08:55 : 11 2 3
+INFO:Rotating Log:got callback 9
+Dec 03 17:08:55 : got callback 7
+INFO:Rotating Log:11 2 3
+Dec 03 17:08:55 : 12 2 3
+INFO:Rotating Log:got callback 7
+INFO:Rotating Log:12 2 3
+Dec 03 17:08:55 : 13 2 3
+Dec 03 17:08:55 : 14 2 3
+INFO:Rotating Log:13 2 3
+INFO:Rotating Log:14 2 3
+Dec 03 17:08:55 : 15 2 3
+INFO:Rotating Log:15 2 3
+Dec 03 17:08:55 : 16 2 3
+INFO:Rotating Log:16 2 3
+Dec 03 17:08:55 : 17 2 3
+Dec 03 17:08:55 : 18 2 3
+INFO:Rotating Log:17 2 3
+Dec 03 17:08:55 : 19 2 3
+INFO:Rotating Log:18 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 17:08:57 : <Future at 0x7fa9e3f788e0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f788e0 state=finished returned str>
+Dec 03 17:08:57 : got callback 10
+INFO:Rotating Log:got callback 10
+Dec 03 17:08:57 : 20 2 3
+INFO:Rotating Log:20 2 3
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7f670 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7f670 state=finished returned str>
+Dec 03 17:08:57 : got callback 11
+INFO:Rotating Log:got callback 11
+Dec 03 17:08:57 : 21 2 3
+INFO:Rotating Log:21 2 3
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7fbb0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7fbb0 state=finished returned str>
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7f7c0 state=finished returned str>
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7f910 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7f7c0 state=finished returned str>
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7fd00 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7f910 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7fd00 state=finished returned str>
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7fa60 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7fa60 state=finished returned str>
+Dec 03 17:08:57 : got callback 15
+INFO:Rotating Log:got callback 15
+Dec 03 17:08:57 : <Future at 0x7fa9e3f86130 state=finished returned str>
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7fe50 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f86130 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7fe50 state=finished returned str>
+Dec 03 17:08:57 : <Future at 0x7fa9e3f7ffa0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f7ffa0 state=finished returned str>
+Dec 03 17:08:57 : got callback 12
+Dec 03 17:08:57 : got callback 13
+INFO:Rotating Log:got callback 12
+Dec 03 17:08:57 : got callback 16
+INFO:Rotating Log:got callback 13
+Dec 03 17:08:57 : got callback 14
+Dec 03 17:08:57 : 22 2 3
+INFO:Rotating Log:got callback 16
+INFO:Rotating Log:got callback 14
+INFO:Rotating Log:22 2 3
+Dec 03 17:08:57 : got callback 19
+INFO:Rotating Log:got callback 19
+Dec 03 17:08:57 : got callback 17
+INFO:Rotating Log:got callback 17
+Dec 03 17:08:57 : got callback 18
+Dec 03 17:08:57 : 23 2 3
+INFO:Rotating Log:got callback 18
+Dec 03 17:08:57 : 24 2 3
+INFO:Rotating Log:23 2 3
+Dec 03 17:08:57 : 25 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 17:08:57 : 26 2 3
+INFO:Rotating Log:25 2 3
+Dec 03 17:08:57 : 27 2 3
+INFO:Rotating Log:26 2 3
+Dec 03 17:08:57 : 28 2 3
+INFO:Rotating Log:27 2 3
+Dec 03 17:08:57 : 29 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86280 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f86280 state=finished returned str>
+Dec 03 17:08:59 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 17:08:59 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 17:08:59 : <Future at 0x7fa9e3f863d0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f863d0 state=finished returned str>
+Dec 03 17:08:59 : got callback 21
+INFO:Rotating Log:got callback 21
+Dec 03 17:08:59 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86520 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f86520 state=finished returned str>
+Dec 03 17:08:59 : got callback 22
+INFO:Rotating Log:got callback 22
+Dec 03 17:08:59 : 32 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86670 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f86670 state=finished returned str>
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86a60 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f86a60 state=finished returned str>
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86bb0 state=finished returned str>
+Dec 03 17:08:59 : got callback 23
+INFO:Rotating Log:<Future at 0x7fa9e3f86bb0 state=finished returned str>
+INFO:Rotating Log:got callback 23
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86910 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f86910 state=finished returned str>
+Dec 03 17:08:59 : <Future at 0x7fa9e3f867c0 state=finished returned str>
+Dec 03 17:08:59 : got callback 26
+INFO:Rotating Log:<Future at 0x7fa9e3f867c0 state=finished returned str>
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86e50 state=finished returned str>
+INFO:Rotating Log:got callback 26
+INFO:Rotating Log:<Future at 0x7fa9e3f86e50 state=finished returned str>
+Dec 03 17:08:59 : got callback 27
+Dec 03 17:08:59 : 33 2 3
+Dec 03 17:08:59 : <Future at 0x7fa9e3f86d00 state=finished returned str>
+INFO:Rotating Log:got callback 27
+INFO:Rotating Log:33 2 3
+Dec 03 17:08:59 : got callback 25
+INFO:Rotating Log:<Future at 0x7fa9e3f86d00 state=finished returned str>
+Dec 03 17:08:59 : got callback 24
+Dec 03 17:08:59 : 34 2 3
+INFO:Rotating Log:got callback 25
+INFO:Rotating Log:got callback 24
+Dec 03 17:08:59 : got callback 29
+Dec 03 17:08:59 : 35 2 3
+INFO:Rotating Log:34 2 3
+Dec 03 17:08:59 : got callback 28
+Dec 03 17:08:59 : 36 2 3
+Dec 03 17:08:59 : 37 2 3
+INFO:Rotating Log:got callback 29
+Dec 03 17:08:59 : 38 2 3
+INFO:Rotating Log:35 2 3
+INFO:Rotating Log:got callback 28
+Dec 03 17:08:59 : 39 2 3
+INFO:Rotating Log:36 2 3
+INFO:Rotating Log:37 2 3
+INFO:Rotating Log:38 2 3
+INFO:Rotating Log:39 2 3
+Dec 03 17:09:01 : <Future at 0x7fa9e3f86fa0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e3f86fa0 state=finished returned str>
+Dec 03 17:09:01 : got callback 30
+INFO:Rotating Log:got callback 30
+Dec 03 17:09:01 : 40 2 3
+INFO:Rotating Log:40 2 3
+Dec 03 17:09:01 : <Future at 0x7fa9e0704130 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704130 state=finished returned str>
+Dec 03 17:09:01 : got callback 31
+INFO:Rotating Log:got callback 31
+Dec 03 17:09:01 : 41 2 3
+INFO:Rotating Log:41 2 3
+Dec 03 17:09:01 : <Future at 0x7fa9e0704280 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704280 state=finished returned str>
+Dec 03 17:09:01 : got callback 32
+INFO:Rotating Log:got callback 32
+Dec 03 17:09:01 : 42 2 3
+INFO:Rotating Log:42 2 3
+Dec 03 17:09:01 : <Future at 0x7fa9e07043d0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e07043d0 state=finished returned str>
+Dec 03 17:09:01 : got callback 33
+INFO:Rotating Log:got callback 33
+Dec 03 17:09:01 : 43 2 3
+INFO:Rotating Log:43 2 3
+Dec 03 17:09:01 : <Future at 0x7fa9e0704520 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704520 state=finished returned str>
+Dec 03 17:09:01 : <Future at 0x7fa9e0704670 state=finished returned str>
+Dec 03 17:09:01 : got callback 34
+INFO:Rotating Log:<Future at 0x7fa9e0704670 state=finished returned str>
+Dec 03 17:09:01 : got callback 35
+INFO:Rotating Log:got callback 34
+Dec 03 17:09:01 : <Future at 0x7fa9e0704a60 state=finished returned str>
+Dec 03 17:09:01 : <Future at 0x7fa9e0704bb0 state=finished returned str>
+INFO:Rotating Log:got callback 35
+INFO:Rotating Log:<Future at 0x7fa9e0704a60 state=finished returned str>
+Dec 03 17:09:01 : <Future at 0x7fa9e07047c0 state=finished returned str>
+Dec 03 17:09:01 : <Future at 0x7fa9e0704910 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704bb0 state=finished returned str>
+Dec 03 17:09:01 : 44 2 3
+INFO:Rotating Log:<Future at 0x7fa9e07047c0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704910 state=finished returned str>
+Dec 03 17:09:01 : 45 2 3
+INFO:Rotating Log:44 2 3
+Dec 03 17:09:01 : got callback 38
+INFO:Rotating Log:45 2 3
+INFO:Rotating Log:got callback 38
+Dec 03 17:09:01 : got callback 39
+INFO:Rotating Log:got callback 39
+Dec 03 17:09:01 : got callback 36
+INFO:Rotating Log:got callback 36
+Dec 03 17:09:01 : got callback 37
+INFO:Rotating Log:got callback 37
+Dec 03 17:09:01 : 46 2 3
+INFO:Rotating Log:46 2 3
+Dec 03 17:09:01 : 47 2 3
+INFO:Rotating Log:47 2 3
+Dec 03 17:09:01 : 48 2 3
+INFO:Rotating Log:48 2 3
+Dec 03 17:09:01 : 49 2 3
+INFO:Rotating Log:49 2 3
+Dec 03 17:09:03 : <Future at 0x7fa9e0704d00 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704d00 state=finished returned str>
+Dec 03 17:09:03 : got callback 40
+INFO:Rotating Log:got callback 40
+Dec 03 17:09:03 : 50 2 3
+INFO:Rotating Log:50 2 3
+Dec 03 17:09:03 : <Future at 0x7fa9e0704e50 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704e50 state=finished returned str>
+Dec 03 17:09:03 : got callback 41
+INFO:Rotating Log:got callback 41
+Dec 03 17:09:03 : 51 2 3
+INFO:Rotating Log:51 2 3
+Dec 03 17:09:03 : <Future at 0x7fa9e0704fa0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0704fa0 state=finished returned str>
+Dec 03 17:09:03 : got callback 42
+INFO:Rotating Log:got callback 42
+Dec 03 17:09:03 : 52 2 3
+INFO:Rotating Log:52 2 3
+Dec 03 17:09:03 : <Future at 0x7fa9e070c130 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070c130 state=finished returned str>
+Dec 03 17:09:03 : got callback 43
+INFO:Rotating Log:got callback 43
+Dec 03 17:09:03 : 53 2 3
+INFO:Rotating Log:53 2 3
+Dec 03 17:09:03 : <Future at 0x7fa9e070c280 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070c280 state=finished returned str>
+Dec 03 17:09:03 : got callback 44
+INFO:Rotating Log:got callback 44
+Dec 03 17:09:03 : <Future at 0x7fa9e070c3d0 state=finished returned str>
+Dec 03 17:09:03 : 54 2 3
+INFO:Rotating Log:<Future at 0x7fa9e070c3d0 state=finished returned str>
+Dec 03 17:09:03 : got callback 45
+INFO:Rotating Log:54 2 3
+Dec 03 17:09:03 : <Future at 0x7fa9e070c520 state=finished returned str>
+INFO:Rotating Log:got callback 45
+Dec 03 17:09:03 : <Future at 0x7fa9e070c7c0 state=finished returned str>
+Dec 03 17:09:03 : 55 2 3
+INFO:Rotating Log:<Future at 0x7fa9e070c520 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070c7c0 state=finished returned str>
+INFO:Rotating Log:55 2 3
+Dec 03 17:09:03 : <Future at 0x7fa9e070c910 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070c910 state=finished returned str>
+Dec 03 17:09:03 : <Future at 0x7fa9e070c670 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070c670 state=finished returned str>
+Dec 03 17:09:03 : got callback 46
+INFO:Rotating Log:got callback 46
+Dec 03 17:09:03 : got callback 48
+INFO:Rotating Log:got callback 48
+Dec 03 17:09:03 : got callback 49
+Dec 03 17:09:03 : got callback 47
+INFO:Rotating Log:got callback 49
+INFO:Rotating Log:got callback 47
+Dec 03 17:09:03 : 56 2 3
+Dec 03 17:09:03 : 57 2 3
+INFO:Rotating Log:56 2 3
+Dec 03 17:09:03 : 58 2 3
+INFO:Rotating Log:57 2 3
+Dec 03 17:09:03 : 59 2 3
+INFO:Rotating Log:58 2 3
+INFO:Rotating Log:59 2 3
+Dec 03 17:09:05 : <Future at 0x7fa9e070ca60 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070ca60 state=finished returned str>
+Dec 03 17:09:05 : got callback 50
+INFO:Rotating Log:got callback 50
+Dec 03 17:09:05 : 60 2 3
+Dec 03 17:09:05 : <Future at 0x7fa9e070cbb0 state=finished returned str>
+INFO:Rotating Log:60 2 3
+INFO:Rotating Log:<Future at 0x7fa9e070cbb0 state=finished returned str>
+Dec 03 17:09:05 : got callback 51
+INFO:Rotating Log:got callback 51
+Dec 03 17:09:05 : 61 2 3
+INFO:Rotating Log:61 2 3
+Dec 03 17:09:05 : <Future at 0x7fa9e070cd00 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070cd00 state=finished returned str>
+Dec 03 17:09:05 : got callback 52
+INFO:Rotating Log:got callback 52
+Dec 03 17:09:05 : 62 2 3
+INFO:Rotating Log:62 2 3
+Dec 03 17:09:05 : <Future at 0x7fa9e070ce50 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070ce50 state=finished returned str>
+Dec 03 17:09:05 : got callback 53
+INFO:Rotating Log:got callback 53
+Dec 03 17:09:05 : 63 2 3
+INFO:Rotating Log:63 2 3
+Dec 03 17:09:05 : <Future at 0x7fa9e070cfa0 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e070cfa0 state=finished returned str>
+Dec 03 17:09:05 : got callback 54
+INFO:Rotating Log:got callback 54
+Dec 03 17:09:05 : 64 2 3
+INFO:Rotating Log:64 2 3
+Dec 03 17:09:05 : <Future at 0x7fa9e0711130 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0711130 state=finished returned str>
+Dec 03 17:09:05 : got callback 55
+INFO:Rotating Log:got callback 55
+Dec 03 17:09:05 : 65 2 3
+INFO:Rotating Log:65 2 3
+Dec 03 17:09:05 : <Future at 0x7fa9e0711280 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0711280 state=finished returned str>
+Dec 03 17:09:05 : <Future at 0x7fa9e07113d0 state=finished returned str>
+Dec 03 17:09:05 : got callback 56
+INFO:Rotating Log:<Future at 0x7fa9e07113d0 state=finished returned str>
+INFO:Rotating Log:got callback 56
+Dec 03 17:09:05 : <Future at 0x7fa9e0711520 state=finished returned str>
+Dec 03 17:09:05 : <Future at 0x7fa9e0711670 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0711520 state=finished returned str>
+INFO:Rotating Log:<Future at 0x7fa9e0711670 state=finished returned str>
+Dec 03 17:09:05 : got callback 57
+Dec 03 17:09:05 : 66 2 3
+INFO:Rotating Log:got callback 57
+INFO:Rotating Log:66 2 3
+Dec 03 17:09:05 : got callback 58
+INFO:Rotating Log:got callback 58
+Dec 03 17:09:05 : got callback 59
+INFO:Rotating Log:got callback 59
+Dec 03 17:09:05 : 67 2 3
+Dec 03 17:09:05 : 68 2 3
+INFO:Rotating Log:67 2 3
+INFO:Rotating Log:68 2 3
+Dec 03 17:09:05 : 69 2 3
+INFO:Rotating Log:69 2 3
+Dec 03 17:09:39 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 17:09:39 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 17:09:39 : 1 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 17:09:39 : 2 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 17:09:39 : 3 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 17:09:39 : 4 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 17:09:39 : 5 2 3
+Dec 03 17:09:39 : 6 2 3
+Dec 03 17:09:39 : 7 2 3
+INFO:Rotating Log:5 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 17:09:39 : 8 2 3
+Dec 03 17:09:39 : 9 2 3
+INFO:Rotating Log:7 2 3
+INFO:Rotating Log:8 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaf5e040 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaf5e040 state=finished returned str>>
+Dec 03 17:09:41 : got callback 0
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaf3eee0 state=finished returned str>>
+INFO:Rotating Log:got callback 0
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaf3eee0 state=finished returned str>>
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaecd730 state=finished returned str>>
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaf3ef40 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaecd730 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaf3ef40 state=finished returned str>>
+Dec 03 17:09:41 : 10 2 3
+INFO:Rotating Log:10 2 3
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaecdb50 state=finished returned str>>
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaecdc10 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaecdb50 state=finished returned str>>
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaeda130 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaecdc10 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaeda130 state=finished returned str>>
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaed5c70 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaed5c70 state=finished returned str>>
+Dec 03 17:09:41 : got callback 1
+INFO:Rotating Log:got callback 1
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaed53d0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaed53d0 state=finished returned str>>
+Dec 03 17:09:41 : <bound method Future.result of <Future at 0x7fd4aaecdfd0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaecdfd0 state=finished returned str>>
+Dec 03 17:09:41 : got callback 3
+INFO:Rotating Log:got callback 3
+Dec 03 17:09:41 : got callback 2
+INFO:Rotating Log:got callback 2
+Dec 03 17:09:41 : got callback 4
+Dec 03 17:09:41 : got callback 7
+INFO:Rotating Log:got callback 4
+Dec 03 17:09:41 : got callback 9
+Dec 03 17:09:41 : got callback 8
+INFO:Rotating Log:got callback 7
+INFO:Rotating Log:got callback 9
+INFO:Rotating Log:got callback 8
+Dec 03 17:09:41 : 11 2 3
+INFO:Rotating Log:11 2 3
+Dec 03 17:09:41 : got callback 6
+INFO:Rotating Log:got callback 6
+Dec 03 17:09:41 : got callback 5
+INFO:Rotating Log:got callback 5
+Dec 03 17:09:41 : 12 2 3
+INFO:Rotating Log:12 2 3
+Dec 03 17:09:41 : 13 2 3
+Dec 03 17:09:41 : 14 2 3
+INFO:Rotating Log:13 2 3
+Dec 03 17:09:41 : 15 2 3
+Dec 03 17:09:41 : 16 2 3
+INFO:Rotating Log:14 2 3
+Dec 03 17:09:41 : 17 2 3
+INFO:Rotating Log:15 2 3
+Dec 03 17:09:41 : 18 2 3
+Dec 03 17:09:41 : 19 2 3
+INFO:Rotating Log:16 2 3
+INFO:Rotating Log:17 2 3
+INFO:Rotating Log:18 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaeda5b0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaeda5b0 state=finished returned str>>
+Dec 03 17:09:43 : got callback 10
+INFO:Rotating Log:got callback 10
+Dec 03 17:09:43 : 20 2 3
+INFO:Rotating Log:20 2 3
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaeda7c0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaeda7c0 state=finished returned str>>
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaeda910 state=finished returned str>>
+Dec 03 17:09:43 : got callback 11
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaeda910 state=finished returned str>>
+Dec 03 17:09:43 : got callback 12
+INFO:Rotating Log:got callback 11
+INFO:Rotating Log:got callback 12
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaedaa60 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaedaa60 state=finished returned str>>
+Dec 03 17:09:43 : 21 2 3
+Dec 03 17:09:43 : 22 2 3
+INFO:Rotating Log:21 2 3
+INFO:Rotating Log:22 2 3
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaedafa0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaedafa0 state=finished returned str>>
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaedae50 state=finished returned str>>
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaedabb0 state=finished returned str>>
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaee3130 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaedae50 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaedabb0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3130 state=finished returned str>>
+Dec 03 17:09:43 : got callback 13
+INFO:Rotating Log:got callback 13
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaee3280 state=finished returned str>>
+Dec 03 17:09:43 : <bound method Future.result of <Future at 0x7fd4aaedad00 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3280 state=finished returned str>>
+Dec 03 17:09:43 : got callback 17
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaedad00 state=finished returned str>>
+Dec 03 17:09:43 : got callback 16
+Dec 03 17:09:43 : got callback 14
+INFO:Rotating Log:got callback 17
+Dec 03 17:09:43 : got callback 18
+INFO:Rotating Log:got callback 16
+Dec 03 17:09:43 : 23 2 3
+INFO:Rotating Log:got callback 14
+INFO:Rotating Log:got callback 18
+INFO:Rotating Log:23 2 3
+Dec 03 17:09:43 : got callback 19
+INFO:Rotating Log:got callback 19
+Dec 03 17:09:43 : got callback 15
+INFO:Rotating Log:got callback 15
+Dec 03 17:09:43 : 24 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 17:09:43 : 25 2 3
+INFO:Rotating Log:25 2 3
+Dec 03 17:09:43 : 26 2 3
+INFO:Rotating Log:26 2 3
+Dec 03 17:09:43 : 27 2 3
+INFO:Rotating Log:27 2 3
+Dec 03 17:09:43 : 28 2 3
+INFO:Rotating Log:28 2 3
+Dec 03 17:09:43 : 29 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee33d0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee33d0 state=finished returned str>>
+Dec 03 17:09:45 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 17:09:45 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3520 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3520 state=finished returned str>>
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3670 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3670 state=finished returned str>>
+Dec 03 17:09:45 : got callback 21
+Dec 03 17:09:45 : got callback 22
+INFO:Rotating Log:got callback 21
+INFO:Rotating Log:got callback 22
+Dec 03 17:09:45 : 31 2 3
+Dec 03 17:09:45 : 32 2 3
+INFO:Rotating Log:31 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee37c0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee37c0 state=finished returned str>>
+Dec 03 17:09:45 : got callback 23
+INFO:Rotating Log:got callback 23
+Dec 03 17:09:45 : 33 2 3
+INFO:Rotating Log:33 2 3
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3d00 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3d00 state=finished returned str>>
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3910 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3910 state=finished returned str>>
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3fa0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3fa0 state=finished returned str>>
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3bb0 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3bb0 state=finished returned str>>
+Dec 03 17:09:45 : got callback 27
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3a60 state=finished returned str>>
+INFO:Rotating Log:got callback 27
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3a60 state=finished returned str>>
+Dec 03 17:09:45 : <bound method Future.result of <Future at 0x7fd4aaee3e50 state=finished returned str>>
+INFO:Rotating Log:<bound method Future.result of <Future at 0x7fd4aaee3e50 state=finished returned str>>
+Dec 03 17:09:45 : got callback 24
+Dec 03 17:09:45 : got callback 29
+Dec 03 17:09:45 : got callback 26
+INFO:Rotating Log:got callback 24
+Dec 03 17:09:45 : 34 2 3
+Dec 03 17:09:45 : got callback 25
+INFO:Rotating Log:got callback 29
+INFO:Rotating Log:got callback 26
+INFO:Rotating Log:34 2 3
+Dec 03 17:09:45 : got callback 28
+Dec 03 17:09:45 : 35 2 3
+INFO:Rotating Log:got callback 25
+INFO:Rotating Log:got callback 28
+Dec 03 17:09:45 : 36 2 3
+INFO:Rotating Log:35 2 3
+Dec 03 17:09:45 : 37 2 3
+INFO:Rotating Log:36 2 3
+Dec 03 17:09:45 : 38 2 3
+INFO:Rotating Log:37 2 3
+Dec 03 17:09:45 : 39 2 3
+INFO:Rotating Log:38 2 3
+INFO:Rotating Log:39 2 3
+Dec 03 17:10:29 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 17:10:29 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 17:10:29 : 1 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 17:10:29 : 2 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 17:10:29 : 3 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 17:10:29 : 4 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 17:10:29 : 5 2 3
+Dec 03 17:10:29 : 6 2 3
+Dec 03 17:10:29 : 7 2 3
+INFO:Rotating Log:5 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 17:10:29 : 8 2 3
+INFO:Rotating Log:7 2 3
+Dec 03 17:10:29 : 9 2 3
+INFO:Rotating Log:9 2 3
+INFO:Rotating Log:8 2 3
+Dec 03 17:10:31 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : Ura
+Dec 03 17:10:31 : Ura
+INFO:Rotating Log:Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : got callback 3
+INFO:Rotating Log:got callback 3
+Dec 03 17:10:31 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : Ura
+Dec 03 17:10:31 : Ura
+INFO:Rotating Log:Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : Ura
+Dec 03 17:10:31 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : got callback 0
+Dec 03 17:10:31 : got callback 2
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : Ura
+INFO:Rotating Log:got callback 0
+Dec 03 17:10:31 : 10 2 3
+INFO:Rotating Log:got callback 2
+Dec 03 17:10:31 : got callback 6
+INFO:Rotating Log:Ura
+Dec 03 17:10:31 : got callback 4
+Dec 03 17:10:31 : got callback 1
+Dec 03 17:10:31 : got callback 5
+INFO:Rotating Log:10 2 3
+Dec 03 17:10:31 : got callback 7
+INFO:Rotating Log:got callback 6
+Dec 03 17:10:31 : got callback 8
+INFO:Rotating Log:got callback 4
+INFO:Rotating Log:got callback 1
+INFO:Rotating Log:got callback 5
+INFO:Rotating Log:got callback 7
+Dec 03 17:10:31 : 11 2 3
+INFO:Rotating Log:got callback 8
+Dec 03 17:10:31 : 12 2 3
+INFO:Rotating Log:11 2 3
+INFO:Rotating Log:12 2 3
+Dec 03 17:10:31 : got callback 9
+INFO:Rotating Log:got callback 9
+Dec 03 17:10:31 : 13 2 3
+INFO:Rotating Log:13 2 3
+Dec 03 17:10:31 : 14 2 3
+Dec 03 17:10:31 : 15 2 3
+INFO:Rotating Log:14 2 3
+Dec 03 17:10:31 : 16 2 3
+INFO:Rotating Log:15 2 3
+INFO:Rotating Log:16 2 3
+Dec 03 17:10:31 : 17 2 3
+INFO:Rotating Log:17 2 3
+Dec 03 17:10:31 : 18 2 3
+Dec 03 17:10:31 : 19 2 3
+INFO:Rotating Log:18 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 17:10:33 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : got callback 10
+INFO:Rotating Log:got callback 10
+Dec 03 17:10:33 : 20 2 3
+INFO:Rotating Log:20 2 3
+Dec 03 17:10:33 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : got callback 11
+INFO:Rotating Log:got callback 11
+Dec 03 17:10:33 : 21 2 3
+INFO:Rotating Log:21 2 3
+Dec 03 17:10:33 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : got callback 12
+INFO:Rotating Log:got callback 12
+Dec 03 17:10:33 : 22 2 3
+INFO:Rotating Log:22 2 3
+Dec 03 17:10:33 : Ura
+Dec 03 17:10:33 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : Ura
+INFO:Rotating Log:Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : Ura
+Dec 03 17:10:33 : got callback 13
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : Ura
+Dec 03 17:10:33 : got callback 16
+INFO:Rotating Log:got callback 13
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : Ura
+INFO:Rotating Log:got callback 16
+Dec 03 17:10:33 : got callback 15
+INFO:Rotating Log:Ura
+Dec 03 17:10:33 : got callback 14
+INFO:Rotating Log:got callback 15
+Dec 03 17:10:33 : got callback 17
+INFO:Rotating Log:got callback 14
+Dec 03 17:10:33 : 23 2 3
+Dec 03 17:10:33 : got callback 18
+Dec 03 17:10:33 : 24 2 3
+INFO:Rotating Log:got callback 17
+INFO:Rotating Log:23 2 3
+Dec 03 17:10:33 : got callback 19
+INFO:Rotating Log:got callback 18
+INFO:Rotating Log:24 2 3
+Dec 03 17:10:33 : 25 2 3
+INFO:Rotating Log:got callback 19
+Dec 03 17:10:33 : 26 2 3
+Dec 03 17:10:33 : 27 2 3
+INFO:Rotating Log:25 2 3
+Dec 03 17:10:33 : 28 2 3
+INFO:Rotating Log:26 2 3
+INFO:Rotating Log:27 2 3
+Dec 03 17:10:33 : 29 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 17:10:35 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 21
+INFO:Rotating Log:got callback 21
+Dec 03 17:10:35 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 22
+INFO:Rotating Log:got callback 22
+Dec 03 17:10:35 : 32 2 3
+INFO:Rotating Log:32 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 23
+INFO:Rotating Log:got callback 23
+Dec 03 17:10:35 : 33 2 3
+INFO:Rotating Log:33 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 24
+INFO:Rotating Log:got callback 24
+Dec 03 17:10:35 : 34 2 3
+INFO:Rotating Log:34 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 25
+INFO:Rotating Log:got callback 25
+Dec 03 17:10:35 : 35 2 3
+INFO:Rotating Log:35 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 26
+INFO:Rotating Log:got callback 26
+Dec 03 17:10:35 : 36 2 3
+INFO:Rotating Log:36 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 27
+INFO:Rotating Log:got callback 27
+Dec 03 17:10:35 : 37 2 3
+INFO:Rotating Log:37 2 3
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : got callback 29
+INFO:Rotating Log:got callback 29
+Dec 03 17:10:35 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:35 : 38 2 3
+INFO:Rotating Log:38 2 3
+Dec 03 17:10:35 : got callback 28
+INFO:Rotating Log:got callback 28
+Dec 03 17:10:35 : 39 2 3
+INFO:Rotating Log:39 2 3
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : got callback 30
+INFO:Rotating Log:got callback 30
+Dec 03 17:10:37 : 40 2 3
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:40 2 3
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : got callback 31
+INFO:Rotating Log:got callback 31
+Dec 03 17:10:37 : 41 2 3
+INFO:Rotating Log:41 2 3
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : got callback 32
+INFO:Rotating Log:got callback 32
+Dec 03 17:10:37 : 42 2 3
+INFO:Rotating Log:42 2 3
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : got callback 34
+Dec 03 17:10:37 : got callback 33
+INFO:Rotating Log:got callback 34
+Dec 03 17:10:37 : 43 2 3
+INFO:Rotating Log:got callback 33
+Dec 03 17:10:37 : Ura
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:43 2 3
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : 44 2 3
+INFO:Rotating Log:Ura
+INFO:Rotating Log:44 2 3
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : Ura
+INFO:Rotating Log:Ura
+Dec 03 17:10:37 : got callback 36
+Dec 03 17:10:37 : got callback 35
+Dec 03 17:10:37 : got callback 37
+INFO:Rotating Log:got callback 36
+Dec 03 17:10:37 : got callback 39
+INFO:Rotating Log:got callback 35
+Dec 03 17:10:37 : got callback 38
+Dec 03 17:10:37 : 45 2 3
+INFO:Rotating Log:got callback 37
+Dec 03 17:10:37 : 46 2 3
+INFO:Rotating Log:got callback 39
+Dec 03 17:10:37 : 47 2 3
+INFO:Rotating Log:got callback 38
+Dec 03 17:10:37 : 48 2 3
+Dec 03 17:10:37 : 49 2 3
+INFO:Rotating Log:45 2 3
+INFO:Rotating Log:46 2 3
+INFO:Rotating Log:47 2 3
+INFO:Rotating Log:48 2 3
+INFO:Rotating Log:49 2 3
+Dec 03 17:14:00 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 17:14:00 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 17:14:00 : 1 2 3
+Dec 03 17:14:00 : 2 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 17:14:00 : 3 2 3
+Dec 03 17:14:00 : 4 2 3
+INFO:Rotating Log:2 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 17:14:00 : 5 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 17:14:00 : 6 2 3
+Dec 03 17:14:00 : 7 2 3
+INFO:Rotating Log:5 2 3
+INFO:Rotating Log:7 2 3
+INFO:Rotating Log:6 2 3
+Dec 03 17:14:00 : 8 2 3
+INFO:Rotating Log:8 2 3
+Dec 03 17:14:00 : 9 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 17:14:16 : Created executor concurrency_lvl : 10
+
+INFO:Rotating Log:Created executor concurrency_lvl : 10
+
+Dec 03 17:14:16 : 0 2 3
+INFO:Rotating Log:0 2 3
+Dec 03 17:14:16 : 1 2 3
+INFO:Rotating Log:1 2 3
+Dec 03 17:14:16 : 2 2 3
+INFO:Rotating Log:2 2 3
+Dec 03 17:14:16 : 3 2 3
+INFO:Rotating Log:3 2 3
+Dec 03 17:14:16 : 4 2 3
+Dec 03 17:14:16 : 5 2 3
+INFO:Rotating Log:4 2 3
+Dec 03 17:14:16 : 6 2 3
+INFO:Rotating Log:5 2 3
+Dec 03 17:14:16 : 7 2 3
+Dec 03 17:14:16 : 8 2 3
+INFO:Rotating Log:6 2 3
+INFO:Rotating Log:7 2 3
+Dec 03 17:14:16 : 9 2 3
+INFO:Rotating Log:8 2 3
+INFO:Rotating Log:9 2 3
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : None
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+INFO:Rotating Log:None
+Dec 03 17:14:18 : Exception happened : Bad thing happened
+Dec 03 17:14:18 : None
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : None
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : None
+Dec 03 17:14:18 : None
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:18 : None
+Dec 03 17:14:18 : None
+INFO:Rotating Log:None
+Dec 03 17:14:18 : got callback 0
+INFO:Rotating Log:None
+Dec 03 17:14:18 : None
+INFO:Rotating Log:None
+Dec 03 17:14:18 : None
+INFO:Rotating Log:None
+Dec 03 17:14:18 : None
+INFO:Rotating Log:None
+Dec 03 17:14:18 : got callback 4
+Dec 03 17:14:18 : got callback 1
+Dec 03 17:14:18 : got callback 2
+INFO:Rotating Log:None
+Dec 03 17:14:18 : got callback 3
+INFO:Rotating Log:got callback 0
+Dec 03 17:14:18 : got callback 5
+INFO:Rotating Log:None
+Dec 03 17:14:18 : got callback 6
+Dec 03 17:14:18 : 10 2 3
+INFO:Rotating Log:None
+Dec 03 17:14:18 : got callback 8
+INFO:Rotating Log:None
+Dec 03 17:14:18 : got callback 7
+INFO:Rotating Log:got callback 4
+Dec 03 17:14:18 : got callback 9
+INFO:Rotating Log:got callback 1
+INFO:Rotating Log:got callback 2
+INFO:Rotating Log:got callback 3
+INFO:Rotating Log:got callback 5
+Dec 03 17:14:18 : 11 2 3
+Dec 03 17:14:18 : 12 2 3
+INFO:Rotating Log:got callback 6
+Dec 03 17:14:18 : 13 2 3
+Dec 03 17:14:18 : 14 2 3
+INFO:Rotating Log:10 2 3
+Dec 03 17:14:18 : 15 2 3
+Dec 03 17:14:18 : 16 2 3
+INFO:Rotating Log:got callback 8
+Dec 03 17:14:18 : 17 2 3
+INFO:Rotating Log:got callback 7
+Dec 03 17:14:18 : 18 2 3
+INFO:Rotating Log:got callback 9
+Dec 03 17:14:18 : 19 2 3
+INFO:Rotating Log:11 2 3
+INFO:Rotating Log:12 2 3
+INFO:Rotating Log:13 2 3
+INFO:Rotating Log:14 2 3
+INFO:Rotating Log:15 2 3
+INFO:Rotating Log:16 2 3
+INFO:Rotating Log:17 2 3
+INFO:Rotating Log:18 2 3
+INFO:Rotating Log:19 2 3
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : None
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:None
+Dec 03 17:14:20 : got callback 10
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:got callback 10
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : None
+INFO:Rotating Log:None
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : 20 2 3
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:20 : None
+INFO:Rotating Log:20 2 3
+Dec 03 17:14:20 : None
+INFO:Rotating Log:None
+Dec 03 17:14:20 : None
+INFO:Rotating Log:None
+Dec 03 17:14:20 : None
+INFO:Rotating Log:None
+Dec 03 17:14:20 : None
+INFO:Rotating Log:None
+Dec 03 17:14:20 : got callback 13
+INFO:Rotating Log:None
+Dec 03 17:14:20 : None
+INFO:Rotating Log:got callback 13
+INFO:Rotating Log:None
+Dec 03 17:14:20 : None
+INFO:Rotating Log:None
+Dec 03 17:14:20 : None
+Dec 03 17:14:20 : got callback 11
+INFO:Rotating Log:None
+Dec 03 17:14:20 : got callback 15
+Dec 03 17:14:20 : got callback 14
+Dec 03 17:14:20 : got callback 18
+INFO:Rotating Log:got callback 11
+INFO:Rotating Log:got callback 15
+INFO:Rotating Log:got callback 14
+Dec 03 17:14:20 : got callback 12
+Dec 03 17:14:20 : 21 2 3
+INFO:Rotating Log:got callback 18
+INFO:Rotating Log:got callback 12
+INFO:Rotating Log:21 2 3
+Dec 03 17:14:20 : got callback 16
+INFO:Rotating Log:got callback 16
+Dec 03 17:14:20 : got callback 17
+Dec 03 17:14:20 : got callback 19
+INFO:Rotating Log:got callback 17
+INFO:Rotating Log:got callback 19
+Dec 03 17:14:20 : 22 2 3
+Dec 03 17:14:20 : 23 2 3
+INFO:Rotating Log:22 2 3
+INFO:Rotating Log:23 2 3
+Dec 03 17:14:20 : 24 2 3
+INFO:Rotating Log:24 2 3
+Dec 03 17:14:20 : 25 2 3
+INFO:Rotating Log:25 2 3
+Dec 03 17:14:20 : 26 2 3
+INFO:Rotating Log:26 2 3
+Dec 03 17:14:20 : 27 2 3
+INFO:Rotating Log:27 2 3
+Dec 03 17:14:20 : 28 2 3
+Dec 03 17:14:20 : 29 2 3
+INFO:Rotating Log:28 2 3
+INFO:Rotating Log:29 2 3
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : None
+INFO:Rotating Log:None
+Dec 03 17:14:22 : got callback 20
+INFO:Rotating Log:got callback 20
+Dec 03 17:14:22 : 30 2 3
+INFO:Rotating Log:30 2 3
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : None
+INFO:Rotating Log:None
+Dec 03 17:14:22 : got callback 21
+INFO:Rotating Log:got callback 21
+Dec 03 17:14:22 : 31 2 3
+INFO:Rotating Log:31 2 3
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+Dec 03 17:14:22 : None
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+INFO:Rotating Log:None
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+Dec 03 17:14:22 : Exception happened : Bad thing happened
+INFO:Rotating Log:Exception happened : Bad thing happened
+Dec 03 17:14:22 : None
+INFO:Rotating Log:Exception happened : Bad thing happened
+INFO:Rotating Log:None
+Dec 03 17:14:22 : None
+INFO:Rotating Log:None
+Dec 03 17:14:22 : None
+INFO:Rotating Log:None
+Dec 03 17:14:22 : got callback 22
+Dec 03 17:14:22 : None
+INFO:Rotating Log:got callback 22
+Dec 03 17:14:22 : None
+INFO:Rotating Log:None
+Dec 03 17:14:22 : None
+INFO:Rotating Log:None
+Dec 03 17:14:22 : None
+INFO:Rotating Log:None
+INFO:Rotating Log:None
+Dec 03 17:14:22 : got callback 25
+Dec 03 17:14:22 : got callback 24
+INFO:Rotating Log:got callback 25
+INFO:Rotating Log:got callback 24
+Dec 03 17:14:22 : got callback 23
+INFO:Rotating Log:got callback 23
+Dec 03 17:14:22 : 32 2 3
+Dec 03 17:14:22 : got callback 26
+INFO:Rotating Log:32 2 3
+Dec 03 17:14:22 : got callback 27
+INFO:Rotating Log:got callback 26
+Dec 03 17:14:22 : got callback 29
+INFO:Rotating Log:got callback 27
+Dec 03 17:14:22 : got callback 28
+INFO:Rotating Log:got callback 29
+Dec 03 17:14:22 : 33 2 3
+INFO:Rotating Log:got callback 28
+Dec 03 17:14:22 : 34 2 3
+Dec 03 17:14:22 : 35 2 3
+INFO:Rotating Log:33 2 3
+INFO:Rotating Log:34 2 3
+Dec 03 17:14:22 : 36 2 3
+INFO:Rotating Log:35 2 3
+Dec 03 17:14:22 : 37 2 3
+INFO:Rotating Log:36 2 3
+Dec 03 17:14:22 : 38 2 3
+INFO:Rotating Log:37 2 3
+Dec 03 17:14:22 : 39 2 3
+INFO:Rotating Log:38 2 3
+INFO:Rotating Log:39 2 3

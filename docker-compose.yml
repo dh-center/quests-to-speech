@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  quest_to_speech:
+    restart: always
+    image: 'dh-center/quest_to_speech:1.0'
+    ports:
+      - 8090:8081 # predefined in Dockerfile
+    volumes:
+      - ./tmp:/usr/src/app/data-folder

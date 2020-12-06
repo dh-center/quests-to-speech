@@ -27,7 +27,7 @@ DATA_FOLDER = "data-folder"
 
 CONFIG = __Config(
     # Server
-    port_number=8080,
+    port_number=os.environ.get('CONTAINER_APP_PORT', default=8080),
     # Folders
     data_folder=DATA_FOLDER,
     mp3_location=os.path.join(DATA_FOLDER, "mp3"),
