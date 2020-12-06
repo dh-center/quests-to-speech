@@ -1,5 +1,5 @@
 class YandexConfig:
-    _AM_TOKEN = "t1.9euelZqOmJ7Mlp3Jm5rHk56PkZGViu3rnpWax8eLjpnLzsmcnZ3PyI2Zlpnl8_dNPksB-u8_QBY2_t3z9w1tSAH67z9AFjb-.biw-uouvfcZOMUHZ5AZDSF2-mo4eNF_wCnsS1t4AZG0SnBzAxeSUcjWQvEJXYevDnUY-NeVjcsI11AV8Hp1ZBw"
+    _AM_TOKEN = ""
     _FOLDER_ID = "b1gof8ni37m9mdsnkabm"
     _VOICE = "filipp",
     _EMOTION = "good"
