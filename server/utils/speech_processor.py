@@ -35,9 +35,6 @@ class YandexSpeechKitProcessor(SpeechProcessor):
             AudioSegment.from_file(
                 tmp_file_path, channels=1, sample_width=2, frame_rate=48000
             ).export(mp3_file_path, format="mp3")
-        except Exception as exp:
-            log_error(f"Exception happened on Yandex speech making {exp}")
-            return False, ""
         finally:
             if os.path.isfile(tmp_file_path):
                 os.remove(tmp_file_path)

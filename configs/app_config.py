@@ -34,7 +34,7 @@ CONFIG = __Config(
     # Executor
     concurrency_lvl=10,
     # Mp3 server
-    socket_write_chunk_size=4 * 1024,  # memory page size
+    socket_write_chunk_size=4 * 1024 * 1024,
     # Storage
     clean_storage_interval=30,
     file_parts_separator="$$",

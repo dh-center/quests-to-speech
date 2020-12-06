@@ -6,6 +6,7 @@ from configs.app_config import CONFIG
 from server.utils.logger import log, log_exception, log_error
 from server.utils.mp3_storage import StorageValue
 from server.utils.speech_processor import CURRENT_PROCESSOR
+from server.utils.yandex_speech.yandex_speech_processor import YandexApiException
 
 EXECUTOR = ThreadPoolExecutor(CONFIG.concurrency_lvl)
 log(f"Created executor concurrency_lvl : {CONFIG.concurrency_lvl}\n")
@@ -38,6 +39,9 @@ def route_to_audio_task(value: StorageValue, route_id: str, text: str, text_hash
         value.file_name = file_name
         value.state = StorageValue.STATE_DONE
         log(f"Result: {res} {task_info} done (file: {file_name})")
+    except YandexApiException as exp:
+        log_error(f"{task_info} broken on Yandex API, exception {exp}")
+        value.state = StorageValue.STATE_BROKEN
     except Exception as exp:
         log_error(f"{task_info} broken, exception {exp}")
         value.state = StorageValue.STATE_BROKEN

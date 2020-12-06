@@ -129,7 +129,7 @@ class Mp3Storage:
     def clear_tmp_files():
         log("Clear tmp files...")
         for file_name in os.listdir(CONFIG.data_folder):
-            if file_name.startswith('tmp'):
+            if file_name.startswith('tmp') and file_name.endswith(".raw"):
                 delete_tmp_file(file_name)
                 log(f"tmp file removed {file_name}")
         log("Clear tmp files finished")
