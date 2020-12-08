@@ -6,11 +6,13 @@ import server.utils.task_executor as executor
 from configs.app_config import CONFIG
 from configs.yandex_speech_kit_config import YandexConfig
 from server.controllers.controllers_utils import HTTP_BAD_REQUEST, FIELD_ROUTE_JSON, FIELD_ROUTE_ID, \
-    check_json_data, HTTP_OK, HTTP_CREATED, HTTP_NOT_FOUND, FIELD_TOKEN
-from server.utils.logger import log
+    check_json_data, HTTP_OK, HTTP_CREATED, HTTP_NOT_FOUND, FIELD_YANDEX_PASSPORT_TOKEN, \
+    FIELD_YANDEX_FOLDER_ID
+from server.utils.logger import log, log_error
 from server.utils.mp3_storage import MP3_STORAGE
 from server.utils.speech_processor import CURRENT_PROCESSOR
 from server.utils.text_hashing import hash_text
+from server.utils.token_renewal import renew_token
 
 
 def prepare_api_response(handler: BaseHTTPRequestHandler, status: int, msg: Union[str, Dict] = None):
@@ -98,11 +100,18 @@ class SetYandexToken(ApiMethod):
 
     def __call__(self, handler: BaseHTTPRequestHandler, json_data):
         # check request
-        error_msg = check_json_data(json_data, [FIELD_TOKEN])
+        error_msg = check_json_data(json_data, [FIELD_YANDEX_PASSPORT_TOKEN, FIELD_YANDEX_FOLDER_ID])
         if error_msg:
             return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
 
-        am_token = json_data[FIELD_TOKEN]
-        YandexConfig.set_am_token(am_token)
-        log(f"Yandex token reset {am_token}")
-        return prepare_api_response(handler, HTTP_OK, "TOKEN_SET")
+        passport_token = json_data[FIELD_YANDEX_PASSPORT_TOKEN]
+        folder_id = json_data[FIELD_YANDEX_FOLDER_ID]
+        YandexConfig.set_passport_token(passport_token)
+        YandexConfig.set_folder_id(folder_id)
+        log(f"Yandex passport token : {passport_token} and folder id reset {folder_id}")
+        try:
+            renew_token()
+        except Exception as exp:
+            log_error(f"Can not authenticated in Yandex {exp}")
+            return prepare_api_response(handler, HTTP_OK, "NOT AUTHENTICATED")
+        return prepare_api_response(handler, HTTP_OK, "AUTHENTICATED")

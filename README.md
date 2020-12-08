@@ -40,10 +40,12 @@ Stack:
 #### /set_yandex_token (POST) with request body
 ```json
 {
-  "token": "<iam_token>"
+  "passport_token": "<passport_token>",
+  "folder_id": "<folder_id>"
 }
 ```
 
 ##### result:
-* **TOKEN_SET** (OK 200) - token set
+* **AUTHENTICATED** (OK 200)
+* **NOT AUTHENTICATED** (OK 200)
 * **BAD REQUEST** (BAD_REQUEST 400) - not know or malformed request

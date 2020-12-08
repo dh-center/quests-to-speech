@@ -8,7 +8,8 @@ HTTP_SERVICE_UNAVAILABLE = 503
 
 FIELD_ROUTE_JSON = 'route_json'
 FIELD_ROUTE_ID = 'route_id'
-FIELD_TOKEN = 'token'
+FIELD_YANDEX_PASSPORT_TOKEN = 'passport_token'
+FIELD_YANDEX_FOLDER_ID = 'folder_id'
 
 
 def check_json_data(json_data, fields: List[str]) -> str:

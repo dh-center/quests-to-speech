@@ -1,8 +1,14 @@
 class YandexConfig:
+    #  auth
     _AM_TOKEN = ""
-    _FOLDER_ID = "b1gof8ni37m9mdsnkabm"
+    _FOLDER_ID = ""
+    _yandexPassportOauthToken = ""
+
+    # voice settings
     _VOICE = "filipp",
     _EMOTION = "good"
+
+    TOKEN_RENEWAL_INTERVAL = 30 * 60  # 30 minutes
 
     @property
     def am_token(self):
@@ -15,6 +21,18 @@ class YandexConfig:
     @property
     def folder_id(self):
         return YandexConfig._FOLDER_ID
+
+    @staticmethod
+    def set_folder_id(foldr_id):
+        YandexConfig._FOLDER_ID = foldr_id
+
+    @property
+    def passport_token(self):
+        return YandexConfig._yandexPassportOauthToken
+
+    @staticmethod
+    def set_passport_token(passport_token):
+        YandexConfig._yandexPassportOauthToken = passport_token
 
     @property
     def voice(self):
