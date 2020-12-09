@@ -28,7 +28,7 @@ class FileDownloadHandler:
                 self.handler.send_response(HTTP_OK)
                 self.handler.send_header("Content-type", "audio/mpeg3")
                 self.handler.send_header("Content-length", str(size))
-                self.handler.send_header("Content-Disposition", f'filename="{served_file_name}.mp3"')
+                self.handler.send_header("Content-Disposition", f'filename="{served_file_name}"')
                 self.handler.end_headers()
                 while True:
                     block = file.read(CONFIG.socket_write_chunk_size)
