@@ -2,6 +2,10 @@ import json
 
 
 def merge_json(json_data, res: list = None):
+    """
+    :param json_data: json to join in one text (each block to be merged, should have key "text")
+    :return: merged json
+    """
     if res is None:
         res = []
     if isinstance(json_data, list):

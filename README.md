@@ -3,7 +3,7 @@
 Stack:
 * Python 3.8
 * `pip install requests pydub`
-* `sudo apt install ffmpeg`
+* `sudo apt install ffmpeg` or `brew install ffmpeg` for mac
 ------------------------------------------
 
 ### API:

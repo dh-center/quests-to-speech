@@ -2,3 +2,4 @@
 /venv/
 /.idea/
 /server/log.log*
+/**/*.log

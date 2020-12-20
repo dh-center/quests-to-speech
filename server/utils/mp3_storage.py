@@ -57,6 +57,10 @@ class Mp3Storage:
         self._rw_lock: RWLock = RWLock()
 
     def activate_storage(self):
+        """
+        Scans through CONFIG.mp3_location and creates dict of files (route_id -> file), where files' names are
+        represented as <route_id>$$<hash>$$created_time.mp3.
+        """
         log("Start storage activation...")
         try:
             self._rw_lock.writer_acquire()
@@ -85,9 +89,25 @@ class Mp3Storage:
 
     @property
     def is_activated(self):
+        """
+        :return: bool
+        activated or initialised storage, it means that the storage routine was activated and already scanned all
+        elements in catalog.
+        """
         return self._activated
 
     def get_or_create_value(self, key: str, text_hash: str) -> Tuple[bool, StorageValue]:
+        """
+        :param key: to retrieve value (route_id)
+        :param text_hash: to check  (to check that hashes the same)
+        :return: (isNewCreated, StorageValue)
+
+        The idea of this method is quite simple. Given route_id and hash of text method tries to get storageValue, but
+        doing it it takes into consideration two factors, the first that value could be broken somehow is_broken() true
+        (for example, ffmpeg has fallen) but we already have mapping, then we need to recreate value and cancel  future.
+        Or hashes of stored files are different, it could easily happen if user resubmitted file with the same route_id
+        but with another text, then we cancel the previous future and start new one (by creating storage element).
+        """
         value = self.get_value(key)
         if value and value.text_hash == text_hash and not value.is_broken():
             return False, value
@@ -105,6 +125,10 @@ class Mp3Storage:
             self._rw_lock.writer_release()
 
     def get_value(self, key: str) -> StorageValue:
+        """
+        :param key:  route_id to get value by
+        :return: StorageValue if there is mapping, or None otherwise
+        """
         try:
             self._rw_lock.reader_acquire()
             return self._storage_dict.get(key, None)
@@ -112,6 +136,9 @@ class Mp3Storage:
             self._rw_lock.reader_release()
 
     def get_all_keys_in_use(self) -> Tuple[list, float]:
+        """
+        :return: returns all keys in use
+        """
         try:
             self._rw_lock.reader_acquire()
             return list(self._storage_dict.keys()), time.time()
@@ -119,6 +146,9 @@ class Mp3Storage:
             self._rw_lock.reader_release()
 
     def get_dict_snapshot(self) -> Dict[str, StorageValue]:
+        """
+        :return: in time shallow copy of underlying dict
+        """
         try:
             self._rw_lock.reader_acquire()
             return {k: v for k, v in self._storage_dict.items()}
@@ -127,6 +157,9 @@ class Mp3Storage:
 
     @staticmethod
     def clear_tmp_files():
+        """
+        Removes all temp files used for program.
+        """
         log("Clear tmp files...")
         for file_name in os.listdir(CONFIG.data_folder):
             if file_name.startswith('tmp') and file_name.endswith(".raw"):

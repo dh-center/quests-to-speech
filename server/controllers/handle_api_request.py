@@ -1,15 +1,40 @@
+import functools
 import json
 from http.server import BaseHTTPRequestHandler
 
-from server.controllers.api_methods import RouteToAudio, GetTrackForRoute, prepare_api_response, SetYandexToken
+from server.controllers.api_methods import RouteToAudio, GetTrackForRoute, prepare_api_response, SetYandexToken, \
+    StringToAudio, ApiMethod
 from server.controllers.controllers_utils import HTTP_BAD_REQUEST
 from server.utils.logger import log, log_error
 
+# Mapping to another handler of endpoint query
 ROUTES = {
     "/get_track_for_route": GetTrackForRoute(),
     "/route_to_audio": RouteToAudio(),
     "/set_yandex_token": SetYandexToken(),
+    "/string_to_audio": StringToAudio(),
 }
+
+
+def request_mapping(request_url: str = ""):
+    if request_url == "":
+        raise ValueError("Provide request url!")
+    if request_url in ROUTES:
+        raise ValueError("Request url is already taken!")
+
+    def dec(func):
+        if func is None:
+            raise ValueError("callback! is None")
+        method = functools.wraps(func)(ApiMethod())
+        method._to_replace = func
+        ROUTES[request_url] = method
+
+    return dec
+
+
+@request_mapping("/heart_beat")
+def heart_beat(handler: BaseHTTPRequestHandler, json_data):
+    return prepare_api_response(handler, 200, "heart_beat")
 
 
 class ApiHandler:

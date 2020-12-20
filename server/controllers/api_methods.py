@@ -7,7 +7,7 @@ from configs.app_config import CONFIG
 from configs.yandex_speech_kit_config import YandexConfig
 from server.controllers.controllers_utils import HTTP_BAD_REQUEST, FIELD_ROUTE_JSON, FIELD_ROUTE_ID, \
     check_json_data, HTTP_OK, HTTP_CREATED, HTTP_NOT_FOUND, FIELD_YANDEX_PASSPORT_TOKEN, \
-    FIELD_YANDEX_FOLDER_ID
+    FIELD_YANDEX_FOLDER_ID, FIELD_ROUTE_TEXT
 from server.utils.logger import log, log_error
 from server.utils.mp3_storage import MP3_STORAGE
 from server.utils.speech_processor import CURRENT_PROCESSOR
@@ -26,9 +26,47 @@ def prepare_api_response(handler: BaseHTTPRequestHandler, status: int, msg: Unio
 
 
 class ApiMethod:
+    def _to_replace(self, handler: BaseHTTPRequestHandler, json_data):
+        raise NotImplemented("")
 
     def __call__(self, handler: BaseHTTPRequestHandler, json_data):
-        raise NotImplemented("")
+        self._to_replace(handler, json_data)
+
+
+class StringToAudio(ApiMethod):
+    def __call__(self, handler: BaseHTTPRequestHandler, json_data):
+        # check request
+        error_msg = check_json_data(json_data, [FIELD_ROUTE_ID, FIELD_ROUTE_TEXT])
+        if error_msg:
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+
+        text = f"<p>{json_data[FIELD_ROUTE_TEXT]}</p>"
+        route_id = json_data[FIELD_ROUTE_ID]
+        log(f"For Route ID : {route_id} got {text}")
+
+        if not text:
+            error_msg = f"No text provided"
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+
+        if len(text) > CONFIG.text_length_limit:
+            error_msg = f"Too large text (> {CONFIG.text_length_limit} characters)"
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+
+        text_hash = hash_text(text)
+        (is_created, value) = MP3_STORAGE.get_or_create_value(route_id, text_hash)
+
+        # check for repeated requests
+        if not is_created:
+            if value.is_done():
+                return prepare_api_response(handler, HTTP_OK, "ALREADY_DONE")
+            elif value.is_processed():
+                return prepare_api_response(handler, HTTP_CREATED, "ALREADY_HAVE_TASK")
+
+        value.future = executor.submit(
+            executor.route_to_audio_task, executor.route_to_audio_callback, value, route_id, text, text_hash
+        )
+
+        return prepare_api_response(handler, HTTP_OK, "OK")
 
 
 class RouteToAudio(ApiMethod):
