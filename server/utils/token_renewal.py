@@ -22,8 +22,8 @@ def renew_token():
 
 
 def token_renewal_task():
+    prev_run = 0
     while True:
-        prev_run = 0
         now = time.time()
         try:
             passport_token = YANDEX_CONFIG.passport_token
