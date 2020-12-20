@@ -95,7 +95,7 @@ def request_mapping(request_url: str = ""):
 
     def dec(func):
         if func is None:
-            raise ValueError("callback! is None")
+            raise ValueError("callback is None!")
         method = functools.wraps(func)(ApiMethod())
         method._to_replace = func
         ROUTES[request_url] = method
