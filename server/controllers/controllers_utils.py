@@ -18,6 +18,6 @@ def check_json_data(json_data, fields: List[str]) -> str:
     if not json_data or not isinstance(json_data, dict):
         return "Can not read passed json"
     for field in fields:
-        field_value = json_data[field]
+        field_value = json_data.get(field, None)
         if not field_value:
             return f"{field} is not passed"

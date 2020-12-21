@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "0bb65d0a-a731-4481-9d2b-940d7b94b709",
+		"name": "quest-to-speech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SSML to audio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"route_id\": \"555512346\",\n  \"route_text\": \"<speak> Вот несколько примеров использования SSML. Вы можете добавить в текст паузу любой длины:<break time=\\\"2s\\\"/> та-дааам! Или разметить текст на параграфы и предложения.Паузы между параграфами длиннее. <p><s>Первое предложение</s><s>Второе предложение</s></p> А еще вы можете подменять фразы. Например, чтобы произносить аббревиатуры и <sub alias=\\\"тому подобное\\\">т.п.</sub> </speak>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/route_to_audio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"route_to_audio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Route JSON to audio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"route_id\": \"5555\",\n  \"route_json\": {\n  \"_id\": \"5fcf58bc16597a98c20f32bd\",\n  \"name\": \"Тест: Знаешь ли ты Маяковского?\",\n  \"description\": \"Прогуляйся по значимым местам для Владимира Маяковского и проверь насколько хорошо ты его знаешь !\",\n  \"type\": \"QUIZ\",\n  \"data\": {\n    \"time\": \"2020-12-08T11:25:14.216Z\",\n    \"blocks\": [\n      {\n        \"type\": \"locationInstance\",\n        \"data\": {\n          \"locationInstanceId\": \"TG9jYXRpb25JbnN0YW5jZTo1ZmNmNTQ0MTE2NTk3YTUwYzEwZjMyYmI=\"\n        }\n      },\n      {\n        \"type\": \"test\",\n        \"data\": {\n          \"question\": \"Как называл Маяковский упадочное настроение среди молодежи?\",\n          \"answers\": [\n            \"Солжиница;\",\n            \"Есенищина;\",\n            \"Гумильвица;\",\n            \"Сологубщина.\"\n          ],\n          \"correctAnswerIndex\": 1,\n          \"rightAnswerMessage\": \"Да! Правильный ответ - Есенищина .  Причина образования слова - противостояние Есенина и Маяковского. \",\n          \"wrongAnswerMessage\": \"Упс, неверно.. Правильный ответ - Есенищина .  Причина образования слова - противостояние Есенина и Маяковского. \"\n        }\n      },\n      {\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"Маяковский глубоко осуждал Есенина, в частности, за его меланхоличные мысли:\"\n        }\n      },\n      {\n        \"type\": \"quote\",\n        \"data\": {\n          \"text\": \"\\\"По вопросу об есенинщине я пропагандирует, конечно, что Есенин сам по себе не так страшен и не мог бы быть так страшен, как есенинщина. Противодействие пропагандистам Есенина против Есенина самого, как он есть\\\".\",\n          \"caption\": \"http://feb-web.ru/feb/litnas/texts/l65/m65-043-.htm?cmd=p#%D0%9F%D1%80%D0%B8%D0%BC%D0%B5% D1% 87% D0% B0% D0% BD% D0% B8% D1% 8F.6\",\n          \"alignment\": \"left\"\n        }\n      },\n      {\n        \"type\": \"locationInstance\",\n        \"data\": {\n          \"locationInstanceId\": \"TG9jYXRpb25JbnN0YW5jZTo1ZmNmNTliYzE2NTk3YTI4MGQwZjMyYmY=\"\n        }\n      },\n      {\n        \"type\": \"test\",\n        \"data\": {\n          \"question\": \"Какая птица нравилась Маяковскому?\",\n          \"answers\": [\n            \"Попугаи\",\n            \"Скворцы\",\n            \"Канарейки\",\n            \"Куры\"\n          ],\n          \"correctAnswerIndex\": 2,\n          \"rightAnswerMessage\": \"Верно! Правильный ответ - Канареек. \",\n          \"wrongAnswerMessage\": \"Почти! Правильный ответ - Канареек. \"\n        }\n      },\n      {\n        \"type\": \"quote\",\n        \"data\": {\n          \"text\": \"Мать Маяковского воспоминала: \\\"в окне комнаты, где занимался Володя, висела клетка с канарейкой. Володя с грустью посматривал на нее, так как до этого видел только свободно летающих птиц\\\"\",\n          \"caption\": \"&nbsp; http://mayakovskiy.lit-info.ru/mayakovskiy/vospominaniya/sovremenniki/mayakovskaya-detstvo-i-yunost.htm\",\n          \"alignment\": \"left\"\n        }\n      },\n      {\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"Позже (примерно конец 1920 - начало 1921 года) Маяковский подарил Канарейку Брикам (на водопьяновый переулок). В этот же приод времени вышло его стихотворение «О дряни»\"\n        }\n      },\n      {\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"Скорее\"\n        }\n      },\n      {\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"головы канарейкам сверните -\"\n        }\n      },\n      {\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"чтоб коммунизм\"\n        }\n      },\n      {\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"канарейками не был побит! »\"\n        }\n      },\n      {\n        \"type\": \"locationInstance\",\n        \"data\": {\n          \"locationInstanceId\": \"TG9jYXRpb25JbnN0YW5jZTo1ZmNmNWM1ZjE2NTk3YTE2NzgwZjMyYzE=\"\n        }\n      },\n      {\n        \"type\": \"test\",\n        \"data\": {\n          \"question\": \"Как были расположены сроки у Маяковского?\",\n          \"answers\": [\n            \"столбиком \",\n            \"в строчку \",\n            \"лесенкой \",\n            \"хаотично \"\n          ],\n          \"correctAnswerIndex\": 2,\n          \"rightAnswerMessage\": \"Конечно же лесенкой !  Ступенчатое расположение стихотворной строки стало настоящей визитной карточкой Маяковского.\",\n          \"wrongAnswerMessage\": \"Не правильно ! Ступенчатое расположение стихотворной строки стало настоящей визитной карточкой Маяковского.\"\n        }\n      },\n      {\n        \"type\": \"paragraph\",\n        \"data\": {\n          \"text\": \"Обращение Маяковского к лесенке (с которой он имеет так и не расстался) может быть датировано точность до месяца: сохранились беловые рукописи поэмы «Про это»: в первом тексте записан столбиком, большая часть второй (она датирована 11 февраля 1923 года) - лесенкой. Можно сказать, что если для Белого найденная им лесенка служила графическим приемом оформления текста, то у Маяковского она действительно превратилась в основополагающий поэтический принцип, сформулированный в статье «Как делать стихи?»:\"\n        }\n      }\n    ]\n  }\n}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/route_to_audio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"route_to_audio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get track for route",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"route_id\": \"5555\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/get_track_for_route",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get_track_for_route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Yandex token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"passport_token\": \"AgAAAAAFX7CiAATuwRH7MOEI70a0iroOGkoM724\",\n  \"folder_id\": \"b1gof8ni37m9mdsnkabm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/set_yandex_token",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"set_yandex_token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

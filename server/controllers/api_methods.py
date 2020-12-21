@@ -33,62 +33,27 @@ class ApiMethod:
         self._to_replace(handler, json_data)
 
 
-class StringToAudio(ApiMethod):
-    def __call__(self, handler: BaseHTTPRequestHandler, json_data):
-        # check request
-        error_msg = check_json_data(json_data, [FIELD_ROUTE_ID, FIELD_ROUTE_TEXT])
-        if error_msg:
-            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
-
-        text = f"<p>{json_data[FIELD_ROUTE_TEXT]}</p>"
-        route_id = json_data[FIELD_ROUTE_ID]
-        log(f"For Route ID : {route_id} got {text}")
-
-        if not text:
-            error_msg = f"No text provided"
-            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
-
-        if len(text) > CONFIG.text_length_limit:
-            error_msg = f"Too large text (> {CONFIG.text_length_limit} characters)"
-            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
-
-        text_hash = hash_text(text)
-        (is_created, value) = MP3_STORAGE.get_or_create_value(route_id, text_hash)
-
-        # check for repeated requests
-        if not is_created:
-            if value.is_done():
-                return prepare_api_response(handler, HTTP_OK, "ALREADY_DONE")
-            elif value.is_processed():
-                return prepare_api_response(handler, HTTP_CREATED, "ALREADY_HAVE_TASK")
-
-        value.future = executor.submit(
-            executor.route_to_audio_task, executor.route_to_audio_callback, value, route_id, text, text_hash
-        )
-
-        return prepare_api_response(handler, HTTP_OK, "OK")
-
-
 class RouteToAudio(ApiMethod):
     def __call__(self, handler: BaseHTTPRequestHandler, json_data):
         # check request
-        error_msg = check_json_data(json_data, [FIELD_ROUTE_ID, FIELD_ROUTE_JSON])
-        if error_msg:
+        error_msg1 = check_json_data(json_data, [FIELD_ROUTE_ID, FIELD_ROUTE_JSON])
+        error_msg2 = check_json_data(json_data, [FIELD_ROUTE_ID, FIELD_ROUTE_TEXT])
+        if error_msg1 and error_msg2:
+            error_msg = f"Please provide fields {FIELD_ROUTE_ID} and ({FIELD_ROUTE_JSON} or {FIELD_ROUTE_TEXT})"
             return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
-
-        route_json = json_data[FIELD_ROUTE_JSON]
-        if not isinstance(route_json, dict):
-            error_msg = "Invalid route_json"
-            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
-
-        text = CURRENT_PROCESSOR.get_json_merger()(route_json)
 
         route_id = json_data[FIELD_ROUTE_ID]
-        log(f"For Route ID : {route_id} got {route_json} and merged it to :\n {text}")
-
-        if not text:
-            error_msg = f"No text provided"
-            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+        text = json_data.get(FIELD_ROUTE_TEXT, None)
+        if text:
+            if not isinstance(text, str):
+                return prepare_api_response(handler, HTTP_BAD_REQUEST, "Invalid route_text")
+            log(f"For Route ID : {route_id} got {text}")
+        else:
+            route_json = json_data[FIELD_ROUTE_JSON]
+            if not isinstance(route_json, dict):
+                return prepare_api_response(handler, HTTP_BAD_REQUEST, "Invalid route_json")
+            text = CURRENT_PROCESSOR.get_json_merger()(route_json)
+            log(f"For Route ID : {route_id} got {route_json} and merged it to :\n {text}")
 
         if len(text) > CONFIG.text_length_limit:
             error_msg = f"Too large text (> {CONFIG.text_length_limit} characters)"

@@ -6,7 +6,8 @@ Stack:
 * `sudo apt install ffmpeg` or `brew install ffmpeg` for mac
 ------------------------------------------
 
-### API:
+### API: 
+(Check `quest-to-speech-examples.postman_collection.json` at postman)
 #### /get_track_for_route (POST) with request body
 ```json
 {
@@ -28,7 +29,13 @@ Stack:
     "route_json": {...}
 }
 ```
-
+или
+```json
+{
+    "route_id": "<string>",
+    "route_text": "ssml text goes here"
+}
+```
 ##### result:
 * **OK** (OK 200) - accepted task for processing
 * **ALREADY_DONE** (OK 200) - already have done task
