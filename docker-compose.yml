@@ -1,8 +1,10 @@
-version: '3.6'
+version: '3.9'
 services:
   quest_to_speech:
     restart: always
-    image: 'dh-center/quest_to_speech:1.0'
+    build:
+      dockerfile: Dockerfile
+      context: .
     ports:
       - 8090:8081 # predefined in Dockerfile
     volumes:

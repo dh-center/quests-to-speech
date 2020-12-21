@@ -1,15 +1,12 @@
-FROM ubuntu:focal-20201106
+FROM python:3.9-buster
 
 WORKDIR /usr/src/app
 
-# install libs
-RUN apt-get -y update
-RUN apt-get -y upgrade
-RUN apt-get install -y ffmpeg
-RUN apt update -y
-RUN apt install -y python3.8
-RUN apt install -y python3-pip
-RUN pip3 install requests pydub
+RUN apt -y update
+RUN apt -y install ffmpeg
+
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
 ARG CONTAINER_APP_PORT_VAR=8081
 ENV CONTAINER_APP_PORT=$CONTAINER_APP_PORT_VAR
