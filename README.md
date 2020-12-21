@@ -56,3 +56,10 @@ Stack:
 * **AUTHENTICATED** (OK 200)
 * **NOT AUTHENTICATED** (OK 200)
 * **BAD REQUEST** (BAD_REQUEST 400) - not know or malformed request
+
+All api credentials can be specified in environment, Python will read them on application start:
+```
+_AM_TOKEN = os.environ.get('YANDEX_API_AM_TOKEN', '')
+_FOLDER_ID = os.environ.get('YANDEX_API_FOLDER_ID', '')
+_yandexPassportOauthToken = os.environ.get('YANDEX_API_PASSPORT_TOKEN', '')
+```

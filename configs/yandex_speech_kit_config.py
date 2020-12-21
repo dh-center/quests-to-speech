@@ -1,8 +1,11 @@
+import os
+
+
 class YandexConfig:
     #  auth
-    _AM_TOKEN = ""
-    _FOLDER_ID = ""
-    _yandexPassportOauthToken = ""
+    _AM_TOKEN = os.environ.get('YANDEX_API_AM_TOKEN', '')
+    _FOLDER_ID = os.environ.get('YANDEX_API_FOLDER_ID', '')
+    _yandexPassportOauthToken = os.environ.get('YANDEX_API_PASSPORT_TOKEN', '')
 
     # voice settings
     _VOICE = "filipp",

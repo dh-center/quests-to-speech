@@ -42,7 +42,7 @@ class ApiHandler:
 
     def handle(self):
         try:
-            api_method = ROUTES[self.handler.path]
+            api_method = ROUTES.get(self.handler.path, None)
             if not api_method:
                 return prepare_api_response(self.handler, HTTP_BAD_REQUEST)
             content_length = int(self.handler.headers['content-length'])
