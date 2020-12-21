@@ -68,7 +68,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"route_id\": \"5555\"\n}",
+					"raw": "{\n  \"route_id\": \"555512346\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -95,7 +95,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"passport_token\": \"AgAAAAAFX7CiAATuwRH7MOEI70a0iroOGkoM724\",\n  \"folder_id\": \"b1gof8ni37m9mdsnkabm\"\n}",
+					"raw": "{\n  \"passport_token\": \"your token\",\n  \"folder_id\": \"your folder id\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
