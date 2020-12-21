@@ -70,16 +70,59 @@ _Пример, когда что-то могло пойти не так:_
 
 Пусть я хочу обрабатывать не только json вариант, но и `string -> audio`, посмотрим, что мы должны поменять
 
-заходим в [ApiHandler](server/controllers/handle_api_request.py) и видим что есть mapping urls на обработчики, названный,
-`ROUTES` давайте наш назовем `string_to_audio` и добавим в список. После этого нам необходимо написать сам обработчик, для этого
-заходим в [api_methods](server/controllers/api_methods.py) и добавляем свой StringToAudio (это все), теперь делая запрос
-вида:
-`{
+заходим в [ApiHandler](server/controllers/handle_api_request.py) и видим что есть mapping urls на обработчики, названный 
+`ROUTES`, давайте наш назовем `string_to_audio` и добавим в список. После этого нам необходимо написать сам обработчик, для этого
+заходим в [api_methods](server/controllers/api_methods.py) и добавляем свой StringToAudio (это все).
+ 
+ ```python
+class StringToAudio(ApiMethod):
+    def __call__(self, handler: BaseHTTPRequestHandler, json_data):
+        # check request
+        error_msg = check_json_data(json_data, [FIELD_ROUTE_ID, FIELD_ROUTE_TEXT])
+        if error_msg:
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+
+        text = f"<p>{json_data[FIELD_ROUTE_TEXT]}</p>"
+        route_id = json_data[FIELD_ROUTE_ID]
+        log(f"For Route ID : {route_id} got {text}")
+
+        if not text:
+            error_msg = f"No text provided"
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+
+        if len(text) > CONFIG.text_length_limit:
+            error_msg = f"Too large text (> {CONFIG.text_length_limit} characters)"
+            return prepare_api_response(handler, HTTP_BAD_REQUEST, error_msg)
+
+        text_hash = hash_text(text)
+        (is_created, value) = MP3_STORAGE.get_or_create_value(route_id, text_hash)
+
+        # check for repeated requests
+        if not is_created:
+            if value.is_done():
+                return prepare_api_response(handler, HTTP_OK, "ALREADY_DONE")
+            elif value.is_processed():
+                return prepare_api_response(handler, HTTP_CREATED, "ALREADY_HAVE_TASK")
+
+        value.future = executor.submit(
+            executor.route_to_audio_task, executor.route_to_audio_callback, value, route_id, text, text_hash
+        )
+
+        return prepare_api_response(handler, HTTP_OK, "OK")`
+ ```
+ 
+ 
+теперь делая запрос вида:
+```json
+{
   "route_id": "123235",
   "route_text": "haha"
-}`
+}
+```
 
 будет выдаваться файл по id.
+
+-----
 
 Мы можем сделать, как в framework-ах по декоратору. А давайте собственно добавим это и сюда. 
 Напишем свой маленький декоратор, а потом создадим endpoint, который будет говорить, что сервис еще не выключен.
