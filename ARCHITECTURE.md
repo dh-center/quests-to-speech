@@ -74,7 +74,7 @@ _Пример, когда что-то могло пойти не так:_
 `ROUTES`, давайте наш назовем `string_to_audio` и добавим в список. После этого нам необходимо написать сам обработчик, для этого
 заходим в [api_methods](server/controllers/api_methods.py) и добавляем свой StringToAudio (это все).
  
- ```python
+```python
 class StringToAudio(ApiMethod):
     def __call__(self, handler: BaseHTTPRequestHandler, json_data):
         # check request

@@ -5,7 +5,7 @@ from typing import Tuple, Callable
 from pydub import AudioSegment
 
 from configs.app_config import CONFIG
-from server.utils.logger import log, log_error
+from server.utils.logger import log
 from server.utils.yandex_speech.json_merger import merge_json_to_text_for_yandex
 from server.utils.yandex_speech.yandex_speech_processor import synthesize
 
