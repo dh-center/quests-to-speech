@@ -5,6 +5,11 @@ from app_source.app_settings import settings
 from app_source.logger import log, log_error
 
 
+"""
+    This class represents storage value with file and its content hash function's value.
+    Hash function's value will be used for repetitive calls for the same route, as we will be able
+    to get that query has changed. 
+"""
 class StorageValue:
     def __init__(self, text_hash: str, file_name: str):
         self.text_hash: str = text_hash
@@ -24,7 +29,8 @@ class Mp3Storage:
 
     def activate_storage(self):
         """
-        Scans through CONFIG.mp3_location and creates dict of files
+        Scans through CONFIG.mp3_location and creates dict of files.
+        with abstractly route_id -> [text_hash, file_name] mapping
         """
         log("Start storage activation...")
         Mp3Storage.clear_tmp_files()
@@ -44,9 +50,17 @@ class Mp3Storage:
         return dict(**self._storage_dict)
 
     def get(self, route_id: str) -> Optional[StorageValue]:
+        """
+        :param route_id: to get StorageValue by
+        :return: StorageValue for this route_id or None if it is absent
+        """
         return self._storage_dict.get(route_id, None)
 
     def put(self, route_id: str, storage_value: StorageValue):
+        """
+        :param route_id: to put StorageValue by (as key)
+        :param storage_value:  to associate with given route_id (as value)
+        """
         prev_value = self._storage_dict.get(route_id, None)
         if prev_value:
             delete_mp3_file(prev_value.file_name)
