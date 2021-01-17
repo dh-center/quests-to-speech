@@ -10,8 +10,6 @@ RUN apt -y install ffmpeg
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-EXPOSE 8091
-
 # add working directory to source roots
 ENV PYTHONPATH="${PYTHONPATH}:/usr/src/app"
 
