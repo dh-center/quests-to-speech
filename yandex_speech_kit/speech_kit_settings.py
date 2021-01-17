@@ -1,6 +1,9 @@
 from pydantic import BaseSettings
 
 
+"""
+    Our specific settings for api, as a voice and an emotion.
+"""
 class YandexSpeechKitSettings(BaseSettings):
     #  auth
     am_token: str = "NOT_SET"

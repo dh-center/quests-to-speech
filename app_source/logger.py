@@ -40,14 +40,6 @@ def log(messages):
     __LOGGER.info(messages)
 
 
-# # print log
-# LOG_LOCK = threading.RLock()
-#
-# def log(*msg):
-#     with LOG_LOCK:
-#         print(*msg, sep=" : ")
-
-# exceptions handle decorator
 def log_exception(fun):
     @wraps(fun)
     def wrapper(*args, **kwargs):

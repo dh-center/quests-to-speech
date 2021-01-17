@@ -1,6 +1,5 @@
 import os
 import time
-from typing import Tuple
 
 import requests
 from pydub import AudioSegment
@@ -10,6 +9,12 @@ from yandex_speech_kit.speech_kit_settings import yandex_settings
 
 
 def create_speech_file(ssml_text: str, file_name: str) -> str:
+    """
+    Self explanatory by its signature, creates mp3 file from text and saves it in a file with specific name
+    :param ssml_text: to create mp3 file from
+    :param file_name: to save mp3 file with
+    :return: mp3_file_path to given file
+    """
     tmp_file_name = f"tmp-{time.time()}{file_name}.raw"
     tmp_file_path = os.path.join(settings.data_folder, tmp_file_name)
     try:
@@ -26,22 +31,16 @@ def create_speech_file(ssml_text: str, file_name: str) -> str:
             os.remove(tmp_file_path)
 
 
-# just for testing
-def dummy_create_speech_file(text: str, file_name: str) -> Tuple[bool, str]:
-    example_file_path = os.path.join(settings.data_folder, "file_example_MP3_1MG.mp3")
-    out_file_path = os.path.join(settings.mp3_location, file_name)
-    with open(example_file_path, 'rb') as example_file:
-        with open(out_file_path, 'wb') as out_file:
-            out_file.write(example_file.read())
-
-    return True, out_file_path
-
-
 class YandexApiException(RuntimeError):
     pass
 
 
 def synthesize(ssml_text):
+    """
+    This method makes api call to string -> mp3 file service provider, in the given case to yandex.
+    It will return generator of audio content bytes chunks, you can use to get resultant file.
+    :param ssml_text: text to synthesize
+    """
     folder_id = yandex_settings.folder_id
     iam_token = yandex_settings.am_token
     ssml_text = f"<speak>{ssml_text}</speak>"

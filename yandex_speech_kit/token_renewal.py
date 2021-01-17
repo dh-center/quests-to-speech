@@ -10,6 +10,9 @@ from yandex_speech_kit.speech_kit_settings import yandex_settings
 
 
 def renew_token():
+    """
+    renew token method, to refresh a token
+    """
     body = {"yandexPassportOauthToken": yandex_settings.yandex_passport_token}
     log(f"Try to renew Yandex token")
     response = requests.post(r'https://iam.api.cloud.yandex.net/iam/v1/tokens', json=body)
