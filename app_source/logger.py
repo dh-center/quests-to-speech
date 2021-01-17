@@ -9,6 +9,12 @@ from app_source.app_settings import settings
 
 BYTES_IN_MEGABYTE = (2 ** 20)
 
+if not os.path.isdir(settings.data_folder):
+    os.makedirs(settings.data_folder)
+file_handler = RotatingFileHandler(
+    os.path.join(settings.data_folder, 'app.log'), maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2
+)
+
 logging.basicConfig(filename=os.path.join(settings.data_folder, 'server.log'), level=logging.INFO)
 logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
@@ -17,11 +23,6 @@ formatter.converter = time.gmtime
 
 __LOGGER = logging.getLogger("Rotating Log")
 
-if not os.path.isdir(settings.data_folder):
-    os.makedirs(settings.data_folder)
-file_handler = RotatingFileHandler(
-    os.path.join(settings.data_folder, 'app.log'), maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2
-)
 file_handler.setFormatter(formatter)
 __LOGGER.addHandler(file_handler)
 

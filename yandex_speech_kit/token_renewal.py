@@ -14,7 +14,7 @@ def renew_token():
     log(f"Try to renew Yandex token")
     response = requests.post(r'https://iam.api.cloud.yandex.net/iam/v1/tokens', json=body)
     if response.status_code != 200:
-        raise YandexApiException(f"VK API exception {response.status_code} {response.content}")
+        raise YandexApiException(f"Yandex API exception {response.status_code} {response.content}")
     response_body = json.loads(response.content)
     yandex_settings.am_token = response_body['iamToken']
 
