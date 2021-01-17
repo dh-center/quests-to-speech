@@ -1,2 +1,7 @@
 requests
 pydub
+fastapi
+uvicorn[standard]
+pydantic
+aiofiles
+starlette
