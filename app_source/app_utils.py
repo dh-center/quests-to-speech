@@ -26,4 +26,3 @@ def route_to_audio(route_id: str, text: str, text_hash: str) -> str:
         raise RuntimeError(f"Sth went wrong {route_id}{file_name}")
     log(f"Result: {out_file_path} {task_info} done (file: {file_name})")
     return file_name
-

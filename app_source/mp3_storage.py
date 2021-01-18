@@ -5,12 +5,13 @@ from app_source.app_settings import settings
 from app_source.logger import log, log_error
 
 
-"""
-    This class represents storage value with file and its content hash function's value.
-    Hash function's value will be used for repetitive calls for the same route, as we will be able
-    to get that query has changed. 
-"""
 class StorageValue:
+    """
+        This class represents storage value with file and its content hash function's value.
+        Hash function's value will be used for repetitive calls for the same route, as we will be able
+        to get that query has changed.
+    """
+
     def __init__(self, text_hash: str, file_name: str):
         self.text_hash: str = text_hash
         self.file_name: str = file_name

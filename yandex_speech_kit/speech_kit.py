@@ -31,6 +31,17 @@ def create_speech_file(ssml_text: str, file_name: str) -> str:
             os.remove(tmp_file_path)
 
 
+# just for testing (use if yandex API is not available)
+def dummy_create_speech_file(ssml_text: str, file_name: str) -> str:
+    example_file_path = os.path.join(settings.data_folder, "file_example_MP3_1MG.mp3")
+    out_file_path = os.path.join(settings.mp3_location, file_name)
+    with open(example_file_path, 'rb') as example_file:
+        with open(out_file_path, 'wb') as out_file:
+            out_file.write(example_file.read())
+
+    return file_name
+
+
 class YandexApiException(RuntimeError):
     pass
 

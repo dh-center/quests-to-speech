@@ -1,10 +1,12 @@
 from pydantic import BaseSettings
 
 
-"""
-    Our specific settings for api, as a voice and an emotion.
-"""
+
+
 class YandexSpeechKitSettings(BaseSettings):
+    """
+        Specific settings for Yandex API, as a voice and an emotion.
+    """
     #  auth
     am_token: str = "NOT_SET"
     folder_id: str
