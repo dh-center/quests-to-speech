@@ -18,10 +18,10 @@ def get_file_name(route_id: str, text_hash: str) -> str:
     return f"{route_id}{sep}{text_hash}{sep}{now}.mp3"
 
 
-def route_to_audio(route_id: str, text: str, text_hash: str) -> str:
-    task_info = f"route_to_audio_task : {route_id}|{text_hash}|{text[:20]}"
+def route_to_audio(route_id: str, ssml_text: str, text_hash: str) -> str:
+    task_info = f"route_to_audio_task : {route_id}|{text_hash}|{ssml_text[:20]}"
     file_name = get_file_name(route_id, text_hash)
-    out_file_path = create_speech_file(text, file_name)
+    out_file_path = create_speech_file(ssml_text, file_name)
     if not out_file_path:
         raise RuntimeError(f"Sth went wrong {route_id}{file_name}")
     log(f"Result: {out_file_path} {task_info} done (file: {file_name})")

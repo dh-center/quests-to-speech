@@ -22,22 +22,22 @@ async def all_routes():
 
 class RouteToSpeechRequestBody(BaseModel):
     route_id: str
-    text: str
+    ssml_text: str
 
 
 @app.post("/route_to_speech")
 async def route_to_speech(request_body: RouteToSpeechRequestBody):
-    if len(request_body.text) > settings.text_length_limit:
-        return f"Too long text passed! (> {settings.text_length_limit})"
+    if len(request_body.ssml_text) > settings.text_length_limit:
+        return f"Too long ssml_text passed! (> {settings.text_length_limit})"
 
-    route_id, text = request_body.route_id, request_body.text
+    route_id, ssml_text = request_body.route_id, request_body.ssml_text
 
-    text_hash = hash_text(text)
+    text_hash = hash_text(ssml_text)
     storage_value = MP3_STORAGE.get(route_id)
     if storage_value is not None and storage_value.text_hash == text_hash:
         file_name = storage_value.file_name
     else:
-        file_name = route_to_audio(route_id, text, text_hash)
+        file_name = route_to_audio(route_id, ssml_text, text_hash)
         MP3_STORAGE.put(route_id, StorageValue(text_hash, file_name))
 
     return FileResponse(
