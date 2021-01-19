@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           tags: dhcenter/quest-to-speech:${{env.BRANCH_NAME}}
-          push: endsWith(github.ref, '/prod') || endsWith(github.ref, '/stage')
+          push: github.ref == 'refs/heads/stage'
 
       - name: Deploy stage
         if: github.ref == 'refs/heads/stage'
