@@ -22,12 +22,12 @@ jobs:
 
       - uses: nelonoel/branch-name@v1.0.1
 
-      - name: Build and push production image
+      - name: Build and push image
         uses: docker/build-push-action@v2
         with:
           context: .
           tags: dhcenter/quest-to-speech:${{env.BRANCH_NAME}}
-          push: github.ref == 'refs/heads/stage'
+          push: ${{ endsWith(github.ref, '/stage') }}
 
       - name: Deploy stage
         if: github.ref == 'refs/heads/stage'
