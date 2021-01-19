@@ -2,17 +2,23 @@ import os
 
 from pydantic import BaseSettings
 
-DATA_FOLDER = "data-folder"
+DATA_FOLDER_DEFAULT = "data-folder"
 
 
 class Settings(BaseSettings):
-    data_folder: str = DATA_FOLDER
-    mp3_location: str = os.path.join(DATA_FOLDER, "mp3")
-    text_length_limit: int = 500
-    file_parts_separator: str = r'$$'
+    """
+    App settings configuration class (based on .env file).
+    """
+    DATA_FOLDER: str = DATA_FOLDER_DEFAULT
+    # where mp3 files will be kept
+    MP3_LOCATION: str = os.path.join(DATA_FOLDER_DEFAULT, "mp3")
+    # max text length for a request
+    TEXT_LENGTH_LIMIT: int = 500
+    # file separator
+    FILE_PARTS_SEPARATOR: str = r'$$'
 
     class Config:
         env_file = ".env"
 
 
-settings = Settings()
+APP_SETTINGS = Settings()

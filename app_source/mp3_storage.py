@@ -1,15 +1,17 @@
 import os
 from typing import Dict, Optional
 
-from app_source.app_settings import settings
-from app_source.logger import log, log_error
+from app_source.app_settings import APP_SETTINGS
+from app_source.logger import LOGGER
 
 
 class StorageValue:
     """
-        This class represents storage value with file and its content hash function's value.
-        Hash function's value will be used for repetitive calls for the same route, as we will be able
-        to get that query has changed.
+        This class represents storage value with file
+        and its content hash function's value.
+        Hash function's value will be used for repetitive calls
+        for the same route, as we will be able
+        to get that the route has changed.
     """
 
     def __init__(self, text_hash: str, file_name: str):
@@ -24,6 +26,11 @@ class StorageValue:
 
 
 class Mp3Storage:
+    """
+    Main class which is responsible for saving and checking
+    that content was already processed.
+    """
+
     def __init__(self):
         self._storage_dict: Dict[str, StorageValue] = {}
         self._activated: bool = False
@@ -33,21 +40,24 @@ class Mp3Storage:
         Scans through CONFIG.mp3_location and creates dict of files.
         with abstractly route_id -> [text_hash, file_name] mapping
         """
-        log("Start storage activation...")
+        LOGGER.log("Start storage activation...")
         Mp3Storage.clear_tmp_files()
-        if not os.path.isdir(settings.mp3_location):
-            os.makedirs(settings.mp3_location)
-        for file_name in os.listdir(settings.mp3_location):
+        if not os.path.isdir(APP_SETTINGS.MP3_LOCATION):
+            os.makedirs(APP_SETTINGS.MP3_LOCATION)
+        for file_name in os.listdir(APP_SETTINGS.MP3_LOCATION):
             if not file_name.endswith('.mp3'):
                 continue
-            log(f"Found {file_name}")
+            LOGGER.log(f"Found {file_name}")
             cropped_name = file_name[:-4]  # crop .mp3 part
-            route_id, text_hash, created_time = cropped_name.split(settings.file_parts_separator)
+            route_id, text_hash, created_time = cropped_name.split(APP_SETTINGS.FILE_PARTS_SEPARATOR)
             self._storage_dict[route_id] = StorageValue(text_hash, file_name)
         self._activated = True
-        log("Storage activated.")
+        LOGGER.log("Storage activated.")
 
     def get_storage_dict(self) -> Dict[str, StorageValue]:
+        """
+        :return: dict with route_id -> StorageValue mapping
+        """
         return dict(**self._storage_dict)
 
     def get(self, route_id: str) -> Optional[StorageValue]:
@@ -64,7 +74,7 @@ class Mp3Storage:
         """
         prev_value = self._storage_dict.get(route_id, None)
         if prev_value:
-            delete_mp3_file(prev_value.file_name)
+            Mp3Storage.__delete_mp3_file(prev_value.file_name)
         self._storage_dict[route_id] = storage_value
 
     @staticmethod
@@ -72,26 +82,36 @@ class Mp3Storage:
         """
         Removes all temp files used for audio generation.
         """
-        log("Clear tmp files...")
-        for file_name in os.listdir(settings.data_folder):
+        LOGGER.log("Clear tmp files...")
+        for file_name in os.listdir(APP_SETTINGS.DATA_FOLDER):
             if file_name.startswith('tmp') and file_name.endswith(".raw"):
-                delete_tmp_file(file_name)
-                log(f"tmp file removed {file_name}")
-        log("Clear tmp files finished")
+                Mp3Storage.__delete_temp_file(file_name)
+                LOGGER.log(f"tmp file removed {file_name}")
+        LOGGER.log("Clear tmp files finished")
 
+    # private api (utils)
 
-def delete_tmp_file(file_path):
-    try:
-        os.remove(os.path.join(settings.data_folder, file_path))
-    except Exception as exp:
-        log_error(f"Exception happened during tmp file {file_path} removal : {exp}")
+    @staticmethod
+    def __delete_temp_file(file_name):
+        """
+        Convenience method to remove temp files from default storage.
+        :param file_name: file to be removed
+        """
+        try:
+            os.remove(os.path.join(APP_SETTINGS.DATA_FOLDER, file_name))
+        except Exception as exp:
+            LOGGER.log_error(f"Exception happened during tmp file {file_name} removal : {exp}")
 
-
-def delete_mp3_file(file_name):
-    try:
-        os.remove(os.path.join(settings.mp3_location, file_name))
-    except Exception as exp:
-        log_error(f"Exception happened during file {file_name} removal : {exp}")
+    @staticmethod
+    def __delete_mp3_file(file_name):
+        """
+        Convenience method to remove mp3 files.
+        :param file_name: file to be removed
+        """
+        try:
+            os.remove(os.path.join(APP_SETTINGS.MP3_LOCATION, file_name))
+        except Exception as exp:
+            LOGGER.log_error(f"Exception happened during mp3 file {file_name} removal : {exp}")
 
 
 MP3_STORAGE = Mp3Storage()
