@@ -3,3 +3,4 @@
 /.idea/
 /server/log.log*
 /**/*.log
+/.env
