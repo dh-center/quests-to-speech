@@ -9,3 +9,4 @@ services:
       - 8091:8000 # predefined in Dockerfile
     volumes:
       - ./tmp:/usr/src/app/data-folder
+      - ./.env:/usr/src/app/.env
