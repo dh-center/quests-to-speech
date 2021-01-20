@@ -41,30 +41,46 @@ json_merger = JsonMerger()
 if __name__ == '__main__':
     json_data = json.loads("""
 {
-  "time": 1607078179960,
-  "blocks": [
-    {
-      "type": "header",
-      "data": {
-        "text": "Editor.js",
-        "level": 2
+    "time": "2020-12-08T11:25:14.216Z",
+    "blocks": [
+      {
+        "type": "locationInstance",
+        "data": {
+          "locationInstanceId": "TG9jYXRpb25JbnN0YW5jZTo1ZmNmNTQ0MTE2NTk3YTUwYzEwZjMyYmI="
+        }
+      },
+      {
+        "type": "test",
+        "data": {
+          "text": "Как называл Маяковский упадочное настроение среди молодежи?",
+          "answers": [
+            "Солжиница;",
+            "Есенищина;",
+            "Гумильвица;",
+            "Сологубщина."
+          ],
+          "correctAnswerIndex": 1,
+          "rightAnswerMessage": "Да! Правильный ответ - Есенищина .  Причина образования слова - противостояние Есенина и Маяковского. ",
+          "wrongAnswerMessage": "Упс, неверно.. Правильный ответ - Есенищина .  Причина образования слова - противостояние Есенина и Маяковского. "
+        }
+      },
+      {
+        "type": "test",
+        "data": {
+          "text": "Как называл Маяковский упадочное настроение среди людей?",
+          "answers": [
+            "Солжиница;",
+            "Есенищина;",
+            "Гумильвица;",
+            "Сологубщина."
+          ],
+          "correctAnswerIndex": 1,
+          "rightAnswerMessage": "Да! Правильный ответ - Есенищина .  Причина образования слова - противостояние Есенина и Маяковского. ",
+          "wrongAnswerMessage": "Упс, неверно.. Правильный ответ - Есенищина .  Причина образования слова - противостояние Есенина и Маяковского. "
+        }
       }
-    },
-    {
-      "type": "paragraph",
-      "data": {
-        "text": "Hey. Meet the new Editor. On this page you can see it in action — try to edit this text."
-      }
-    },
-    {
-      "type": "header",
-      "data": {
-        "text": "Key features",
-        "level": 3
-      }
-    }
-  ]
+    ]
 }
-    """)
+""")
     print(json_data)
     print(JsonMerger.merge_json_to_text_for_yandex(json_data))
