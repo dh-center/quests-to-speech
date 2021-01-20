@@ -1,4 +1,5 @@
 import os
+from typing import Dict, Union
 
 import uvicorn
 from fastapi import FastAPI
@@ -7,6 +8,7 @@ from starlette.responses import FileResponse
 
 from app_source.app_settings import app_settings
 from app_source.app_utils import app_main_methods
+from app_source.json_paragraphs_merger import json_merger
 from app_source.logger import main_logger
 from app_source.mp3_storage import mp3_storage, StorageValue
 from yandex_speech_kit.token_renewal import token_renew
@@ -29,24 +31,30 @@ async def all_routes():
 
 class RouteToSpeechRequestBody(BaseModel):
     """
-    Main request entity with id of route and text
+       Main request entity with id of route and text
     """
     route_id: str
-    ssml_text: str
+    ssml_text: Union[Dict, str]
 
 
 @app.post("/route_to_speech")
 async def route_to_speech(request_body: RouteToSpeechRequestBody):
     """
-    :param request_body: route_id and text of route
+    :param request_body: route_id and text of route | or dict
     :return: audio file representation of given route
     """
-    if len(request_body.ssml_text) > app_settings.TEXT_LENGTH_LIMIT:
-        return f"Too long ssml_text passed! (> {app_settings.TEXT_LENGTH_LIMIT})"
+
+    ssml_text = ""
+    if isinstance(request_body.ssml_text, dict):
+        ssml_text = json_merger.merge_json_to_text_for_yandex(request_body.ssml_text)
+    else:
+        if len(request_body.ssml_text) > app_settings.TEXT_LENGTH_LIMIT:
+            return f"Too long ssml_text passed! (> {app_settings.TEXT_LENGTH_LIMIT})"
+        ssml_text = request_body.ssml_text
 
     main_logger.log(f"Got query in route to speech route_id: {request_body.route_id},"
-               f" ssml_text: {request_body.ssml_text}")
-    route_id, ssml_text = request_body.route_id, request_body.ssml_text
+                    f" ssml_text: {ssml_text}")
+    route_id = request_body.route_id
 
     text_hash = app_main_methods.hash_text(ssml_text)
     storage_value = mp3_storage.get(route_id)

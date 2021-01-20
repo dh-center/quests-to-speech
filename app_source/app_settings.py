@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     TEXT_LENGTH_LIMIT: int = 500
     # file separator
     FILE_PARTS_SEPARATOR: str = r'$$'
+    SET_KEY_WORDS: list = ["text"]
 
     class Config:
         env_file = ".env"
