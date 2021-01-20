@@ -2,11 +2,10 @@ import logging
 import os
 import sys
 import time
-from functools import wraps
 from logging import Logger
 from logging.handlers import RotatingFileHandler
 
-from app_source.app_settings import APP_SETTINGS
+from app_source.app_settings import app_settings
 
 BYTES_IN_MEGABYTE = (2 ** 20)
 
@@ -19,11 +18,11 @@ class AppLogger:
 
     def __init__(self):
         # initialise logger folder if it is needed
-        if not os.path.isdir(APP_SETTINGS.DATA_FOLDER):
-            os.makedirs(APP_SETTINGS.DATA_FOLDER)
+        if not os.path.isdir(app_settings.DATA_FOLDER):
+            os.makedirs(app_settings.DATA_FOLDER)
 
         # for the root logger (to separate server messages)
-        logging.basicConfig(filename=os.path.join(APP_SETTINGS.DATA_FOLDER, 'server.log'), level=logging.INFO,
+        logging.basicConfig(filename=os.path.join(app_settings.DATA_FOLDER, 'server.log'), level=logging.INFO,
                             format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
         # configure formatter
@@ -36,7 +35,7 @@ class AppLogger:
         # collect handlers
         self.handlers = []
         file_handler = RotatingFileHandler(
-            os.path.join(APP_SETTINGS.DATA_FOLDER, 'app.log'), maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2
+            os.path.join(app_settings.DATA_FOLDER, 'app.log'), maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2
         )
         console_handler = logging.StreamHandler(sys.stdout)
 
@@ -64,4 +63,4 @@ class AppLogger:
         self.main_logger.info(message)
 
 
-LOGGER = AppLogger()
+main_logger = AppLogger()

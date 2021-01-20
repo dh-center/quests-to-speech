@@ -1,9 +1,9 @@
 import hashlib
 import time
 
-from app_source.app_settings import APP_SETTINGS, Settings
-from app_source.logger import LOGGER
-from yandex_speech_kit.speech_kit import SPEECH_KIT_PROCESSOR, SpeechKit
+from app_source.app_settings import app_settings, Settings
+from app_source.logger import main_logger
+from yandex_speech_kit.speech_kit import speech_kit_processor, SpeechKit
 
 
 class AppMethods:
@@ -40,7 +40,7 @@ class AppMethods:
         out_file_path = self.speech_kit.create_speech_file(ssml_text, file_name)
         if not out_file_path:
             raise RuntimeError(f"Sth went wrong {route_id}{file_name}")
-        LOGGER.log(f"Result: {out_file_path} {task_info} done (file: {file_name})")
+        main_logger.log(f"Result: {out_file_path} {task_info} done (file: {file_name})")
         return file_name
 
     def __construct_file_name(self, route_id: str, text_hash: str) -> str:
@@ -54,4 +54,4 @@ class AppMethods:
         return f"{route_id}{sep}{text_hash}{sep}{now}.mp3"
 
 
-APP_MAIN_METHODS = AppMethods(SPEECH_KIT_PROCESSOR, APP_SETTINGS)
+app_main_methods = AppMethods(speech_kit_processor, app_settings)

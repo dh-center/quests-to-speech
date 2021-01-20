@@ -21,4 +21,4 @@ class Settings(BaseSettings):
         env_file = ".env"
 
 
-APP_SETTINGS = Settings()
+app_settings = Settings()

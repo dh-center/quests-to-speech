@@ -5,15 +5,15 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from starlette.responses import FileResponse
 
-from app_source.app_settings import APP_SETTINGS
-from app_source.app_utils import APP_MAIN_METHODS
-from app_source.logger import LOGGER
-from app_source.mp3_storage import MP3_STORAGE, StorageValue
+from app_source.app_settings import app_settings
+from app_source.app_utils import app_main_methods
+from app_source.logger import main_logger
+from app_source.mp3_storage import mp3_storage, StorageValue
 from yandex_speech_kit.token_renewal import token_renew
 
 # initialisation of main components
 app = FastAPI()
-MP3_STORAGE.activate_storage()
+mp3_storage.activate_storage()
 token_renew(forced=True)
 
 
@@ -24,7 +24,7 @@ async def all_routes():
     """
     :return: all mapped routes
     """
-    return MP3_STORAGE.get_storage_dict()
+    return mp3_storage.get_storage_dict()
 
 
 class RouteToSpeechRequestBody(BaseModel):
@@ -41,24 +41,24 @@ async def route_to_speech(request_body: RouteToSpeechRequestBody):
     :param request_body: route_id and text of route
     :return: audio file representation of given route
     """
-    if len(request_body.ssml_text) > APP_SETTINGS.TEXT_LENGTH_LIMIT:
-        return f"Too long ssml_text passed! (> {APP_SETTINGS.TEXT_LENGTH_LIMIT})"
+    if len(request_body.ssml_text) > app_settings.TEXT_LENGTH_LIMIT:
+        return f"Too long ssml_text passed! (> {app_settings.TEXT_LENGTH_LIMIT})"
 
-    LOGGER.log(f"Got query in route to speech route_id: {request_body.route_id},"
+    main_logger.log(f"Got query in route to speech route_id: {request_body.route_id},"
                f" ssml_text: {request_body.ssml_text}")
     route_id, ssml_text = request_body.route_id, request_body.ssml_text
 
-    text_hash = APP_MAIN_METHODS.hash_text(ssml_text)
-    storage_value = MP3_STORAGE.get(route_id)
+    text_hash = app_main_methods.hash_text(ssml_text)
+    storage_value = mp3_storage.get(route_id)
     if storage_value is not None and storage_value.text_hash == text_hash:
         file_name = storage_value.file_name
     else:
-        file_name = APP_MAIN_METHODS.route_to_audio_file(route_id, ssml_text, text_hash)
-        MP3_STORAGE.put(route_id, StorageValue(text_hash, file_name))
+        file_name = app_main_methods.route_to_audio_file(route_id, ssml_text, text_hash)
+        mp3_storage.put(route_id, StorageValue(text_hash, file_name))
 
     return FileResponse(
         path=os.path.join(os.path.abspath(os.curdir),
-                          APP_SETTINGS.MP3_LOCATION, file_name),
+                          app_settings.MP3_LOCATION, file_name),
         media_type="audio/mpeg3",
         filename=file_name
     )

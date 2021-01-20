@@ -20,4 +20,4 @@ class YandexSpeechKitSettings(BaseSettings):
         env_file = ".env"
 
 
-YANDEX_SETTINGS = YandexSpeechKitSettings()
+yandex_settings = YandexSpeechKitSettings()

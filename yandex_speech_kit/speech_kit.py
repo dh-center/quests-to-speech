@@ -4,8 +4,8 @@ import time
 import requests
 from pydub import AudioSegment
 
-from app_source.app_settings import APP_SETTINGS, Settings
-from yandex_speech_kit.speech_kit_settings import YANDEX_SETTINGS, YandexSpeechKitSettings
+from app_source.app_settings import app_settings, Settings
+from yandex_speech_kit.speech_kit_settings import yandex_settings, YandexSpeechKitSettings
 
 
 class SpeechKit:
@@ -81,7 +81,7 @@ class SpeechKit:
                 yield chunk
 
 
-SPEECH_KIT_PROCESSOR = SpeechKit(settings=APP_SETTINGS, yandex_audio_settings=YANDEX_SETTINGS)
+speech_kit_processor = SpeechKit(settings=app_settings, yandex_audio_settings=yandex_settings)
 
 # This is an example
 if __name__ == "__main__":
@@ -94,6 +94,6 @@ if __name__ == "__main__":
 """
 
     with open("try.raw", "wb") as f:
-        for audio_content in SPEECH_KIT_PROCESSOR.synthesize(text):
+        for audio_content in speech_kit_processor.synthesize(text):
             f.write(audio_content)
     AudioSegment.from_file("try.raw", channels=1, sample_width=2, frame_rate=48000).export("try_new1.mp3", format="mp3")
