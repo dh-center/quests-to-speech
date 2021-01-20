@@ -2,50 +2,65 @@ import logging
 import os
 import sys
 import time
-from functools import wraps
+from logging import Logger
 from logging.handlers import RotatingFileHandler
 
-from app_source.app_settings import settings
+from app_source.app_settings import app_settings
 
 BYTES_IN_MEGABYTE = (2 ** 20)
 
-if not os.path.isdir(settings.data_folder):
-    os.makedirs(settings.data_folder)
-file_handler = RotatingFileHandler(
-    os.path.join(settings.data_folder, 'app.log'), maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2
-)
 
-logging.basicConfig(filename=os.path.join(settings.data_folder, 'server.log'), level=logging.INFO)
-logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+class AppLogger:
+    """
+    Class to configure logging of application
+    """
+    main_logger: Logger
 
-formatter = logging.Formatter('%(asctime)s : %(message)s', '%b %d %H:%M:%S')
-formatter.converter = time.gmtime
+    def __init__(self):
+        # initialise logger folder if it is needed
+        if not os.path.isdir(app_settings.DATA_FOLDER):
+            os.makedirs(app_settings.DATA_FOLDER)
 
-__LOGGER = logging.getLogger("Rotating Log")
+        # for the root logger (to separate server messages)
+        logging.basicConfig(filename=os.path.join(app_settings.DATA_FOLDER, 'server.log'), level=logging.INFO,
+                            format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-file_handler.setFormatter(formatter)
-__LOGGER.addHandler(file_handler)
+        # configure formatter
+        formatter = logging.Formatter('%(asctime)s : %(message)s', '%b %d %H:%M:%S')
+        formatter.converter = time.gmtime
 
-console_handler = logging.StreamHandler(sys.stdout)
-console_handler.setFormatter(formatter)
-# do not forget to spool both stdout and stderr > /dev/null 2>&1
-__LOGGER.addHandler(console_handler)
+        # specify logger
+        self.main_logger = logging.getLogger("Main logger")
+
+        # collect handlers
+        self.handlers = []
+        file_handler = RotatingFileHandler(
+            os.path.join(app_settings.DATA_FOLDER, 'app.log'), maxBytes=20 * BYTES_IN_MEGABYTE, backupCount=2
+        )
+        console_handler = logging.StreamHandler(sys.stdout)
+
+        self.handlers.append(file_handler)
+        self.handlers.append(console_handler)
+
+        # configure handlers
+        for handler in self.handlers:
+            handler.setFormatter(formatter)
+            self.main_logger.addHandler(handler)
+
+        self.main_logger.setLevel(logging.INFO)
+
+    def log_error(self, message: str):
+        """
+        log method for exceptions
+        :param message: log message
+        """
+        self.main_logger.exception(message)
+
+    def log(self, message: str):
+        """
+        :param message: log message
+        """
+        self.main_logger.info(message)
 
 
-def log_error(message):
-    __LOGGER.exception(message)
-
-
-def log(messages):
-    __LOGGER.info(messages)
-
-
-def log_exception(fun):
-    @wraps(fun)
-    def wrapper(*args, **kwargs):
-        try:
-            return fun(*args, **kwargs)
-        except Exception as exp:
-            log(f"Exception happened : {exp}")
-
-    return wrapper
+main_logger = AppLogger()
