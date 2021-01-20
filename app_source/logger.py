@@ -50,14 +50,6 @@ class AppLogger:
 
         self.main_logger.setLevel(logging.INFO)
 
-    def add_additional_loggers(self, logger: Logger):
-        """
-        Add logger current available handlers
-        :param logger: to add handlers to
-        """
-        for handler in self.handlers:
-            logger.addHandler(handler)
-
     def log_error(self, message: str):
         """
         log method for exceptions
@@ -70,16 +62,6 @@ class AppLogger:
         :param message: log message
         """
         self.main_logger.info(message)
-
-    def log_exception_decorator(self, fun):
-        @wraps(fun)
-        def wrapper(*args, **kwargs):
-            try:
-                return fun(*args, **kwargs)
-            except Exception as exp:
-                self.log(f"Exception happened : {exp}")
-
-        return wrapper
 
 
 LOGGER = AppLogger()
