@@ -1,5 +1,5 @@
 import os
-from typing import Dict, Union
+from typing import Dict, Union, List
 
 import uvicorn
 from fastapi import FastAPI
@@ -34,7 +34,7 @@ class RouteToSpeechRequestBody(BaseModel):
        Main request entity with id of route and text
     """
     route_id: str
-    ssml_text: Union[Dict, str]
+    ssml_text: Union[str, List, Dict]
 
 
 @app.post("/route_to_speech")
@@ -45,12 +45,12 @@ async def route_to_speech(request_body: RouteToSpeechRequestBody):
     """
 
     ssml_text = ""
-    if isinstance(request_body.ssml_text, dict):
-        ssml_text = json_merger.merge_json_to_text_for_yandex(request_body.ssml_text)
-    else:
+    if isinstance(request_body.ssml_text, str):
         if len(request_body.ssml_text) > app_settings.TEXT_LENGTH_LIMIT:
             return f"Too long ssml_text passed! (> {app_settings.TEXT_LENGTH_LIMIT})"
         ssml_text = request_body.ssml_text
+    else:
+        ssml_text = json_merger.merge_json_to_text_for_yandex(request_body.ssml_text)
 
     main_logger.log(f"Got query in route to speech route_id: {request_body.route_id},"
                     f" ssml_text: {ssml_text}")
