@@ -33,7 +33,7 @@ jobs:
         if: github.ref == 'refs/heads/stage'
         uses: garygrossgarten/github-action-ssh@v0.3.0
         with:
-          command: cd ~/st-retrospect/stage/qts && ./deploy.sh
+          command: cd ~/retrospect/prod/quest-to-speech && ./deploy.sh
           host: ${{ secrets.SERVER_HOST }}
           username: root
           privateKey: ${{ secrets.PRIVATE_KEY }}

@@ -50,7 +50,8 @@ class Mp3Storage:
             main_logger.log(f"Found {file_name}")
             cropped_name = file_name[:-4]  # crop .mp3 part
             route_id, text_hash, created_time = cropped_name.split(app_settings.FILE_PARTS_SEPARATOR)
-            self._storage_dict[route_id] = StorageValue(text_hash, file_name)
+            file_id = self.get_file_id(route_id, text_hash)
+            self._storage_dict[file_id] = StorageValue(text_hash, file_name)
         self._activated = True
         main_logger.log("Storage activated.")
 
@@ -60,22 +61,37 @@ class Mp3Storage:
         """
         return dict(**self._storage_dict)
 
-    def get(self, route_id: str) -> Optional[StorageValue]:
+    def get(self, route_id: str, text_hash: str) -> Optional[StorageValue]:
         """
         :param route_id: to get StorageValue by
+        :param text_hash: ssml test hash for creating audio id
         :return: StorageValue for this route_id or None if it is absent
         """
-        return self._storage_dict.get(route_id, None)
+        file_id = self.get_file_id(route_id, text_hash)
+        return self._storage_dict.get(file_id, None)
 
-    def put(self, route_id: str, storage_value: StorageValue):
+    def put(self, route_id: str, text_hash: str, storage_value: StorageValue):
         """
         :param route_id: to put StorageValue by (as key)
+        :param text_hash: ssml test hash for creating audio id
         :param storage_value:  to associate with given route_id (as value)
         """
-        prev_value = self._storage_dict.get(route_id, None)
+        file_id = self.get_file_id(route_id, text_hash)
+
+        prev_value = self._storage_dict.get(file_id, None)
         if prev_value:
             Mp3Storage.__delete_mp3_file(prev_value.file_name)
-        self._storage_dict[route_id] = storage_value
+        self._storage_dict[file_id] = storage_value
+
+    @staticmethod
+    def get_file_id(route_id: str, text_hash: str):
+        """
+        Creates unique audio id based on route_id and ssml text hash
+        :param route_id: route id hash for creating audio id
+        :param text_hash: ssml test hash for creating audio id
+
+        """
+        return f'{route_id}:{text_hash}'
 
     @staticmethod
     def clear_tmp_files():

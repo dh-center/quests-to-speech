@@ -57,12 +57,12 @@ async def route_to_speech(request_body: RouteToSpeechRequestBody):
     route_id = request_body.route_id
 
     text_hash = app_main_methods.hash_text(ssml_text)
-    storage_value = mp3_storage.get(route_id)
+    storage_value = mp3_storage.get(route_id, text_hash)
     if storage_value is not None and storage_value.text_hash == text_hash:
         file_name = storage_value.file_name
     else:
         file_name = app_main_methods.route_to_audio_file(route_id, ssml_text, text_hash)
-        mp3_storage.put(route_id, StorageValue(text_hash, file_name))
+        mp3_storage.put(route_id, text_hash, StorageValue(text_hash, file_name))
 
     return FileResponse(
         path=os.path.join(os.path.abspath(os.curdir),
